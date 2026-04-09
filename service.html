@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGE — Service</title>
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="apple-touch-icon" href="images/logo-mge.png">
+    <meta name="description" content="MGE — Expertise électrique à Paris. Rénovation, domotique, éclairage architectural.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+                </div>
+                <span class="nav-phone">07 81 90 07 84</span>
+                <a href="careers.html" class="btn-careers-nav" data-i18n="nav.careers">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav" data-i18n="nav.cta">Consultation</a>
+            </div>
+        </div>
+        <nav class="nav-overlay" id="navOverlay">
+            <ul>
+                <li><a href="index.html#services"  onclick="closeMenu()" data-i18n="nav.solutions">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()" data-i18n="nav.expertises">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()" data-i18n="nav.realisations">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" data-i18n="nav.cta">Consultation</a></li>
+            </ul>
+            <div class="overlay-footer">
+                <div class="overlay-address">
+                    <span>2 rue Lakanal, 75015 Paris</span>
+                    <span>07 81 90 07 84</span>
+                </div>
+                <div class="overlay-social">
+                    <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="sp-hero">
+        <div class="sp-hero-bg" id="spHeroBg"></div>
+        <div class="sp-hero-overlay"></div>
+        <div class="container sp-hero-content">
+            <a href="index.html#services" class="sp-back" id="spBack">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span data-i18n="back">Retour aux solutions</span>
+            </a>
+            <div class="sp-hero-inner">
+                <span class="sp-tag" id="spTag"></span>
+                <h1 class="sp-title" id="spTitle"></h1>
+                <p class="sp-hero-sub" id="spHeroSub"></p>
+                <div class="sp-hero-cta">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn" data-i18n="cta.btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ STATS ═══════════════ -->
+    <section class="sp-stats reveal reveal-up">
+        <div class="container">
+            <div class="sp-stats-grid" id="spStats"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ INTRO + LISTE ═══════════════ -->
+    <section class="sp-content">
+        <div class="container">
+            <div class="sp-body">
+                <div class="sp-left reveal reveal-up">
+                    <span class="section-label" data-i18n="section.service">Notre service</span>
+                    <p class="sp-desc" id="spDesc"></p>
+                    <a href="index.html#contact" class="btn-main sp-devis-btn" id="spCta" data-i18n="cta.btn">Demander un devis</a>
+                </div>
+                <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
+                    <h3 class="sp-points-title" data-i18n="points.title">Ce que comprend ce service</h3>
+                    <ul class="sp-points" id="spPoints"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ GALERIE PHOTOS ═══════════════ -->
+    <section class="sp-gallery reveal reveal-up">
+        <div class="container">
+            <div class="sp-gallery-grid" id="spPhotos"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ APPROCHE PAR ÉTAPES ═══════════════ -->
+    <section class="sp-steps-section">
+        <div class="container">
+            <div class="sp-steps-header reveal reveal-up">
+                <span class="section-label" data-i18n="steps.label">Notre approche</span>
+                <h2 data-i18n-html="steps.title">Comment nous <em>travaillons</em></h2>
+            </div>
+            <div class="sp-steps-grid" id="spSteps"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FAQ ═══════════════ -->
+    <section class="sp-faq-section">
+        <div class="container">
+            <div class="sp-faq-header reveal reveal-up">
+                <span class="section-label" data-i18n="faq.label">Questions fréquentes</span>
+                <h2 data-i18n-html="faq.title">Ce que vous voulez <em>savoir</em></h2>
+            </div>
+            <div class="sp-faq-list" id="spFaq"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ AUTRES SOLUTIONS ═══════════════ -->
+    <section class="sp-related">
+        <div class="container">
+            <span class="section-label" data-i18n="related.label">Autres solutions</span>
+            <div class="sp-related-grid" id="spRelated"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CTA FINAL ═══════════════ -->
+    <section class="sp-cta-band">
+        <div class="container">
+            <div class="sp-cta-inner reveal reveal-up">
+                <div class="sp-cta-text">
+                    <p class="sp-cta-label" data-i18n="cta.label">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title" data-i18n-html="cta.title">Parlons de <em>votre projet.</em></h2>
+                </div>
+                <div class="sp-cta-actions">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn" data-i18n="cta.btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
+            <p data-i18n="footer.copy">© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <div class="footer-links">
+                <a href="index.html#expertise" data-i18n="footer.link1">Expertise</a>
+                <a href="index.html#services"  data-i18n="footer.link2">Solutions</a>
+                <a href="index.html#contact"   data-i18n="footer.link3">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ── Hamburger ──────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const overlay   = document.getElementById('navOverlay');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        overlay.classList.toggle('open');
+        document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMenu() {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ── Traductions UI ─────────────────────────────────────────────
+    const ui = {
+        fr: {
+            'nav.solutions':    'Solutions',
+            'nav.expertises':   'Expertises',
+            'nav.realisations': 'Réalisations',
+            'nav.cta':          'Consultation',
+            'nav.careers':      'Nous rejoindre',
+            'back':             'Retour aux solutions',
+            'section.service':  'Notre service',
+            'points.title':     'Ce que comprend ce service',
+            'steps.label':      'Notre approche',
+            'steps.title':      'Comment nous <em>travaillons</em>',
+            'faq.label':        'Questions fréquentes',
+            'faq.title':        'Ce que vous voulez <em>savoir</em>',
+            'cta.btn':          'Demander un devis',
+            'cta.label':        'Prêt à démarrer votre projet ?',
+            'cta.title':        'Parlons de <em>votre projet.</em>',
+            'related.label':    'Autres solutions',
+            'footer.copy':      '© 2026 MGE · Monge Gauthier Énergie · Paris',
+            'footer.link1':     'Expertise',
+            'footer.link2':     'Solutions',
+            'footer.link3':     'Contact',
+        },
+        en: {
+            'nav.solutions':    'Solutions',
+            'nav.expertises':   'Expertise',
+            'nav.realisations': 'Projects',
+            'nav.cta':          'Contact',
+            'nav.careers':      'Join us',
+            'back':             'Back to solutions',
+            'section.service':  'Our service',
+            'points.title':     'What this service includes',
+            'steps.label':      'Our approach',
+            'steps.title':      'How we <em>work</em>',
+            'faq.label':        'Frequently asked questions',
+            'faq.title':        'What you want <em>to know</em>',
+            'cta.btn':          'Request a quote',
+            'cta.label':        'Ready to get started?',
+            'cta.title':        "Let's talk about <em>your project.</em>",
+            'related.label':    'Other solutions',
+            'footer.copy':      '© 2026 MGE · Monge Gauthier Énergie · Paris',
+            'footer.link1':     'Expertise',
+            'footer.link2':     'Solutions',
+            'footer.link3':     'Contact',
+        }
+    };
+
+    // ── Photos ─────────────────────────────────────────────────────
+    const servicePhotos = {
+        renovation: [
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        eclairage: [
+            'https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        domotique: [
+            'https://images.unsplash.com/photo-1558002038-1055907df827?w=900&auto=format&fit=crop&q=75',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        normes: [
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        tableau: [
+            'https://images.unsplash.com/photo-1616137466211-f02fc81ae5d1?w=900&auto=format&fit=crop&q=75',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        depannage: [
+            'https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+            'https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1',
+        ],
+        tertiaire: [
+            'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=500&auto=format&fit=crop&q=75',
+        ],
+        commerce: [
+            'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=500&auto=format&fit=crop&q=75',
+        ],
+        infrastructure: [
+            'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&auto=format&fit=crop&q=75',
+        ],
+        audit: [
+            'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=75',
+        ],
+        maintenance: [
+            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&auto=format&fit=crop&q=75',
+        ],
+        consuel: [
+            'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&auto=format&fit=crop&q=75',
+            'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&auto=format&fit=crop&q=75',
+        ]
+    };
+
+    // ── Données services FR ────────────────────────────────────────
+    const servicesFr = {
+        renovation: {
+            tag: 'Particulier',
+            title: 'Rénovation',
+            heroSub: "Refonte électrique complète pour appartements haussmanniens et lofts contemporains. Chaque intervention est invisible et respecte l'architecture existante.",
+            desc: "De la mise en conformité NF C 15-100 à la pose de tableaux sur-mesure, MGE prend en charge l'intégralité de votre rénovation électrique. Nos électriciens interviennent sans démolition visible, en coordination avec votre architecte ou votre décorateur d'intérieur. Chaque détail est soigné, chaque câble est dissimulé.",
+            points: ['Mise en conformité NF C 15-100', 'Câblage encastré sans démolition', 'Tableaux électriques sur-mesure', 'Coordination avec architectes et décorateurs', 'Garantie décennale incluse', 'Nettoyage de chantier compris'],
+            stats: [{ num: '100+', label: 'Rénovations réalisées à Paris' }, { num: '180m²', label: 'Surface moyenne traitée' }, { num: '100%', label: 'Conformité NF C 15-100 garantie' }],
+            steps: [
+                { num: '01', title: 'Diagnostic', desc: 'Visite technique gratuite de votre appartement. Relevé complet de l\'installation existante et identification des non-conformités.' },
+                { num: '02', title: 'Conception', desc: 'Élaboration du plan électrique avec votre architecte ou décorateur. Choix des équipements, validation du budget.' },
+                { num: '03', title: 'Réalisation', desc: 'Câblage intégral, pose des tableaux et appareillage. Interventions propres et rapides, sans démolition visible.' },
+                { num: '04', title: 'Réception', desc: 'Test de l\'ensemble des circuits, remise du dossier de conformité et accompagnement CONSUEL si nécessaire.' }
+            ],
+            faq: [
+                { q: 'Combien de temps dure une rénovation électrique complète ?', a: 'Pour un appartement de 80 à 150m², comptez entre 5 et 10 jours ouvrés. Nous planifions les interventions pour minimiser votre gêne au quotidien.' },
+                { q: 'Faut-il quitter son logement pendant les travaux ?', a: 'Non, nous organisons les travaux par zones pour que vous puissiez rester chez vous. Une coupure de courant partielle peut être nécessaire quelques heures par jour.' },
+                { q: 'Obtenez-vous l\'attestation CONSUEL ?', a: 'Oui. Toutes nos installations sont conformes NF C 15-100 et nous constituons le dossier CONSUEL pour la mise en service de votre compteur.' },
+                { q: 'Intervenez-vous dans les bâtiments classés ou haussmanniens ?', a: 'C\'est notre spécialité. Nous maîtrisons les contraintes des immeubles anciens et intervenons en respectant les cloisons, moulures et parquets d\'origine.' }
+            ]
+        },
+        eclairage: {
+            tag: 'Particulier',
+            title: 'Éclairage',
+            heroSub: "Conception et installation d'éclairages sur-mesure : lumière d'accentuation, éclairage indirect, LEDs architecturales. Chaque scène de vie sublimée par la lumière.",
+            desc: "L'éclairage est la touche finale qui révèle un intérieur. MGE conçoit des installations lumineuses sur-mesure, en parfaite harmonie avec votre décoration. De l'étude lumineuse à la mise en service des gradateurs, nous orchestrons chaque ambiance pour que votre intérieur parisien soit mis en valeur à toute heure de la journée.",
+            points: ['Étude lumineuse personnalisée', 'LED basse consommation haut de gamme', 'Variateurs et scènes lumineuses', 'Spots encastrés, rails et rubans LED', 'Éclairage extérieur et paysager', 'Intégration domotique possible'],
+            stats: [{ num: '−70%', label: 'Économie sur la facture énergie' }, { num: '5 ans', label: 'Garantie sur les équipements LED' }, { num: '300+', label: 'Points lumineux installés par an' }],
+            steps: [
+                { num: '01', title: 'Étude lumineuse', desc: 'Analyse de vos espaces, de la lumière naturelle et de vos usages. Élaboration d\'un plan lumière sur-mesure avec simulation.' },
+                { num: '02', title: 'Sélection', desc: 'Choix des sources lumineuses (spots, suspensions, rubans, projecteurs) en accord avec votre décorateur et vos préférences.' },
+                { num: '03', title: 'Installation', desc: 'Câblage et pose des luminaires, variateurs et contrôleurs. Cheminement des câbles totalement dissimulé.' },
+                { num: '04', title: 'Réglages & formation', desc: 'Programmation des scènes lumineuses, réglage des intensités, et formation à l\'utilisation de votre système.' }
+            ],
+            faq: [
+                { q: 'Quelle est la différence entre éclairage indirect et d\'accentuation ?', a: 'L\'éclairage indirect crée une ambiance douce en diffusant la lumière sur les murs ou le plafond. L\'accentuation met en valeur un tableau, un meuble ou un détail architectural avec un faisceau ciblé.' },
+                { q: 'Peut-on intégrer l\'éclairage à une installation domotique existante ?', a: 'Oui, nous sommes compatibles avec les systèmes KNX, Control4, Somfy et la plupart des standards du marché. Votre éclairage pourra être piloté depuis votre smartphone.' },
+                { q: 'Combien de scènes lumineuses peut-on programmer ?', a: 'Autant que vous le souhaitez : réveil, journée de travail, dîner en amoureux, soirée, nuit… Chaque pièce peut avoir ses propres scènes activables en un toucher.' },
+                { q: 'Les LEDs sont-elles compatibles avec les variateurs ?', a: 'Toutes les LEDs que nous installons sont "dimmables" et testées avec nos variateurs pour garantir une variation douce, sans scintillement ni bourdonnement.' }
+            ]
+        },
+        domotique: {
+            tag: 'Particulier',
+            title: 'Domotique',
+            heroSub: "Intégration de systèmes intelligents KNX, Control4 et Home Assistant pour un pilotage total de votre habitat depuis votre smartphone.",
+            desc: "La domotique transforme votre appartement parisien en un espace intelligent, confortable et économe. MGE maîtrise les principaux protocoles du marché — KNX, Control4, Home Assistant — et conçoit des architectures robustes, évolutives et intuitives. Un seul écran ou votre voix suffisent pour orchestrer lumières, volets, chauffage et sécurité.",
+            points: ['Systèmes KNX & Control4 certifiés', 'Gestion lumière, volets, chauffage', 'Interface mobile intuitive', 'Scènes automatisées (départ, soirée, nuit)', 'Compatibilité Alexa & Google Home', 'Évolution et extension faciles'],
+            stats: [{ num: 'KNX', label: 'Certification officielle installateur' }, { num: '−30%', label: 'Économies d\'énergie en moyenne' }, { num: '200+', label: 'Scènes programmables par installation' }],
+            steps: [
+                { num: '01', title: 'Audit de votre habitat', desc: 'Analyse de vos usages, de votre infrastructure existante et de vos souhaits d\'automatisation. Définition du niveau de domotisation.' },
+                { num: '02', title: 'Architecture système', desc: 'Conception de l\'architecture KNX ou Control4 : bus, actionneurs, capteurs, interfaces. Plan complet avant tout travaux.' },
+                { num: '03', title: 'Installation & câblage', desc: 'Pose des bus de terrain, actionneurs dans les tableaux, capteurs et interfaces tactiles. Câblage entièrement dissimulé.' },
+                { num: '04', title: 'Programmation & formation', desc: 'Configuration de toutes les scènes et automatismes. Formation de 2h à l\'utilisation, et hotline dédiée pendant 3 mois.' }
+            ],
+            faq: [
+                { q: 'Quelle est la différence entre KNX et des systèmes comme Philips Hue ?', a: 'KNX est un protocole professionnel filaire, extrêmement fiable et pérenne, utilisé dans les grandes installations. Philips Hue est une solution grand public Wi-Fi, plus simple mais moins robuste et évolutive.' },
+                { q: 'Peut-on domotiser un appartement sans tout refaire ?', a: 'Oui, grâce à des solutions sans fil comme Home Assistant ou des actionneurs rétrofittables. Nous analysons votre installation existante et proposons la solution la plus adaptée.' },
+                { q: 'En cas de panne Internet, la domotique fonctionne-t-elle encore ?', a: 'Les systèmes KNX fonctionnent entièrement en local, sans dépendance à Internet. Les interrupteurs muraux continuent de fonctionner normalement en cas de coupure réseau.' },
+                { q: 'Puis-je étendre mon installation domotique plus tard ?', a: 'Absolument. L\'architecture KNX est modulaire : vous pouvez ajouter des pièces, des fonctions ou des équipements à tout moment sans refaire l\'installation existante.' }
+            ]
+        },
+        normes: {
+            tag: 'Particulier',
+            title: 'Mise aux Normes',
+            heroSub: "Diagnostic complet et mise en conformité de vos installations électriques selon la norme NF C 15-100. Obligatoire lors d'une vente immobilière.",
+            desc: "Une installation électrique vieillissante représente un risque réel : incendie, électrocution, refus d'assurance. MGE réalise un diagnostic exhaustif de votre logement et effectue tous les travaux de mise en conformité selon la norme NF C 15-100 en vigueur. À l'issue de notre intervention, vous disposez d'un rapport de conformité officiel.",
+            points: ['Diagnostic CONSUEL complet', 'Remplacement des installations vétustes', 'Mise à terre et protection différentielle', 'Rapport de conformité officiel', 'Accompagnement démarches administratives', 'Devis détaillé avant travaux'],
+            stats: [{ num: '48h', label: 'Délai de remise du diagnostic' }, { num: '100%', label: 'Conformité CONSUEL garantie' }, { num: '30 ans', label: 'Durée de vie des installations reposées' }],
+            steps: [
+                { num: '01', title: 'Diagnostic', desc: 'Inspection visuelle et métrologie complète : continuité de mise à terre, isolement, protection différentielle, marquage des circuits.' },
+                { num: '02', title: 'Rapport détaillé', desc: 'Remise d\'un rapport technique avec liste précise des non-conformités, photos à l\'appui, et estimation chiffrée des travaux.' },
+                { num: '03', title: 'Travaux de mise en conformité', desc: 'Remplacement ou création des circuits défaillants, installation de protections différentielles et mise à la terre généralisée.' },
+                { num: '04', title: 'Attestation officielle', desc: 'Délivrance du rapport de conformité et accompagnement pour l\'obtention de l\'attestation CONSUEL si nécessaire.' }
+            ],
+            faq: [
+                { q: 'La mise aux normes est-elle obligatoire pour vendre mon appartement ?', a: 'Lors d\'une vente, un diagnostic électrique est obligatoire si l\'installation a plus de 15 ans. Si des anomalies sont relevées, les travaux ne sont pas légalement obligatoires mais fortement recommandés pour rassurer l\'acheteur.' },
+                { q: 'Mon assurance peut-elle refuser de m\'indemniser en cas de sinistre ?', a: 'Oui. Si votre installation est vétuste et reconnue non conforme, votre assureur peut invoquer une faute grave pour réduire ou refuser l\'indemnisation en cas d\'incendie ou dégât des eaux d\'origine électrique.' },
+                { q: 'Combien de temps prennent les travaux de mise en conformité ?', a: 'En fonction de l\'état de l\'installation, de 1 à 5 jours. Un simple remplacement de tableau et ajout de différentiels peut se faire en 1 journée.' },
+                { q: 'Quel est le coût moyen d\'une mise aux normes ?', a: 'Entre 1 500€ et 5 000€ selon la superficie et l\'état de l\'installation. Nous établissons un devis détaillé gratuit après diagnostic.' }
+            ]
+        },
+        tableau: {
+            tag: 'Particulier',
+            title: 'Tableau Électrique',
+            heroSub: "Remplacement ou optimisation de votre tableau électrique. Installation de disjoncteurs, protections différentielles et gestion des circuits.",
+            desc: "Le tableau électrique est le cœur de votre installation. Un tableau vétuste ou mal dimensionné peut causer des pannes répétées, voire des incendies. MGE remplace ou optimise votre tableau en une journée, avec des équipements haut de gamme (Schneider, Legrand, Hager), un câblage irréprochable et une documentation complète de vos circuits.",
+            points: ['Tableau encastré ou en saillie', 'Disjoncteurs magnéto-thermiques', 'Protection différentielle 30mA', 'Ajout de circuits dédiés (cuisine, bureau)', 'Étiquetage et documentation complète', 'Mise en service et test complet'],
+            stats: [{ num: '1 jour', label: 'Durée moyenne d\'intervention' }, { num: '30mA', label: 'Protection différentielle systématique' }, { num: '15 ans', label: 'Garantie sur les tableaux posés' }],
+            steps: [
+                { num: '01', title: 'Analyse des besoins', desc: 'Recensement de vos équipements, de vos circuits existants et de vos projets futurs. Dimensionnement précis du nouveau tableau.' },
+                { num: '02', title: 'Choix du matériel', desc: 'Sélection des équipements (Schneider, Legrand, Hager) adaptés à votre installation. Présentation du devis détaillé.' },
+                { num: '03', title: 'Remplacement', desc: 'Dépose de l\'ancien tableau, câblage du nouveau, reprise de tous les circuits. Intervention propre et rapide, généralement en une journée.' },
+                { num: '04', title: 'Tests & documentation', desc: 'Contrôle de chaque circuit, test des protections différentielles. Remise d\'un schéma complet et d\'un étiquetage clair de chaque disjoncteur.' }
+            ],
+            faq: [
+                { q: 'Quand faut-il remplacer son tableau électrique ?', a: 'Si votre tableau date de plus de 25 ans, si les disjoncteurs sautent fréquemment, si vous n\'avez pas de protection différentielle 30mA, ou si vous ajoutez des équipements énergivores (borne de recharge, climatisation).' },
+                { q: 'Combien de circuits faut-il prévoir ?', a: 'La norme NF C 15-100 impose un minimum : circuit éclairage par tranche de 8 points lumineux, circuit prise par pièce, circuits spécialisés pour le lave-linge, le four, la cuisinière, etc. Nous vérifions votre configuration.' },
+                { q: 'Peut-on garder les anciens circuits avec un nouveau tableau ?', a: 'Oui, dans la plupart des cas. Nous testons chaque circuit existant et ne remplaçons que ceux qui présentent des défauts d\'isolement ou de continuité.' },
+                { q: 'Faut-il couper le courant dans tout l\'appartement ?', a: 'Oui, mais seulement quelques heures. Nous planifions l\'intervention pour que la coupure soit la plus courte possible, généralement moins d\'une demi-journée.' }
+            ]
+        },
+        depannage: {
+            tag: 'Particulier',
+            title: 'Dépannage 7j/7',
+            heroSub: "Intervention rapide pour toute panne électrique à Paris. Diagnostic précis, réparation immédiate, tarif transparent.",
+            desc: "Une panne électrique ne prévient pas. Disjoncteur qui saute en permanence, prise défaillante, court-circuit inexpliqué — MGE intervient à Paris 7j/7 avec un technicien qualifié. Notre engagement : un diagnostic transparent avant toute intervention et une réparation durable, pas un simple rafistolage.",
+            points: ['Intervention sous 2h en urgence', 'Diagnostic précis et transparent', 'Réparation prise, interrupteur, circuit', 'Remplacement fusibles et disjoncteurs', 'Devis gratuit avant intervention', 'Disponible week-end et jours fériés'],
+            stats: [{ num: '2h', label: 'Délai d\'intervention garanti à Paris' }, { num: '7j/7', label: 'Disponibilité week-end & fériés' }, { num: '0€', label: 'Devis systématiquement gratuit' }],
+            steps: [
+                { num: '01', title: 'Appel & diagnostic téléphonique', desc: 'Décrivez votre panne. Notre technicien vous guide par téléphone pour identifier le problème et évaluer l\'urgence.' },
+                { num: '02', title: 'Intervention sur site', desc: 'Un électricien qualifié arrive dans les 2 heures. Il effectue un diagnostic complet et vous présente un devis avant de commencer.' },
+                { num: '03', title: 'Réparation', desc: 'La plupart des pannes sont résolues en une seule intervention grâce à notre stock de pièces embarquées (disjoncteurs, prises, câbles).' },
+                { num: '04', title: 'Contrôle & prévention', desc: 'Vérification du reste de l\'installation pour anticiper d\'autres défauts. Rapport d\'intervention remis par e-mail.' }
+            ],
+            faq: [
+                { q: 'Intervenez-vous les week-ends et jours fériés ?', a: 'Oui, 7 jours sur 7. Le tarif week-end est légèrement majoré mais reste transparent et communiqué avant toute intervention.' },
+                { q: 'Mon disjoncteur saute dès que je branche un appareil, que faire ?', a: 'Ne rebranchez pas l\'appareil sans identifier l\'origine. Cela peut indiquer un court-circuit dans l\'appareil lui-même ou une surcharge du circuit. Appelez-nous pour un diagnostic rapide.' },
+                { q: 'Puis-je toucher au tableau électrique moi-même ?', a: 'Le rétablissement d\'un disjoncteur est sans danger. En revanche, ne touchez jamais aux fils ou aux bornes de branchement sans être certifié. Contactez-nous pour toute intervention sur le câblage.' },
+                { q: 'La réparation est-elle garantie ?', a: 'Oui, toutes nos réparations sont garanties 1 an pièces et main-d\'œuvre. Si la panne réapparaît dans ce délai, nous revenons sans frais.' }
+            ]
+        },
+        tertiaire: {
+            tag: 'Entreprise',
+            title: 'Locaux Tertiaires',
+            heroSub: "Installation et maintenance électrique pour bureaux, cabinets médicaux, studios et espaces de coworking. Respect des contraintes d'exploitation.",
+            desc: "L'électricité d'un bureau ne s'improvise pas. Densité de postes de travail, câblage réseau, conformité ERP, interventions hors horaires ouvrés — MGE connaît les exigences du tertiaire parisien. Nous livrons des installations fiables, évolutives et esthétiques, pensées pour accompagner la croissance de votre activité.",
+            points: ['Câblage courants forts & faibles', 'Éclairage professionnel LED', 'Prises de travail et réseaux', 'Conformité ERP et accessibilité', 'Interventions hors heures ouvrées', 'Contrat de maintenance disponible'],
+            stats: [{ num: '48h', label: 'Délai de remise du devis tertiaire' }, { num: 'ERP', label: 'Conformité réglementation garantie' }, { num: '10 ans', label: 'Garantie décennale sur nos installations' }],
+            steps: [
+                { num: '01', title: 'Analyse du site', desc: 'Visite technique de vos locaux, étude des plans, recensement des besoins en puissance, réseau et sécurité.' },
+                { num: '02', title: 'Conception', desc: 'Élaboration du schéma électrique et du plan de câblage. Coordination avec votre architecte et le maître d\'œuvre.' },
+                { num: '03', title: 'Réalisation', desc: 'Installation complète courants forts et faibles, éclairage, tableaux et équipements de sécurité. Planning adapté à votre exploitation.' },
+                { num: '04', title: 'Mise en service & DOE', desc: 'Tests complets, remise du Dossier des Ouvrages Exécutés (DOE) et formation de votre responsable technique.' }
+            ],
+            faq: [
+                { q: 'Pouvez-vous intervenir la nuit ou le week-end pour ne pas perturber notre activité ?', a: 'Oui, c\'est notre fonctionnement habituel pour les clients tertiaires. Nous planifions toutes les interventions importantes hors des heures ouvrées.' },
+                { q: 'Que couvre la conformité ERP pour un bureau ?', a: 'Éclairage de sécurité (BAES), détection incendie, accessibilité PMH, balisage des issues de secours. Nous vérifions l\'ensemble de ces points et réalisons les travaux de mise en conformité.' },
+                { q: 'Proposez-vous des contrats de maintenance pour les locaux tertiaires ?', a: 'Oui, nous proposons des contrats annuels avec visites préventives, vérifications réglementaires et hotline dédiée. Tarif calculé selon la surface et la complexité de l\'installation.' },
+                { q: 'Pouvez-vous gérer l\'électricité d\'un déménagement de bureaux ?', a: 'Absolument. Démontage dans les anciens locaux, installation dans les nouveaux, remise en service rapide. Nous coordonnons avec votre informaticien pour le câblage réseau.' }
+            ]
+        },
+        commerce: {
+            tag: 'Entreprise',
+            title: 'Commerce & Retail',
+            heroSub: "Solutions électriques adaptées aux commerces, boutiques et restaurants. Mise en valeur des espaces et fiabilité maximale de l'installation.",
+            desc: "Dans un commerce, chaque détail compte. L'éclairage vitrine qui attire le client, les prises de caisse toujours disponibles, l'alimentation fiable des équipements de cuisine — MGE conçoit des installations pensées pour la performance commerciale. Nos interventions sont rapides et nous respectons votre rythme d'activité.",
+            points: ['Éclairage vitrine et ambiance', 'Alimentation caisses et TPE', 'Signalétique lumineuse', 'Respect normes ERP', 'Maintenance préventive', 'Remise en service express'],
+            stats: [{ num: '24h', label: 'Délai de remise en service d\'urgence' }, { num: 'ERP', label: 'Conformité garantie' }, { num: '−40%', label: 'Économie énergie avec notre LED pro' }],
+            steps: [
+                { num: '01', title: 'Visite & brief commercial', desc: 'Compréhension de votre concept, de votre parcours client et de vos contraintes opérationnelles. Prise en compte du planning d\'ouverture.' },
+                { num: '02', title: 'Plan d\'éclairage & alimentation', desc: 'Conception du plan lumière (vitrine, ambiance, accentuation) et du plan d\'alimentation (caisses, cuisine, signalétique).' },
+                { num: '03', title: 'Travaux', desc: 'Installation complète. Toutes les interventions de gros œuvre sont planifiées la nuit ou le week-end pour éviter toute fermeture.' },
+                { num: '04', title: 'Livraison & suivi', desc: 'Mise en service complète le jour J. Contrat de maintenance préventive proposé pour garantir la continuité de votre activité.' }
+            ],
+            faq: [
+                { q: 'Peut-on travailler la nuit pour ne pas fermer le commerce ?', a: 'C\'est notre organisation habituelle pour les commerces. Nous coordonnons avec vous pour que toutes les interventions importantes se fassent hors des heures d\'ouverture.' },
+                { q: 'Quelle réglementation s\'applique à mon restaurant ou ma boutique ?', a: 'Les établissements recevant du public (ERP) sont soumis à des règles strictes : éclairage de sécurité, protection incendie, accessibilité. Nous vérifions et mettons en conformité l\'ensemble.' },
+                { q: 'Proposez-vous des solutions d\'éclairage pour les vitrines ?', a: 'Oui, c\'est une de nos spécialités. Spots LED orientables, rubans lumineux, éclairage de mise en valeur des produits — nous concevons des solutions qui valorisent votre marchandise.' },
+                { q: 'Que faire en cas de panne en plein service ?', a: 'Appelez-nous directement. Nous intervenons en urgence dans les 2 heures pour les commerces sous contrat. Sans contrat, nous faisons tout notre possible pour intervenir le jour même.' }
+            ]
+        },
+        infrastructure: {
+            tag: 'Entreprise',
+            title: 'Infrastructure',
+            heroSub: "Conception et réalisation d'infrastructures électriques pour bâtiments, copropriétés et résidences haut de gamme.",
+            desc: "Les infrastructures électriques de bâtiment requièrent une expertise pointue : calcul de puissance, conformité réglementaire, coordination avec les autres corps d'état. MGE intervient en phase conception comme en rénovation, pour des projets de copropriété, résidences haut de gamme ou immeubles de bureaux.",
+            points: ['TGBT et tableaux divisionnaires', 'Chemins de câbles', 'Alimentation parkings et communs', 'Éclairage de sécurité BAES', 'Groupe électrogène et onduleurs', 'Dossiers réglementaires complets'],
+            stats: [{ num: '5 000m²', label: 'Surface maximale traitée en un projet' }, { num: 'BT/HTA', label: 'Maîtrise basse et haute tension' }, { num: '10 ans', label: 'Garantie décennale systématique' }],
+            steps: [
+                { num: '01', title: 'Étude de conception', desc: 'Calcul des puissances, bilans de puissance, schémas unifilaires, coordination de protection. Dossiers techniques complets.' },
+                { num: '02', title: 'Consultation & marché', desc: 'Rédaction des CCTP, assistance à la consultation des entreprises, analyse des offres et recommandation.' },
+                { num: '03', title: 'Réalisation', desc: 'Déploiement des chemins de câbles, TGBT, tableaux divisionnaires, raccordements et équipements de sécurité.' },
+                { num: '04', title: 'Recette & DOE', desc: 'Tests de mise en service, vérifications réglementaires (APAVE, SOCOTEC), remise des dossiers d\'ouvrages exécutés.' }
+            ],
+            faq: [
+                { q: 'Pouvez-vous gérer la totalité d\'un projet de rénovation d\'immeuble ?', a: 'Oui, de l\'étude de conception à la réception des travaux. Nous coordonnons avec tous les corps d\'état et assurons le suivi de chantier.' },
+                { q: 'Que comprend un TGBT ?', a: 'Le Tableau Général Basse Tension centralise la distribution électrique de tout le bâtiment : arrivée EDF, protection générale, départs vers les tableaux divisionnaires, comptage, et protections différentielles.' },
+                { q: 'Travaillez-vous avec des syndics de copropriété ?', a: 'Oui, nous avons de nombreuses références avec des syndics parisiens. Nous intervenons sur les parties communes, l\'éclairage des couloirs, les caves, les parkings et les locaux techniques.' },
+                { q: 'Quelle est la durée d\'un projet d\'infrastructure complet ?', a: 'De 2 semaines pour une petite copropriété à 6 mois pour un immeuble de grande hauteur. Nous établissons un planning détaillé dès la phase de conception.' }
+            ]
+        },
+        audit: {
+            tag: 'Entreprise',
+            title: 'Audit Énergétique',
+            heroSub: "Analyse complète de vos consommations électriques et recommandations pour réduire votre empreinte énergétique et vos coûts.",
+            desc: "L'audit énergétique est devenu incontournable face à la hausse des tarifs de l'électricité et aux obligations réglementaires (décret tertiaire, RE2020). MGE réalise un audit complet de votre installation, identifie les gisements d'économies et vous accompagne dans la mise en œuvre des solutions retenues.",
+            points: ['Mesure des consommations en temps réel', 'Identification des postes énergivores', 'Plan d\'optimisation chiffré', 'Bilan carbone de l\'installation', 'Accompagnement CEE et aides fiscales', 'Suivi des économies réalisées'],
+            stats: [{ num: '−25%', label: 'Économies moyennes constatées' }, { num: 'CEE', label: 'Accompagnement certificats d\'énergie' }, { num: '1 an', label: 'Retour sur investissement moyen' }],
+            steps: [
+                { num: '01', title: 'Collecte de données', desc: 'Installation de capteurs de mesure sur vos tableaux. Collecte des données de consommation sur 2 à 4 semaines.' },
+                { num: '02', title: 'Analyse', desc: 'Identification des équipements énergivores, des heures de pointe, des gaspillages en veille et des opportunités d\'optimisation.' },
+                { num: '03', title: 'Rapport & recommandations', desc: 'Remise d\'un rapport détaillé avec plan d\'actions priorisées, ROI chiffré pour chaque action et identification des aides disponibles.' },
+                { num: '04', title: 'Mise en œuvre & suivi', desc: 'Réalisation des travaux préconisés et suivi des économies réalisées sur 12 mois pour valider l\'atteinte des objectifs.' }
+            ],
+            faq: [
+                { q: 'Mon entreprise est-elle soumise à l\'obligation d\'audit énergétique ?', a: 'Les entreprises de plus de 250 salariés ou dont le bilan annuel dépasse 43M€ sont soumises à l\'obligation d\'audit tous les 4 ans. Le décret tertiaire impose aussi des objectifs de réduction aux bâtiments de plus de 1000m².' },
+                { q: 'Quelles sont les économies habituellement constatées ?', a: 'En moyenne 20 à 35% sur la facture électrique, selon l\'état initial de l\'installation. Les gains les plus importants viennent de l\'éclairage, de la gestion des veilles et de l\'optimisation de la puissance souscrite.' },
+                { q: 'Qu\'est-ce que les CEE et comment en bénéficier ?', a: 'Les Certificats d\'Économies d\'Énergie permettent de financer une partie des travaux d\'efficacité énergétique. Nous vous aidons à monter les dossiers de demande et à maximiser le montant des aides.' },
+                { q: 'L\'audit perturbe-t-il le fonctionnement de notre entreprise ?', a: 'Non, la phase de mesure est totalement transparente. Les capteurs sont posés en quelques heures sur vos tableaux et ne nécessitent aucune coupure de courant.' }
+            ]
+        },
+        maintenance: {
+            tag: 'Entreprise',
+            title: 'Maintenance',
+            heroSub: "Contrats de maintenance préventive et corrective pour garantir la continuité de votre activité et la conformité de vos installations.",
+            desc: "Une panne électrique coûte cher : perte d'activité, intervention d'urgence, risque de non-conformité. La maintenance préventive est le meilleur investissement pour un professionnel. MGE propose des contrats sur-mesure avec visites planifiées, vérifications réglementaires et hotline dédiée pour vos équipes.",
+            points: ['Visites périodiques planifiées', 'Vérifications réglementaires', 'Hotline dédiée 7j/7', 'Rapport d\'intervention systématique', 'Pièces de rechange en stock', 'Tableau de bord de conformité'],
+            stats: [{ num: '−80%', label: 'Réduction des pannes imprévues' }, { num: '4h', label: 'Délai d\'intervention sous contrat' }, { num: '12 mois', label: 'Rapport annuel de conformité fourni' }],
+            steps: [
+                { num: '01', title: 'Audit initial', desc: 'État des lieux complet de votre installation à l\'entrée en contrat. Inventaire des équipements, identification des risques prioritaires.' },
+                { num: '02', title: 'Plan de maintenance', desc: 'Élaboration du calendrier des visites préventives et des vérifications réglementaires adaptées à votre activité.' },
+                { num: '03', title: 'Visites préventives', desc: 'Contrôle des tableaux, tests des protections différentielles, vérification des connexions, nettoyage des armoires électriques.' },
+                { num: '04', title: 'Reporting & optimisation', desc: 'Rapport annuel de conformité, bilan des interventions, recommandations d\'amélioration et mise à jour du plan de maintenance.' }
+            ],
+            faq: [
+                { q: 'Quelle est la fréquence des visites préventives recommandée ?', a: 'Pour la plupart des locaux professionnels : 2 visites annuelles + une vérification réglementaire annuelle. Pour les établissements ERP ou les datacenters, la fréquence est plus élevée.' },
+                { q: 'Que comprend la vérification réglementaire ?', a: 'Contrôle de conformité NF C 15-100, vérification des protections différentielles, BAES, détection incendie, mise à la terre. Remise d\'un rapport officiel utilisable pour votre assurance.' },
+                { q: 'Que se passe-t-il en cas de panne avec un contrat de maintenance ?', a: 'Vous appelez notre hotline dédiée. Un technicien intervient sous 4 heures (heures ouvrées) ou sous 2 heures en urgence absolue. La main-d\'œuvre est incluse dans le contrat.' },
+                { q: 'Proposez-vous des contrats pour plusieurs sites ?', a: 'Oui, nous gérons des parcs multi-sites pour des enseignes ou des groupes immobiliers. Un interlocuteur dédié et un tableau de bord centralisé pour tous vos établissements.' }
+            ]
+        },
+        consuel: {
+            tag: 'Entreprise',
+            title: 'Conformité CONSUEL',
+            heroSub: "Accompagnement complet pour l'obtention de l'attestation CONSUEL, indispensable pour la mise en service de votre compteur électrique.",
+            desc: "L'attestation de conformité CONSUEL est obligatoire pour toute mise en service d'un compteur électrique neuf ou après une modification importante de l'installation. MGE prend en charge l'intégralité de la démarche : audit pré-CONSUEL, levée des réserves, constitution du dossier et suivi jusqu'à l'obtention de l'attestation.",
+            points: ['Audit pré-CONSUEL', 'Levée des réserves', 'Constitution du dossier', 'Suivi du passage CONSUEL', 'Attestation de conformité garantie', 'Délais maîtrisés'],
+            stats: [{ num: '100%', label: 'Attestations obtenues au premier passage' }, { num: '15 jours', label: 'Délai moyen d\'obtention' }, { num: '0', label: 'Réserve non levée sur nos dossiers' }],
+            steps: [
+                { num: '01', title: 'Audit pré-CONSUEL', desc: 'Inspection complète de votre installation selon le référentiel CONSUEL. Identification et documentation de toutes les non-conformités.' },
+                { num: '02', title: 'Levée des réserves', desc: 'Réalisation de tous les travaux correctifs nécessaires. Nous nous assurons que chaque point du cahier des charges CONSUEL est respecté.' },
+                { num: '03', title: 'Constitution du dossier', desc: 'Préparation du dossier de demande d\'attestation : schémas électriques, descriptif des travaux, photos des installations.' },
+                { num: '04', title: 'Passage & attestation', desc: 'Coordination avec le contrôleur CONSUEL. Présence de notre technicien lors de la visite pour répondre à toutes les questions.' }
+            ],
+            faq: [
+                { q: 'Dans quels cas le CONSUEL est-il obligatoire ?', a: 'Pour toute installation électrique neuve, pour la remise en service d\'un compteur coupé depuis plus de 2 ans, après un sinistre électrique, et pour toute extension importante d\'une installation existante.' },
+                { q: 'Que se passe-t-il si le CONSUEL est refusé ?', a: 'En cas de refus, Enedis ne peut pas mettre en service le compteur. Nous intervenons alors pour lever les réserves dans les meilleurs délais et programmons un second passage.' },
+                { q: 'Combien de temps faut-il pour obtenir l\'attestation ?', a: 'En moyenne 15 jours entre l\'audit initial et l\'obtention. En cas d\'urgence (emménagement imminent), nous pouvons accélérer la procédure.' },
+                { q: 'Peut-on passer le CONSUEL soi-même ?', a: 'Théoriquement oui, mais c\'est fortement déconseillé sans expertise. Un dossier incomplet ou des réserves non anticipées retardent la mise en service. Nous garantissons l\'obtention au premier passage.' }
+            ]
+        }
+    };
+
+    const servicesEn = {
+        renovation:     { tag:'Residential', title:'Renovation', heroSub:"Complete electrical overhaul for Haussmann apartments and contemporary lofts. Every intervention is invisible and respects the existing architecture.", desc:"From NF C 15-100 compliance to bespoke electrical panels, MGE handles your complete electrical renovation. Our electricians work without visible demolition, coordinating with your architect or interior designer. Every detail is carefully managed, every cable concealed.", points:['NF C 15-100 compliance','Concealed wiring without demolition','Custom electrical panels','Coordination with architects','Ten-year warranty included','Site cleaning included'], stats:[{num:'100+',label:'Renovations completed in Paris'},{num:'180m²',label:'Average surface area treated'},{num:'100%',label:'NF C 15-100 compliance guaranteed'}], steps:[{num:'01',title:'Diagnostic',desc:'Free technical site visit. Complete survey of existing installation and identification of non-compliances.'},{num:'02',title:'Design',desc:'Electrical plan with your architect. Equipment selection, budget validation.'},{num:'03',title:'Installation',desc:'Complete wiring, panel and fitting installation. Clean, fast work with no visible demolition.'},{num:'04',title:'Handover',desc:'Full circuit testing, compliance file delivery and CONSUEL support if required.'}], faq:[{q:'How long does a full electrical renovation take?',a:'For an 80–150m² apartment, allow 5 to 10 working days.'},{q:'Do I need to leave my home during the work?',a:'No. We organise work by zones so you can stay at home.'},{q:'Do you obtain the CONSUEL certificate?',a:'Yes. All our installations comply with NF C 15-100 and we handle the CONSUEL file.'},{q:'Do you work in listed or Haussmann buildings?',a:"It's our speciality. We master the constraints of old buildings and respect original features."}] },
+        eclairage:      { tag:'Residential', title:'Lighting', heroSub:"Design and installation of custom lighting: accent, indirect, and architectural LEDs. Every living scene elevated by light.", desc:"Lighting is the finishing touch that reveals an interior. MGE designs bespoke lighting installations in perfect harmony with your decoration. From lighting study to commissioning of dimmers, we orchestrate every atmosphere.", points:['Personalized lighting study','Premium low-energy LEDs','Dimmers and lighting scenes','Recessed spots, tracks and LED strips','Outdoor and landscape lighting','Home automation integration available'], stats:[{num:'−70%',label:'Savings on energy bill'},{num:'5 yrs',label:'Warranty on LED equipment'},{num:'300+',label:'Light points installed per year'}], steps:[{num:'01',title:'Lighting study',desc:'Analysis of your spaces, natural light and usage. Custom lighting plan with simulation.'},{num:'02',title:'Selection',desc:'Choice of light sources in line with your decorator and preferences.'},{num:'03',title:'Installation',desc:'Wiring and fitting of luminaires, dimmers and controllers. Fully concealed cable runs.'},{num:'04',title:'Settings & training',desc:'Programming of lighting scenes, intensity adjustment, and system usage training.'}], faq:[{q:'What is the difference between indirect and accent lighting?',a:'Indirect lighting creates a soft atmosphere by diffusing light on walls or ceiling. Accent lighting highlights a painting, furniture or architectural detail.'},{q:'Can lighting be integrated into an existing home automation system?',a:'Yes, we are compatible with KNX, Control4, Somfy and most market standards.'},{q:'How many lighting scenes can be programmed?',a:'As many as you wish: wake-up, work, dinner, evening, night…'},{q:'Are LEDs compatible with dimmers?',a:'All the LEDs we install are dimmable and tested with our dimmers for smooth dimming.'}] },
+        domotique:      { tag:'Residential', title:'Home Automation', heroSub:"Integration of intelligent KNX, Control4 and Home Assistant systems for total control of your home from your smartphone.", desc:"Home automation transforms your Parisian apartment into an intelligent, comfortable and energy-efficient space. MGE masters the main market protocols — KNX, Control4, Home Assistant — and designs robust, scalable and intuitive architectures.", points:['Certified KNX & Control4 systems','Lighting, shutters, heating management','Intuitive mobile interface','Automated scenes','Alexa & Google Home compatible','Easy to expand'], stats:[{num:'KNX',label:'Official installer certification'},{num:'−30%',label:'Average energy savings'},{num:'200+',label:'Programmable scenes per installation'}], steps:[{num:'01',title:'Home audit',desc:'Analysis of your usage, existing infrastructure and automation wishes.'},{num:'02',title:'System architecture',desc:'KNX or Control4 architecture design: bus, actuators, sensors, touch interfaces.'},{num:'03',title:'Installation & wiring',desc:'Fieldbus, panel actuators, sensors and touch interfaces. Fully concealed wiring.'},{num:'04',title:'Programming & training',desc:'Configuration of all scenes and automations. 2h training and dedicated hotline for 3 months.'}], faq:[{q:'What is the difference between KNX and systems like Philips Hue?',a:'KNX is a professional wired protocol, extremely reliable and durable. Philips Hue is a consumer Wi-Fi solution, simpler but less robust.'},{q:'Can I automate an apartment without redoing everything?',a:'Yes, through wireless solutions like Home Assistant or retrofittable actuators.'},{q:'If Internet goes down, does home automation still work?',a:'KNX systems work entirely locally, with no Internet dependency.'},{q:'Can I extend my home automation system later?',a:'Absolutely. KNX architecture is modular: add rooms, functions or equipment at any time.'}] },
+        normes:         { tag:'Residential', title:'Electrical Compliance', heroSub:"Complete diagnosis and compliance of your electrical installations to the NF C 15-100 standard. Required for property sales.", desc:"An ageing electrical installation represents a real risk. MGE carries out a comprehensive audit of your home and performs all compliance work to the current NF C 15-100 standard.", points:['Full CONSUEL diagnosis','Replacement of outdated installations','Earthing and differential protection','Official compliance report','Administrative support','Detailed quote before work'], stats:[{num:'48h',label:'Diagnosis report delivery time'},{num:'100%',label:'CONSUEL compliance guaranteed'},{num:'30 yrs',label:'Lifespan of new installations'}], steps:[{num:'01',title:'Diagnostic',desc:'Visual inspection and complete metrology: earth continuity, insulation, differential protection, circuit labelling.'},{num:'02',title:'Detailed report',desc:'Technical report with precise list of non-compliances, photos, and estimated costs.'},{num:'03',title:'Compliance works',desc:'Replacement or creation of defective circuits, differential protection and general earthing.'},{num:'04',title:'Official certificate',desc:'Compliance report delivery and CONSUEL certificate support if required.'}], faq:[{q:'Is compliance work required to sell my apartment?',a:'An electrical survey is mandatory for properties over 15 years old. Work is strongly recommended to reassure buyers.'},{q:'Can my insurer refuse to pay in case of damage?',a:'Yes. If your installation is recognised as non-compliant, your insurer may reduce or refuse compensation.'},{q:'How long does compliance work take?',a:'From 1 to 5 days depending on the state of the installation.'},{q:'What is the average cost?',a:'Between €1,500 and €5,000 depending on size and condition. Free detailed quote after diagnosis.'}] },
+        tableau:        { tag:'Residential', title:'Electrical Panel', heroSub:"Replacement or upgrade of your electrical panel. Installation of circuit breakers, differential protections and circuit management.", desc:"The electrical panel is the heart of your installation. MGE replaces or upgrades your panel in one day, with premium equipment and complete documentation of your circuits.", points:['Flush-mounted or surface panels','Magneto-thermal circuit breakers','30mA differential protection','Dedicated circuits (kitchen, office)','Complete labeling and documentation','Full commissioning and testing'], stats:[{num:'1 day',label:'Average intervention time'},{num:'30mA',label:'Systematic differential protection'},{num:'15 yrs',label:'Warranty on installed panels'}], steps:[{num:'01',title:'Needs analysis',desc:'Survey of your equipment, existing circuits and future plans. Precise new panel sizing.'},{num:'02',title:'Equipment selection',desc:'Selection of equipment (Schneider, Legrand, Hager) adapted to your installation.'},{num:'03',title:'Replacement',desc:'Old panel removal, new panel wiring, all circuits reconnected. Clean, usually one-day job.'},{num:'04',title:'Tests & documentation',desc:'Each circuit checked, differential protection tested. Full schematic and clear labelling of every breaker.'}], faq:[{q:'When should I replace my electrical panel?',a:'If it\'s over 25 years old, breakers trip frequently, no 30mA protection, or you\'re adding high-power equipment.'},{q:'How many circuits do I need?',a:'NF C 15-100 specifies minimums. We check your configuration and size accordingly.'},{q:'Can I keep existing circuits with a new panel?',a:'Usually yes. We test each existing circuit and only replace those with defects.'},{q:'Does the whole apartment need to be cut off?',a:'Yes, but only for a few hours. We plan the intervention to minimise the outage time.'}] },
+        depannage:      { tag:'Residential', title:'Emergency Repair 7/7', heroSub:"Rapid response for any electrical fault across Paris. Accurate diagnosis, immediate repair, transparent pricing.", desc:"An electrical fault doesn't wait. MGE responds 7 days a week with a qualified technician. Our commitment: transparent diagnosis before any intervention and a lasting repair.", points:['Response within 2 hours for emergencies','Accurate and transparent diagnosis','Socket, switch, circuit repair','Fuse and breaker replacement','Free quote before intervention','Available weekends & public holidays'], stats:[{num:'2h',label:'Guaranteed response time in Paris'},{num:'7/7',label:'Availability weekends & holidays'},{num:'€0',label:'Quote always free'}], steps:[{num:'01',title:'Call & phone diagnosis',desc:'Describe your fault. Our technician guides you by phone to identify the problem.'},{num:'02',title:'On-site intervention',desc:'A qualified electrician arrives within 2 hours and presents a quote before starting.'},{num:'03',title:'Repair',desc:'Most faults are resolved in a single visit thanks to our stock of spare parts.'},{num:'04',title:'Check & prevention',desc:'Installation check to anticipate other faults. Intervention report sent by email.'}], faq:[{q:'Do you work weekends and public holidays?',a:'Yes, 7 days a week. Weekend rates are slightly higher but always communicated upfront.'},{q:'My breaker trips every time I plug in an appliance, what should I do?',a:'Don\'t plug it back in without identifying the cause. Call us for a rapid diagnosis.'},{q:'Can I touch the electrical panel myself?',a:'Resetting a breaker is safe. Never touch wires or terminals without certification.'},{q:'Is the repair guaranteed?',a:'Yes, all repairs carry a 1-year parts and labour guarantee.'}] },
+        tertiaire:      { tag:'Commercial', title:'Office Buildings', heroSub:"Electrical installation and maintenance for offices, medical practices, studios and coworking spaces.", desc:"MGE knows the demands of Parisian office buildings. We deliver reliable, scalable and aesthetic installations designed to support your business growth.", points:['Power and data cabling','Professional LED lighting','Workstations and network outlets','ERP and accessibility compliance','Out-of-hours interventions','Maintenance contract available'], stats:[{num:'48h',label:'Quote delivery time'},{num:'ERP',label:'Compliance guaranteed'},{num:'10 yrs',label:'Decennial warranty'}], steps:[{num:'01',title:'Site analysis',desc:'Technical site visit, plan study, power, network and security needs assessment.'},{num:'02',title:'Design',desc:'Electrical and cabling plan. Coordination with architect and project manager.'},{num:'03',title:'Installation',desc:'Full power and data installation, lighting, panels and safety equipment.'},{num:'04',title:'Commissioning & DOE',desc:'Full testing, handover of as-built documents and training of your technical manager.'}], faq:[{q:'Can you work nights or weekends to avoid disruption?',a:'Yes, this is our standard approach for office clients.'},{q:'What does ERP compliance cover for an office?',a:'Emergency lighting, fire detection, PMH accessibility, emergency exit signage.'},{q:'Do you offer maintenance contracts for offices?',a:'Yes, annual contracts with preventive visits, regulatory checks and dedicated hotline.'},{q:'Can you handle the electrical work for an office move?',a:'Yes. Dismantling in old premises, installation in new ones, rapid recommissioning.'}] },
+        commerce:       { tag:'Commercial', title:'Retail & Shops', heroSub:"Electrical solutions tailored for retail stores, boutiques and restaurants.", desc:"In retail, every detail counts. MGE designs installations focused on commercial performance. Our interventions are fast and respect your business schedule.", points:['Display and ambient lighting','Cash register and payment terminal power','Illuminated signage','ERP compliance','Preventive maintenance','Express recommissioning'], stats:[{num:'24h',label:'Emergency recommissioning time'},{num:'ERP',label:'Compliance guaranteed'},{num:'−40%',label:'Energy saving with our pro LED'}], steps:[{num:'01',title:'Visit & brief',desc:'Understanding your concept, customer journey and operational constraints.'},{num:'02',title:'Lighting & power plan',desc:'Display lighting, ambient and accent plan, plus power plan for tills and kitchen.'},{num:'03',title:'Works',desc:'Full installation. Major works scheduled outside opening hours.'},{num:'04',title:'Handover & support',desc:'Full commissioning on day 1. Preventive maintenance contract available.'}], faq:[{q:'Can you work nights to avoid closing the shop?',a:'Yes, this is our standard organisation for retail clients.'},{q:'What regulations apply to my restaurant or shop?',a:'ERP rules: emergency lighting, fire protection, accessibility. We check and comply.'},{q:'Do you offer display window lighting solutions?',a:'Yes, it\'s one of our specialities: adjustable LED spots, light strips, product highlighting.'},{q:'What to do in case of a breakdown during service?',a:'Call our hotline. We respond within 2 hours for contract clients.'}] },
+        infrastructure: { tag:'Commercial', title:'Infrastructure', heroSub:"Design and delivery of electrical infrastructure for buildings, co-ownerships and high-end residences.", desc:"Building electrical infrastructure requires specialist expertise. MGE intervenes from design to renovation for co-ownerships, high-end residences and office buildings.", points:['Main switchboards and sub-panels','Cable trays','Parking and common area power','Emergency lighting (BAES)','Generators and UPS systems','Complete regulatory files'], stats:[{num:'5,000m²',label:'Maximum surface per project'},{num:'BT/HTA',label:'Low and high voltage expertise'},{num:'10 yrs',label:'Decennial warranty'}], steps:[{num:'01',title:'Design study',desc:'Power calculations, single-line diagrams, protection coordination. Complete technical files.'},{num:'02',title:'Tendering',desc:'CCTP preparation, contractor consultation, offer analysis and recommendation.'},{num:'03',title:'Installation',desc:'Cable tray deployment, main and sub-panels, connections and safety equipment.'},{num:'04',title:'Commissioning & DOE',desc:'Commissioning tests, regulatory checks, as-built document handover.'}], faq:[{q:'Can you manage a complete building renovation?',a:'Yes, from design to works acceptance. We coordinate all trades.'},{q:'What does a main switchboard include?',a:'The TGBT centralises the building\'s electrical distribution: EDF supply, protection, sub-panel feeds, metering.'},{q:'Do you work with co-ownership managers?',a:'Yes, we have many references with Paris co-ownership managers.'},{q:'How long does a full infrastructure project take?',a:'From 2 weeks for a small co-ownership to 6 months for a large building.'}] },
+        audit:          { tag:'Commercial', title:'Energy Audit', heroSub:"Complete analysis of your electricity consumption with recommendations to reduce your energy footprint and costs.", desc:"The energy audit is essential given rising electricity prices and regulatory obligations. MGE carries out a comprehensive audit of your installation and supports you in implementing the recommended solutions.", points:['Real-time consumption measurement','Identification of energy-intensive equipment','Quantified optimization plan','Carbon footprint assessment','CEE and tax incentive support','Savings monitoring'], stats:[{num:'−25%',label:'Average savings achieved'},{num:'CEE',label:'Energy certificate support'},{num:'1 yr',label:'Average payback period'}], steps:[{num:'01',title:'Data collection',desc:'Measurement sensors installed on your panels. Consumption data collected over 2–4 weeks.'},{num:'02',title:'Analysis',desc:'Identification of energy-intensive equipment, peak hours, standby waste and optimisation opportunities.'},{num:'03',title:'Report & recommendations',desc:'Detailed report with prioritised action plan, ROI per action and available grants.'},{num:'04',title:'Implementation & monitoring',desc:'Recommended works carried out and savings monitored over 12 months.'}], faq:[{q:'Is my company required to carry out an energy audit?',a:'Companies with over 250 employees or turnover above €43M must audit every 4 years.'},{q:'What savings are typically achieved?',a:'On average 20–35% on the electricity bill, mainly from lighting, standby and power optimisation.'},{q:'What are CEE and how do I benefit?',a:'Energy Saving Certificates allow you to part-fund energy efficiency works. We help you build applications.'},{q:'Does the audit disrupt our business?',a:'No. Measurement sensors are fitted in a few hours with no power cut.'}] },
+        maintenance:    { tag:'Commercial', title:'Maintenance', heroSub:"Preventive and corrective maintenance contracts to ensure business continuity and installation compliance.", desc:"An electrical fault is costly: lost business, emergency call-out, compliance risk. Preventive maintenance is the best investment for a business. MGE offers tailored contracts with planned visits, regulatory checks and a dedicated hotline.", points:['Scheduled periodic visits','Regulatory checks','Dedicated hotline 7/7','Systematic intervention reports','Spare parts in stock','Annual compliance dashboard'], stats:[{num:'−80%',label:'Reduction in unplanned breakdowns'},{num:'4h',label:'Response time under contract'},{num:'12 mths',label:'Annual compliance report provided'}], steps:[{num:'01',title:'Initial audit',desc:'Full installation survey on contract start. Equipment inventory, priority risk identification.'},{num:'02',title:'Maintenance plan',desc:'Preventive visit calendar and regulatory check schedule adapted to your business.'},{num:'03',title:'Preventive visits',desc:'Panel checks, differential protection tests, connection verification, panel cleaning.'},{num:'04',title:'Reporting & optimisation',desc:'Annual compliance report, intervention summary, improvement recommendations.'}], faq:[{q:'How often are preventive visits recommended?',a:'For most offices: 2 annual visits + annual regulatory check. Higher frequency for ERP or datacentres.'},{q:'What does the regulatory check include?',a:'NF C 15-100 compliance, differential protection, emergency lighting, fire detection, earthing.'},{q:'What happens in case of a fault with a maintenance contract?',a:'Call our dedicated hotline. A technician arrives within 4 hours (business hours), labour included.'},{q:'Do you offer multi-site contracts?',a:'Yes, we manage multi-site portfolios for retailers and property groups.'}] },
+        consuel:        { tag:'Commercial', title:'CONSUEL Compliance', heroSub:"Full support for obtaining the CONSUEL certificate, essential for activating your electricity meter.", desc:"The CONSUEL compliance certificate is mandatory for any new meter connection or major installation modification. MGE manages the entire process: pre-CONSUEL audit, reservation clearance, file preparation and follow-up.", points:['Pre-CONSUEL audit','Reservation clearance','File preparation','CONSUEL inspection follow-up','Guaranteed compliance certificate','Controlled timelines'], stats:[{num:'100%',label:'Certificates obtained at first visit'},{num:'15 days',label:'Average processing time'},{num:'0',label:'Unresolved reservations on our files'}], steps:[{num:'01',title:'Pre-CONSUEL audit',desc:'Full inspection of your installation against the CONSUEL reference. Identification of all non-compliances.'},{num:'02',title:'Reservation clearance',desc:'All corrective works carried out. We ensure every CONSUEL checklist point is met.'},{num:'03',title:'File preparation',desc:'Application file preparation: electrical schematics, works description, installation photos.'},{num:'04',title:'Inspection & certificate',desc:'Coordination with the CONSUEL inspector. Our technician present during the visit.'}], faq:[{q:'When is CONSUEL mandatory?',a:'For any new installation, meter reconnection after 2+ year cut, electrical incident, or major extension.'},{q:'What if CONSUEL is refused?',a:'Enedis cannot connect the meter. We intervene to clear reservations and arrange a second visit.'},{q:'How long does it take to obtain the certificate?',a:'On average 15 days. In urgent cases (imminent move-in), we can accelerate.'},{q:'Can I go through CONSUEL myself?',a:'Technically yes, but not recommended without expertise. We guarantee first-visit success.'}] }
+    };
+
+    // ── État langue ────────────────────────────────────────────────
+    let currentLang = localStorage.getItem('mge-lang') || 'fr';
+    const urlP = new URLSearchParams(window.location.search);
+    const id   = urlP.get('id') || 'renovation';
+    const tab  = urlP.get('tab') || 'particulier';
+
+    // Lien retour avec mémorisation de l'onglet
+    const backLink = document.getElementById('spBack');
+    if (backLink) backLink.href = `index.html?tab=${tab}#services`;
+
+    function applyLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        localStorage.setItem('mge-lang', lang);
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        const t = ui[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el => { if (t[el.dataset.i18n]) el.textContent = t[el.dataset.i18n]; });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => { if (t[el.dataset.i18nHtml]) el.innerHTML = t[el.dataset.i18nHtml]; });
+        loadService(lang);
+    }
+
+    function switchLang(lang) { if (lang !== currentLang) applyLang(lang); }
+
+    function loadService(lang) {
+        const services = lang === 'en' ? servicesEn : servicesFr;
+        const s = services[id];
+        if (!s) { window.location.href = 'index.html'; return; }
+
+        document.title = `MGE — ${s.title}`;
+
+        // Hero
+        const photos = servicePhotos[id] || [];
+        if (photos[0]) {
+            document.getElementById('spHeroBg').style.backgroundImage = `url('${photos[0]}')`;
+        }
+        document.getElementById('spTag').textContent    = s.tag;
+        document.getElementById('spTitle').textContent  = s.title;
+        document.getElementById('spHeroSub').textContent = s.heroSub;
+
+        // Description & points
+        document.getElementById('spDesc').textContent = s.desc;
+        const ul = document.getElementById('spPoints');
+        ul.innerHTML = '';
+        s.points.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = p;
+            ul.appendChild(li);
+        });
+
+        // Stats
+        const statsGrid = document.getElementById('spStats');
+        statsGrid.innerHTML = '';
+        s.stats.forEach(st => {
+            const div = document.createElement('div');
+            div.className = 'sp-stat-item';
+            div.innerHTML = `<span class="sp-stat-num">${st.num}</span><span class="sp-stat-label">${st.label}</span>`;
+            statsGrid.appendChild(div);
+        });
+
+        // Galerie photos (grille magazine)
+        const photosGrid = document.getElementById('spPhotos');
+        photosGrid.innerHTML = '';
+        photos.slice(0, 4).forEach((url, i) => {
+            const div = document.createElement('div');
+            div.className = `sp-gallery-item sp-gallery-item--${i + 1} reveal reveal-up`;
+            div.style.transitionDelay = (i * 0.1) + 's';
+            div.innerHTML = `<img src="${url}" alt="${s.title}" loading="lazy">`;
+            photosGrid.appendChild(div);
+            revealObserver.observe(div);
+        });
+
+        // Étapes
+        const stepsGrid = document.getElementById('spSteps');
+        stepsGrid.innerHTML = '';
+        s.steps.forEach((step, i) => {
+            const div = document.createElement('div');
+            div.className = 'sp-step reveal reveal-up';
+            div.style.transitionDelay = (i * 0.12) + 's';
+            div.innerHTML = `
+                <span class="sp-step-num">${step.num}</span>
+                <div class="sp-step-content">
+                    <h3>${step.title}</h3>
+                    <p>${step.desc}</p>
+                </div>`;
+            stepsGrid.appendChild(div);
+            revealObserver.observe(div);
+        });
+
+        // FAQ accordion
+        const faqList = document.getElementById('spFaq');
+        faqList.innerHTML = '';
+        s.faq.forEach((item, i) => {
+            const div = document.createElement('div');
+            div.className = 'sp-faq-item reveal reveal-up';
+            div.style.transitionDelay = (i * 0.08) + 's';
+            div.innerHTML = `
+                <button class="sp-faq-q" aria-expanded="false">
+                    <span>${item.q}</span>
+                    <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="sp-faq-a"><p>${item.a}</p></div>`;
+            div.querySelector('.sp-faq-q').addEventListener('click', function() {
+                const isOpen = this.getAttribute('aria-expanded') === 'true';
+                // Fermer tous les autres
+                faqList.querySelectorAll('.sp-faq-q').forEach(btn => {
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.closest('.sp-faq-item').classList.remove('open');
+                });
+                if (!isOpen) {
+                    this.setAttribute('aria-expanded', 'true');
+                    div.classList.add('open');
+                }
+            });
+            faqList.appendChild(div);
+            revealObserver.observe(div);
+        });
+
+        // Services liés (même catégorie)
+        const related = Object.entries(services)
+            .filter(([k]) => k !== id && services[k].tag === s.tag)
+            .slice(0, 3);
+        const relGrid = document.getElementById('spRelated');
+        relGrid.innerHTML = '';
+        related.forEach(([rid, rs]) => {
+            const a = document.createElement('a');
+            a.href = `service.html?id=${rid}&tab=${tab}`;
+            a.className = 'sp-related-item reveal reveal-up';
+            a.innerHTML = `<span class="sp-related-tag">${rs.tag}</span><h3>${rs.title}</h3><span class="sp-related-arrow">→</span>`;
+            relGrid.appendChild(a);
+            revealObserver.observe(a);
+        });
+
+        // Pré-remplissage formulaire devis
+        document.querySelectorAll('.sp-devis-btn').forEach(btn => {
+            btn.onclick = () => sessionStorage.setItem('mge-projet', s.title);
+        });
+    }
+
+    // ── Scroll reveal ──────────────────────────────────────────────
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Init ───────────────────────────────────────────────────────
+    applyLang(currentLang);
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Électrique Paris | MGE — Contrats Préventifs & Correctifs</title>
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="apple-touch-icon" href="images/logo-mge.png">
+    <meta name="description" content="MGE assure la maintenance préventive et corrective de vos installations électriques à Paris. Contrats sur-mesure, hotline 7j/7, rapport annuel de conformité.">
+    <link rel="canonical" href="https://MongeGauthierEnergie.github.io/maintenance.html">
+    <meta property="og:title" content="Maintenance Électrique Paris | MGE — Contrats Préventifs & Correctifs">
+    <meta property="og:description" content="MGE assure la maintenance préventive et corrective de vos installations électriques à Paris. Contrats sur-mesure, hotline 7j/7, rapport annuel de conformité.">
+    <meta property="og:url" content="https://MongeGauthierEnergie.github.io/maintenance.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1400&auto=format&fit=crop&q=80">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+                </div>
+                <span class="nav-phone">07 81 90 07 84</span>
+                <a href="careers.html" class="btn-careers-nav">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav">Consultation</a>
+            </div>
+        </div>
+        <nav class="nav-overlay" id="navOverlay">
+            <ul>
+                <li><a href="index.html#services"  onclick="closeMenu()">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()">Consultation</a></li>
+            </ul>
+            <div class="overlay-footer">
+                <div class="overlay-address">
+                    <span>2 rue Lakanal, 75015 Paris</span>
+                    <span>07 81 90 07 84</span>
+                </div>
+                <div class="overlay-social">
+                    <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="sp-hero">
+        <div class="sp-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1400&auto=format&fit=crop&q=80')"></div>
+        <div class="sp-hero-overlay"></div>
+        <div class="container sp-hero-content">
+            <a href="index.html?tab=entreprise#services" class="sp-back">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span>Retour aux solutions</span>
+            </a>
+            <div class="sp-hero-inner">
+                <span class="sp-tag">Entreprise</span>
+                <h1 class="sp-title">MAINTENANCE</h1>
+                <p class="sp-hero-sub">Contrats de maintenance préventive et corrective pour garantir la continuité de votre activité et la conformité de vos installations.</p>
+                <div class="sp-hero-cta">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ STATS ═══ -->
+    <section class="sp-stats reveal reveal-up">
+        <div class="container">
+            <div class="sp-stats-grid">
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">−80%</span>
+                        <span class="sp-stat-label">Réduction des pannes imprévues</span>
+                    </div>
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">4 h</span>
+                        <span class="sp-stat-label">Délai d'intervention sous contrat</span>
+                    </div>
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">12 mois</span>
+                        <span class="sp-stat-label">Rapport annuel de conformité fourni</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTENU ═══ -->
+    <section class="sp-content">
+        <div class="container">
+            <div class="sp-body">
+                <div class="sp-left reveal reveal-up">
+                    <span class="section-label">Notre service</span>
+                    <p class="sp-desc">Une panne électrique coûte cher : perte d'activité, intervention d'urgence, risque de non-conformité. La maintenance préventive est le meilleur investissement pour un professionnel. MGE propose des contrats sur-mesure avec visites planifiées, vérifications réglementaires et hotline dédiée pour vos équipes.</p>
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                </div>
+                <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
+                    <h3 class="sp-points-title">Ce que comprend ce service</h3>
+                    <ul class="sp-points">
+                        <li>Visites périodiques planifiées</li>
+                        <li>Vérifications réglementaires</li>
+                        <li>Hotline dédiée 7j/7</li>
+                        <li>Rapport d'intervention systématique</li>
+                        <li>Pièces de rechange en stock</li>
+                        <li>Tableau de bord de conformité</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ GALERIE ═══ -->
+    <section class="sp-gallery reveal reveal-up">
+        <div class="container">
+            <div class="sp-gallery-grid">
+                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&auto=format&fit=crop&q=75" alt="Maintenance" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&auto=format&fit=crop&q=75" alt="Maintenance" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&auto=format&fit=crop&q=75" alt="Maintenance" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&auto=format&fit=crop&q=75" alt="Maintenance" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ÉTAPES ═══ -->
+    <section class="sp-steps-section">
+        <div class="container">
+            <div class="sp-steps-header reveal reveal-up">
+                <span class="section-label">Notre approche</span>
+                <h2>Comment nous <em>travaillons</em></h2>
+            </div>
+            <div class="sp-steps-grid">
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.00s">
+                    <span class="sp-step-num">01</span>
+                    <div class="sp-step-content">
+                        <h3>Audit initial</h3>
+                        <p>État des lieux complet de votre installation à l'entrée en contrat. Inventaire des équipements, identification des risques prioritaires.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.12s">
+                    <span class="sp-step-num">02</span>
+                    <div class="sp-step-content">
+                        <h3>Plan de maintenance</h3>
+                        <p>Élaboration du calendrier des visites préventives et des vérifications réglementaires adaptées à votre activité.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.24s">
+                    <span class="sp-step-num">03</span>
+                    <div class="sp-step-content">
+                        <h3>Visites préventives</h3>
+                        <p>Contrôle des tableaux, tests des protections différentielles, vérification des connexions, nettoyage des armoires électriques.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.36s">
+                    <span class="sp-step-num">04</span>
+                    <div class="sp-step-content">
+                        <h3>Reporting & optimisation</h3>
+                        <p>Rapport annuel de conformité, bilan des interventions, recommandations d'amélioration et mise à jour du plan de maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="sp-faq-section">
+        <div class="container">
+            <div class="sp-faq-header reveal reveal-up">
+                <span class="section-label">Questions fréquentes</span>
+                <h2>Ce que vous voulez <em>savoir</em></h2>
+            </div>
+            <div class="sp-faq-list">
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.00s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Quelle est la fréquence des visites préventives recommandée ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Pour la plupart des locaux professionnels : 2 visites annuelles + une vérification réglementaire annuelle. Pour les établissements ERP ou les datacenters, la fréquence est plus élevée.</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.08s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Que comprend la vérification réglementaire ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Contrôle de conformité NF C 15-100, vérification des protections différentielles, BAES, détection incendie, mise à la terre. Remise d'un rapport officiel utilisable pour votre assurance.</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.16s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Que se passe-t-il en cas de panne avec un contrat de maintenance ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Vous appelez notre hotline dédiée. Un technicien intervient sous 4 heures (heures ouvrées) ou sous 2 heures en urgence absolue. La main-d'œuvre est incluse dans le contrat.</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.24s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Proposez-vous des contrats pour plusieurs sites ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Oui, nous gérons des parcs multi-sites pour des enseignes ou des groupes immobiliers. Un interlocuteur dédié et un tableau de bord centralisé pour tous vos établissements.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ AUTRES SOLUTIONS ═══ -->
+    <section class="sp-related">
+        <div class="container">
+            <span class="section-label">Autres solutions</span>
+            <div class="sp-related-grid">
+                <a href="tertiaire.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Entreprise</span>
+                    <h3>Locaux Tertiaires</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+                <a href="infrastructure.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Entreprise</span>
+                    <h3>Infrastructure</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+                <a href="audit.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Entreprise</span>
+                    <h3>Audit Énergétique</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA BAND ═══ -->
+    <section class="sp-cta-band">
+        <div class="container">
+            <div class="sp-cta-inner reveal reveal-up">
+                <div class="sp-cta-text">
+                    <p class="sp-cta-label">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title">Parlons de <em>votre projet.</em></h2>
+                </div>
+                <div class="sp-cta-actions">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
+            <p>© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <div class="footer-links">
+                <a href="index.html#expertise">Expertise</a>
+                <a href="index.html#services">Solutions</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ── Navbar ──
+    const hamburger = document.getElementById('hamburger');
+    const overlay   = document.getElementById('navOverlay');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        overlay.classList.toggle('open');
+        document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMenu() {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ── Lang switch (UI only) ──
+    let currentLang = localStorage.getItem('mge-lang') || 'fr';
+    function switchLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('mge-lang', lang);
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    }
+    // Apply saved lang on load
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.sp-faq-q').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const isOpen = this.getAttribute('aria-expanded') === 'true';
+            document.querySelectorAll('.sp-faq-q').forEach(b => {
+                b.setAttribute('aria-expanded', 'false');
+                b.closest('.sp-faq-item').classList.remove('open');
+            });
+            if (!isOpen) {
+                this.setAttribute('aria-expanded', 'true');
+                this.closest('.sp-faq-item').classList.add('open');
+            }
+        });
+    });
+
+    // ── Scroll reveal ──
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
+        });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Devis pré-remplissage ──
+    document.querySelectorAll('.sp-devis-btn').forEach(btn => {
+        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', 'Maintenance'));
+    });
+    </script>
+</body>
+</html>

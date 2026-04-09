@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGE — Nous rejoindre</title>
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="apple-touch-icon" href="images/logo-mge.png">
+    <meta name="description" content="Rejoignez l'équipe MGE — Candidatures CDI, CDD, Stage, Alternance à Paris.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+                </div>
+                <span class="nav-phone">07 81 90 07 84</span>
+                <a href="careers.html" class="btn-careers-nav" data-i18n="nav.careers">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav" data-i18n="nav.cta">Consultation</a>
+            </div>
+        </div>
+        <nav class="nav-overlay" id="navOverlay">
+            <ul>
+                <li><a href="index.html#services"  onclick="closeMenu()" data-i18n="nav.solutions">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()" data-i18n="nav.expertises">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()" data-i18n="nav.realisations">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" data-i18n="nav.cta">Consultation</a></li>
+            </ul>
+            <div class="overlay-footer">
+                <div class="overlay-address">
+                    <span>2 rue Lakanal, 75015 Paris</span>
+                    <span>07 81 90 07 84</span>
+                </div>
+                <div class="overlay-social">
+                    <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="cp-hero">
+        <div class="container">
+            <a href="index.html" class="sp-back">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span data-i18n="back">Retour</span>
+            </a>
+            <div class="cp-hero-inner">
+                <span class="sp-tag" data-i18n="hero.tag">Recrutement</span>
+                <h1 class="sp-title">
+                    <span data-i18n="hero.line1">Rejoignez</span><br>
+                    <em data-i18n="hero.line2">l'équipe MGE.</em>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ BODY ═══════════════ -->
+    <section class="cp-body">
+        <div class="container">
+            <div class="cp-grid">
+
+                <!-- Gauche : Pourquoi MGE -->
+                <div class="cp-left reveal reveal-up">
+                    <span class="section-label" data-i18n="why.label">Pourquoi MGE</span>
+                    <p class="cp-intro" data-i18n="why.intro">Entreprise à taille humaine, nous intervenons sur des projets exigeants à Paris — rénovations de prestige, domotique avancée, éclairage architectural. Nous cherchons des profils motivés, rigoureux et fiers de leur métier.</p>
+
+                    <div class="cp-values">
+                        <div class="cp-value">
+                            <span class="cp-value-num">01</span>
+                            <div>
+                                <h4 data-i18n="v1.title">Projets d'exception</h4>
+                                <p data-i18n="v1.text">Appartements haussmanniens, lofts contemporains, bureaux de prestige. Chaque chantier est une opportunité d'élever votre savoir-faire.</p>
+                            </div>
+                        </div>
+                        <div class="cp-value">
+                            <span class="cp-value-num">02</span>
+                            <div>
+                                <h4 data-i18n="v2.title">Équipe soudée</h4>
+                                <p data-i18n="v2.text">Structure agile, décisions rapides, ambiance de travail saine. Vous serez acteur du développement de l'entreprise.</p>
+                            </div>
+                        </div>
+                        <div class="cp-value">
+                            <span class="cp-value-num">03</span>
+                            <div>
+                                <h4 data-i18n="v3.title">Évolution réelle</h4>
+                                <p data-i18n="v3.text">Formations techniques, certifications KNX, montée en responsabilités — nous investissons dans ceux qui s'investissent.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cp-contact-block">
+                        <span class="cp-contact-label" data-i18n="contact.label">Une question ?</span>
+                        <p>contact@mge-energie.fr</p>
+                        <p>2 rue Lakanal, 75015 Paris</p>
+                    </div>
+                </div>
+
+                <!-- Droite : Formulaire -->
+                <div class="cp-right reveal reveal-up" style="transition-delay:.15s">
+                    <div class="cp-form-card">
+                        <h2 class="cp-form-title" data-i18n="form.title">Votre candidature</h2>
+                        <p class="cp-form-sub" data-i18n="form.sub">Remplissez ce formulaire — nous vous recontacterons dans les plus brefs délais.</p>
+
+                        <form class="cp-form" onsubmit="submitForm(event)">
+                            <input type="hidden" name="_subject" value="Nouvelle candidature — MGE Paris">
+                            <div class="form-group">
+                                <label data-i18n="form.poste">Type de poste souhaité</label>
+                                <select name="poste" class="careers-select" required>
+                                    <option value="" disabled selected data-i18n="form.poste.ph">— Sélectionner —</option>
+                                    <option value="CDI"        data-i18n="opt.cdi">CDI</option>
+                                    <option value="CDD"        data-i18n="opt.cdd">CDD</option>
+                                    <option value="Stage"      data-i18n="opt.stage">Stage</option>
+                                    <option value="Alternance" data-i18n="opt.alt">Alternance</option>
+                                    <option value="Freelance"  data-i18n="opt.free">Freelance / Mission</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.profil">Profil professionnel</label>
+                                <input type="text" name="profil" data-i18n-placeholder="form.profil.ph" placeholder="Électricien, Chef de chantier, Apprenti…" required>
+                            </div>
+                            <div class="careers-row">
+                                <div class="form-group">
+                                    <label data-i18n="form.prenom">Prénom</label>
+                                    <input type="text" name="prenom" data-i18n-placeholder="form.prenom.ph" placeholder="Votre prénom" required>
+                                </div>
+                                <div class="form-group">
+                                    <label data-i18n="form.nom">Nom</label>
+                                    <input type="text" name="nom" data-i18n-placeholder="form.nom.ph" placeholder="Votre nom" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.email">Email</label>
+                                <input type="email" name="email" data-i18n-placeholder="form.email.ph" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.tel">Téléphone</label>
+                                <input type="tel" name="tel" data-i18n-placeholder="form.tel.ph" placeholder="06 00 00 00 00">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.msg">Message & motivation</label>
+                                <textarea name="message" rows="5" data-i18n-placeholder="form.msg.ph" placeholder="Présentez-vous brièvement et expliquez votre intérêt pour MGE…" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit" id="cpSubmit" data-i18n="form.submit">Envoyer ma candidature</button>
+                            <div class="cp-sent" id="cpSent">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span data-i18n="form.sent">Candidature envoyée — nous vous recontactons bientôt.</span>
+                            </div>
+                        </form>
+                        <p class="careers-notice" data-i18n="form.notice">Aucun appel spontané ne sera traité. Merci d'utiliser ce formulaire.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
+            <p data-i18n="footer.copy">© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <div class="footer-links">
+                <a href="index.html#expertise" data-i18n="footer.link1">Expertise</a>
+                <a href="index.html#services"  data-i18n="footer.link2">Solutions</a>
+                <a href="index.html#contact"   data-i18n="footer.link3">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ── Hamburger ──────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const overlay   = document.getElementById('navOverlay');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        overlay.classList.toggle('open');
+        document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMenu() {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ── Traductions ────────────────────────────────────────────────
+    const ui = {
+        fr: {
+            'nav.solutions':   'Solutions',
+            'nav.expertises':  'Expertises',
+            'nav.realisations':'Réalisations',
+            'nav.cta':         'Consultation',
+            'nav.careers':     'Nous rejoindre',
+            'back':            'Retour',
+            'hero.tag':        'Recrutement',
+            'hero.line1':      'Rejoignez',
+            'hero.line2':      "l'équipe MGE.",
+            'why.label':       'Pourquoi MGE',
+            'why.intro':       "Entreprise à taille humaine, nous intervenons sur des projets exigeants à Paris — rénovations de prestige, domotique avancée, éclairage architectural. Nous cherchons des profils motivés, rigoureux et fiers de leur métier.",
+            'v1.title':        "Projets d'exception",
+            'v1.text':         "Appartements haussmanniens, lofts contemporains, bureaux de prestige. Chaque chantier est une opportunité d'élever votre savoir-faire.",
+            'v2.title':        'Équipe soudée',
+            'v2.text':         "Structure agile, décisions rapides, ambiance de travail saine. Vous serez acteur du développement de l'entreprise.",
+            'v3.title':        'Évolution réelle',
+            'v3.text':         "Formations techniques, certifications KNX, montée en responsabilités — nous investissons dans ceux qui s'investissent.",
+            'contact.label':   'Une question ?',
+            'form.title':      'Votre candidature',
+            'form.sub':        'Remplissez ce formulaire — nous vous recontacterons dans les plus brefs délais.',
+            'form.poste':      'Type de poste souhaité',
+            'form.poste.ph':   '— Sélectionner —',
+            'opt.cdi':         'CDI',
+            'opt.cdd':         'CDD',
+            'opt.stage':       'Stage',
+            'opt.alt':         'Alternance',
+            'opt.free':        'Freelance / Mission',
+            'form.profil':     'Profil professionnel',
+            'form.profil.ph':  'Électricien, Chef de chantier, Apprenti…',
+            'form.prenom':     'Prénom',
+            'form.prenom.ph':  'Votre prénom',
+            'form.nom':        'Nom',
+            'form.nom.ph':     'Votre nom',
+            'form.email':      'Email',
+            'form.email.ph':   'votre@email.com',
+            'form.tel':        'Téléphone',
+            'form.tel.ph':     '06 00 00 00 00',
+            'form.msg':        'Message & motivation',
+            'form.msg.ph':     'Présentez-vous brièvement et expliquez votre intérêt pour MGE…',
+            'form.submit':     'Envoyer ma candidature',
+            'form.sent':       'Candidature envoyée — nous vous recontactons bientôt.',
+            'form.notice':     "Aucun appel spontané ne sera traité. Merci d'utiliser ce formulaire.",
+            'footer.copy':     '© 2026 MGE · Monge Gauthier Énergie · Paris',
+            'footer.link1':    'Expertise',
+            'footer.link2':    'Solutions',
+            'footer.link3':    'Contact',
+        },
+        en: {
+            'nav.solutions':   'Solutions',
+            'nav.expertises':  'Expertise',
+            'nav.realisations':'Projects',
+            'nav.cta':         'Contact',
+            'nav.careers':     'Join us',
+            'back':            'Back',
+            'hero.tag':        'Careers',
+            'hero.line1':      'Join',
+            'hero.line2':      'the MGE team.',
+            'why.label':       'Why MGE',
+            'why.intro':       'A human-scale firm, we work on demanding projects across Paris — prestige renovations, advanced home automation, architectural lighting. We look for motivated, rigorous professionals proud of their craft.',
+            'v1.title':        'Exceptional projects',
+            'v1.text':         'Haussmann apartments, contemporary lofts, prestige offices. Every project is an opportunity to elevate your expertise.',
+            'v2.title':        'Close-knit team',
+            'v2.text':         'Agile structure, fast decisions, healthy work environment. You will be an active part of the company\'s growth.',
+            'v3.title':        'Real career growth',
+            'v3.text':         'Technical training, KNX certifications, increased responsibilities — we invest in those who invest in us.',
+            'contact.label':   'Any questions?',
+            'form.title':      'Your application',
+            'form.sub':        'Fill in this form — we will get back to you as soon as possible.',
+            'form.poste':      'Desired position type',
+            'form.poste.ph':   '— Select —',
+            'opt.cdi':         'Permanent (CDI)',
+            'opt.cdd':         'Fixed-term (CDD)',
+            'opt.stage':       'Internship',
+            'opt.alt':         'Apprenticeship',
+            'opt.free':        'Freelance / Contract',
+            'form.profil':     'Professional profile',
+            'form.profil.ph':  'Electrician, Site manager, Apprentice…',
+            'form.prenom':     'First name',
+            'form.prenom.ph':  'Your first name',
+            'form.nom':        'Last name',
+            'form.nom.ph':     'Your last name',
+            'form.email':      'Email',
+            'form.email.ph':   'your@email.com',
+            'form.tel':        'Phone',
+            'form.tel.ph':     '+33 6 00 00 00 00',
+            'form.msg':        'Message & motivation',
+            'form.msg.ph':     'Briefly introduce yourself and explain your interest in MGE…',
+            'form.submit':     'Send my application',
+            'form.sent':       'Application sent — we will be in touch soon.',
+            'form.notice':     'Unsolicited calls will not be processed. Please use this form.',
+            'footer.copy':     '© 2026 MGE · Monge Gauthier Énergie · Paris',
+            'footer.link1':    'Expertise',
+            'footer.link2':    'Solutions',
+            'footer.link3':    'Contact',
+        }
+    };
+
+    // ── Appliquer langue ───────────────────────────────────────────
+    let currentLang = localStorage.getItem('mge-lang') || 'fr';
+
+    function applyLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        localStorage.setItem('mge-lang', lang);
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        const t = ui[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            if (t[el.dataset.i18n] !== undefined) el.textContent = t[el.dataset.i18n];
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            if (t[el.dataset.i18nHtml] !== undefined) el.innerHTML = t[el.dataset.i18nHtml];
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            if (t[el.dataset.i18nPlaceholder] !== undefined) el.placeholder = t[el.dataset.i18nPlaceholder];
+        });
+        // Options du select
+        document.querySelectorAll('option[data-i18n]').forEach(el => {
+            if (t[el.dataset.i18n] !== undefined) el.textContent = t[el.dataset.i18n];
+        });
+    }
+
+    function switchLang(lang) { if (lang !== currentLang) applyLang(lang); }
+
+    // ══════════════════════════════════════════════════════════
+    // ⚠️  REMPLACEZ PAR VOTRE ID FORMSPREE "Candidature MGE"
+    //     → https://formspree.io → Mon compte → Mes formulaires
+    const FORMSPREE_CANDIDAT = 'xjgprwwn';
+    // ══════════════════════════════════════════════════════════
+
+    async function submitForm(e) {
+        e.preventDefault();
+        const form     = e.target;
+        const btn      = document.getElementById('cpSubmit');
+        const sent     = document.getElementById('cpSent');
+        const origText = btn.textContent;
+        btn.disabled    = true;
+        btn.textContent = currentLang === 'en' ? 'Sending…' : 'Envoi en cours…';
+        sent.style.display = 'none';
+        try {
+            const res = await fetch(`https://formspree.io/f/${FORMSPREE_CANDIDAT}`, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (res.ok) {
+                sent.querySelector('span').textContent = currentLang === 'en'
+                    ? 'Application sent — we will be in touch soon.'
+                    : 'Candidature envoyée — nous vous recontactons bientôt.';
+                sent.style.display = 'flex';
+                form.reset();
+            } else { throw new Error(); }
+        } catch {
+            sent.querySelector('span').textContent = currentLang === 'en'
+                ? 'Error — please try again.'
+                : 'Erreur — veuillez réessayer.';
+            sent.style.display = 'flex';
+        }
+        btn.disabled    = false;
+        btn.textContent = origText;
+    }
+
+    // ── Scroll reveal ──────────────────────────────────────────────
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Init ───────────────────────────────────────────────────────
+    applyLang(currentLang);
+    </script>
+</body>
+</html>

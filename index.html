@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGE | Électricien Paris - Rénovation & Domotique de Prestige</title>
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="apple-touch-icon" href="images/logo-mge.png">
+    <meta name="description" content="MGE (Monge Gauthier Énergie) : Expertise électrique à Paris. Rénovation d'exception, mise aux normes et domotique. Électricité de prestige à Paris.">
+    <link rel="canonical" href="https://MongeGauthierEnergie.github.io/">
+    <meta property="og:title" content="MGE | Électricité & Expertise de Prestige - Paris">
+    <meta property="og:description" content="Solutions électriques haute-couture et domotique avancée à Paris.">
+    <meta property="og:url" content="https://MongeGauthierEnergie.github.io/">
+    <meta property="og:image" content="https://MongeGauthierEnergie.github.io/images/logo-mge.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "name": "MGE - Monge Gauthier Énergie",
+      "image": "https://MongeGauthierEnergie.github.io/logo-mge.png",
+      "url": "https://MongeGauthierEnergie.github.io/",
+      "telephone": "0781900784",
+      "email": "monge.energie@gmail.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 rue Lakanal",
+        "addressLocality": "Paris",
+        "postalCode": "75015",
+        "addressCountry": "FR"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="#" class="nav-logo">
+                <img src="images/logo-mge.png" alt="MGE - Monge Gauthier Énergie">
+            </a>
+
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+                </div>
+                <span class="nav-phone">07 81 90 07 84</span>
+                <a href="careers.html" class="btn-careers-nav" data-i18n="careers.tab">Nous rejoindre</a>
+                <a href="#contact" class="btn-nav" data-i18n="nav.cta">Consultation</a>
+            </div>
+        </div>
+
+        <!-- Menu overlay -->
+        <nav class="nav-overlay" id="navOverlay">
+            <ul>
+                <li><a href="#services" onclick="closeMenu()" data-i18n="nav.solutions">Solutions</a></li>
+                <li><a href="#expertise" onclick="closeMenu()" data-i18n="nav.expertises">Expertises</a></li>
+                <li><a href="#archives" onclick="closeMenu()" data-i18n="nav.realisations">Réalisations</a></li>
+                <li><a href="#contact" onclick="closeMenu()" data-i18n="nav.cta">Consultation</a></li>
+            </ul>
+            <div class="overlay-footer">
+                <div class="overlay-address">
+                    <span>2 rue Lakanal, 75015 Paris</span>
+                    <span>07 81 90 07 84</span>
+                </div>
+                <div class="overlay-social">
+                    <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <span class="hero-label" data-i18n-html="hero.label">— Paris &nbsp;·&nbsp; Électricité &amp; Domotique</span>
+                <h1>
+                    <span class="h1-thin" data-i18n="hero.h1.thin">La maîtrise</span>
+                    <span class="h1-serif" data-i18n="hero.h1.serif">électrique.</span>
+                    <span class="h1-light" data-i18n="hero.h1.light">De prestige.</span>
+                </h1>
+                <p class="hero-sub" data-i18n-html="hero.sub">Expertise technique et finitions d'exception.<br>Installations soignées pour des clients exigeants à Paris.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-main" data-i18n="hero.cta1">Étude de projet</a>
+                    <a href="#archives" class="btn-ghost" data-i18n="hero.cta2">Nos réalisations</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900&auto=format&fit=crop&q=80" alt="Intérieur parisien MGE">
+            </div>
+            <div class="hero-scroll">
+                <span data-i18n="hero.scroll">Défiler</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- SECTION SOLUTIONS -->
+        <section id="services" class="services">
+            <div class="container">
+                <span class="section-label reveal" data-i18n="services.label">01 / Nos Solutions</span>
+                <div class="services-head">
+                    <h2 class="reveal reveal-up" data-i18n-html="services.h2">Des solutions <em>sur-mesure</em></h2>
+                    <p class="reveal reveal-up reveal-d1" data-i18n="services.p">Grâce à notre expertise technique, nous créons des installations qui conjuguent fiabilité irréprochable et finitions d'exception.</p>
+                </div>
+
+                <!-- Onglets visuels -->
+                <div class="tab-selector reveal reveal-up reveal-d2">
+                    <button class="tab-card active" data-tab="particulier">
+                        <div class="tab-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M16 3L2 13v17h9V20h10v10h9V13L16 3z"/></svg>
+                        </div>
+                        <div class="tab-text">
+                            <strong data-i18n="services.tab.particulier">Particulier</strong>
+                            <span data-i18n="services.tab.particulier.desc">Appartements & résidences</span>
+                        </div>
+                    </button>
+                    <button class="tab-card" data-tab="entreprise">
+                        <div class="tab-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="3" y="9" width="26" height="20" rx="1"/><path d="M10 9V6a1 1 0 011-1h10a1 1 0 011 1v3"/><path d="M3 17h26"/><path d="M12 17v12M20 17v12"/></svg>
+                        </div>
+                        <div class="tab-text">
+                            <strong data-i18n="services.tab.entreprise">Entreprise</strong>
+                            <span data-i18n="services.tab.entreprise.desc">Bureaux, commerces & infrastructure</span>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Grille Particulier -->
+                <div class="icons-grid" id="tab-particulier">
+                    <div class="icon-item reveal" onclick="openService('renovation')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M24 6L4 20v24h14V30h12v14h14V20L24 6z"/></svg></div>
+                        <span data-i18n="service.renovation">Rénovation</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('eclairage')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="24" cy="18" r="10"/><path d="M24 28v14M17 36h14M18 10l-3-3M30 10l3-3M14 18H8M40 18h-6"/></svg></div>
+                        <span data-i18n="service.eclairage">Éclairage</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('domotique')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="8" y="8" width="32" height="32" rx="4"/><circle cx="24" cy="24" r="6"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4"/></svg></div>
+                        <span data-i18n="service.domotique">Domotique</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('normes')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M24 4l4 8h9l-7 6 3 9-9-5-9 5 3-9-7-6h9z"/></svg></div>
+                        <span data-i18n="service.normes">Mise aux normes</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('tableau')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 8h8v12l4 4-4 4v12h-8V28l-4-4 4-4V8z"/><path d="M16 20h16M16 28h16"/></svg></div>
+                        <span data-i18n="service.tableau">Tableau électrique</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('depannage')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="24" cy="24" r="16"/><path d="M24 16v8l6 4"/></svg></div>
+                        <span data-i18n="service.depannage">Dépannage</span>
+                    </div>
+                </div>
+
+                <!-- Grille Entreprise -->
+                <div class="icons-grid hidden" id="tab-entreprise">
+                    <div class="icon-item reveal" onclick="openService('tertiaire')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="6" y="14" width="36" height="28" rx="2"/><path d="M16 14V10a2 2 0 012-2h12a2 2 0 012 2v4"/><path d="M6 26h36"/></svg></div>
+                        <span data-i18n="service.tertiaire">Tertiaire</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('commerce')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M8 40V16l16-8 16 8v24"/><rect x="18" y="26" width="12" height="14"/></svg></div>
+                        <span data-i18n="service.commerce">Commerce</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('infrastructure')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="8" y="8" width="32" height="32" rx="2"/><path d="M16 20h16M16 28h16M24 16v16"/></svg></div>
+                        <span data-i18n="service.infrastructure">Infrastructure</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('audit')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M6 36l10-10 8 8 8-12 10 14"/><path d="M6 6v36h36"/></svg></div>
+                        <span data-i18n="service.audit">Audit énergétique</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('maintenance')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M38 10l-6 6-4-4 6-6a8 8 0 00-10 10L10 30a4 4 0 005 5l14-14a8 8 0 0010-10z"/></svg></div>
+                        <span data-i18n="service.maintenance">Maintenance</span>
+                    </div>
+                    <div class="icon-item reveal" onclick="openService('consuel')">
+                        <div class="icon-wrap"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M10 14h28M10 24h28M10 34h18"/><circle cx="36" cy="34" r="6"/><path d="M33 34l2 2 4-4"/></svg></div>
+                        <span data-i18n="service.consuel">Conformité CONSUEL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION EXPERTISE (cards) -->
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <span class="section-label reveal" data-i18n="expertise.label">02 / Domaines d'Intervention</span>
+                <div class="expertise-grid">
+                    <div class="expertise-card reveal reveal-up">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&auto=format&fit=crop&q=75" alt="Rénovation"></div>
+                        <div class="card-num">01</div>
+                        <h3 data-i18n="expertise.card1.h3">Rénovation</h3>
+                        <p data-i18n="expertise.card1.p">Mise en conformité invisible pour patrimoines exigeants. Appartements haussmanniens, lofts contemporains — chaque installation respecte l'architecture et l'esthétique.</p>
+                        <div class="card-line"></div>
+                    </div>
+                    <div class="expertise-card reveal reveal-up reveal-d1">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=75" alt="Domotique"></div>
+                        <div class="card-num">02</div>
+                        <h3 data-i18n="expertise.card2.h3">Domotique</h3>
+                        <p data-i18n="expertise.card2.p">Intégration de systèmes intelligents KNX et Control4 pour un confort thermique et lumineux optimal. Pilotage total depuis votre mobile.</p>
+                        <div class="card-line"></div>
+                    </div>
+                    <div class="expertise-card reveal reveal-up reveal-d2">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&auto=format&fit=crop&q=75" alt="Éclairage"></div>
+                        <div class="card-num">03</div>
+                        <h3 data-i18n="expertise.card3.h3">Éclairage</h3>
+                        <p data-i18n="expertise.card3.p">Conception lumineuse sur-mesure : éclairage d'accentuation, indirect, basse consommation. Chaque scène de vie sublimée par la lumière.</p>
+                        <div class="card-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANDE CHIFFRES -->
+        <section class="stats">
+            <div class="stats-inner">
+                <div class="stat-item reveal">
+                    <span class="stat-num">100<sup>+</sup></span>
+                    <span class="stat-label" data-i18n="stats.label1">Projets livrés</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item reveal reveal-d1">
+                    <span class="stat-num">Sur-mesure</span>
+                    <span class="stat-label" data-i18n="stats.label2">Chaque projet</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item reveal reveal-d2">
+                    <span class="stat-num">Paris</span>
+                    <span class="stat-label" data-i18n="stats.label3">Ancrage local</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item reveal reveal-d3">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label" data-i18n="stats.label4">Certifié CONSUEL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHIVES -->
+        <section id="archives" class="archives">
+            <div class="container">
+                <span class="section-label reveal" data-i18n="archives.label">03 / Réalisations</span>
+                <div class="archives-head">
+                    <h2 class="reveal reveal-up" data-i18n-html="archives.h2">Projets <em>récents</em></h2>
+                </div>
+                <div class="gallery-grid">
+                    <article class="project-item reveal reveal-up">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1" alt="Appartement Belle Époque — Paris 15e">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="archives.proj1.cat">Rénovation Électrique Complète</span>
+                            <h3 data-i18n-html="archives.proj1.h3">Appartement Belle Époque — Paris 15<sup>e</sup></h3>
+                            <p data-i18n="archives.proj1.p">Refonte totale du câblage, tableau sur-mesure et éclairage architectural intégré. 180m².</p>
+                        </div>
+                    </article>
+                    <article class="project-item reveal reveal-up reveal-d1">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1" alt="Suite Privée — Rue du Bac, Paris 7e">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="archives.proj2.cat">Domotique KNX</span>
+                            <h3 data-i18n-html="archives.proj2.h3">Suite Privée — Rue du Bac, Paris 7<sup>e</sup></h3>
+                            <p data-i18n="archives.proj2.p">Déploiement KNX complet : scènes lumineuses, volets motorisés et chauffage centralisé.</p>
+                        </div>
+                    </article>
+                    <article class="project-item project-item--wide reveal reveal-up reveal-d2">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=1800&h=900&dpr=1" alt="Penthouse Kléber — Paris 16e">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="archives.proj3.cat">Éclairage Architectural</span>
+                            <h3 data-i18n-html="archives.proj3.h3">Penthouse Kléber — Paris 16<sup>e</sup></h3>
+                            <p data-i18n="archives.proj3.p">Étude lumineuse sur-mesure : spots encastrés, rubans LED architecturaux et gradateurs connectés. 120m².</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+
+            <!-- Bande sombre -->
+            <div class="contact-hero">
+                <div class="container">
+                    <span class="section-label" data-i18n="contact.label">04 / Consultation</span>
+                    <h2 data-i18n-html="contact.h2">Parlons de<br><em>votre projet.</em></h2>
+                </div>
+            </div>
+
+            <!-- Corps deux colonnes -->
+            <div class="contact-body">
+                <div class="container">
+                    <div class="contact-grid">
+
+                        <!-- Gauche : infos & promesses -->
+                        <div class="contact-left reveal reveal-up">
+                            <p class="contact-intro" data-i18n="contact.intro">Rénovation, domotique, dépannage ou audit énergétique — décrivez votre besoin et nous revenons vers vous rapidement avec une proposition adaptée.</p>
+
+                            <div class="contact-promises">
+                                <div class="contact-promise">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <div>
+                                        <strong data-i18n="contact.p1.title">Réponse sous 24h</strong>
+                                        <p data-i18n="contact.p1.text">Chaque demande est traitée en priorité.</p>
+                                    </div>
+                                </div>
+                                <div class="contact-promise">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <div>
+                                        <strong data-i18n="contact.p3.title">Devis gratuit & sans engagement</strong>
+                                        <p data-i18n="contact.p3.text">Étude personnalisée offerte.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-details">
+                                <div class="detail-item">
+                                    <span data-i18n="contact.addr.label">Adresse</span>
+                                    <p>2 rue Lakanal, 75015 Paris</p>
+                                </div>
+                                <div class="detail-item">
+                                    <span data-i18n="contact.phone.label">Ligne Directe</span>
+                                    <p><a href="tel:0781900784">07 81 90 07 84</a></p>
+                                </div>
+                                <div class="detail-item">
+                                    <span data-i18n="contact.email.label">Email</span>
+                                    <p><a href="mailto:monge.energie@gmail.com">monge.energie@gmail.com</a></p>
+                                </div>
+                                <div class="detail-item">
+                                    <span data-i18n="contact.social.label">Présence</span>
+                                    <div class="social-icons">
+                                        <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                        </a>
+                                        <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Droite : formulaire en carte -->
+                        <div class="contact-right reveal reveal-up" style="transition-delay:.15s">
+                            <div class="contact-form-card">
+                                <h3 class="contact-form-title" data-i18n="contact.form.title">Votre projet</h3>
+                                <p class="contact-form-sub" data-i18n="contact.form.sub">Remplissez ce formulaire — nous revenons vers vous rapidement.</p>
+                                <form class="contact-form" onsubmit="submitContact(event)">
+                                    <input type="hidden" name="_subject" value="Nouveau contact — MGE Paris">
+                                    <div class="careers-row">
+                                        <div class="form-group">
+                                            <label data-i18n="form.name.label">Nom</label>
+                                            <input type="text" name="name" data-i18n-placeholder="form.name.placeholder" placeholder="Votre nom" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label data-i18n="form.email.label">Email</label>
+                                            <input type="email" name="email" data-i18n-placeholder="form.email.placeholder" placeholder="Votre email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label data-i18n="form.projet.label">Nature du projet</label>
+                                        <input type="text" id="champProjet" name="projet" data-i18n-placeholder="form.projet.placeholder" placeholder="Rénovation, domotique, dépannage…">
+                                    </div>
+                                    <div class="form-group">
+                                        <label data-i18n="form.msg.label">Message</label>
+                                        <textarea name="message" rows="5" data-i18n-placeholder="form.msg.placeholder" placeholder="Décrivez votre projet..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-submit" id="contactSubmitBtn" data-i18n="form.submit">Envoyer la demande</button>
+                                    <div class="form-feedback" id="contactFeedback"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
+            <p data-i18n-html="footer.copy">&copy; 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <div class="footer-links">
+                <a href="#expertise" data-i18n="footer.link1">Expertise</a>
+                <a href="#services" data-i18n="footer.link2">Solutions</a>
+                <a href="#contact" data-i18n="footer.link3">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL CANDIDATURE -->
+    <div class="careers-modal" id="careersModal">
+        <div class="careers-backdrop" onclick="closeCareers()"></div>
+        <div class="careers-panel">
+            <button class="modal-close" onclick="closeCareers()">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-tag" data-i18n="careers.tag">Recrutement</div>
+            <h2 class="modal-title" data-i18n="careers.title">Rejoignez l'équipe MGE</h2>
+            <p class="careers-intro" data-i18n="careers.intro">Vous souhaitez intégrer une entreprise à taille humaine, exigeante et reconnue dans l'électricité de prestige à Paris ? Laissez-nous votre candidature.</p>
+
+            <form class="careers-form" onsubmit="submitCareers(event)">
+                        <input type="hidden" name="_subject" value="Nouvelle candidature — MGE Paris">
+                <div class="form-group">
+                    <label data-i18n="careers.field.poste">Type de poste souhaité</label>
+                    <select name="poste" class="careers-select" required>
+                        <option value="" disabled selected data-i18n="careers.field.poste.placeholder">— Sélectionner —</option>
+                        <option value="CDI" data-i18n="careers.opt.cdi">CDI</option>
+                        <option value="CDD" data-i18n="careers.opt.cdd">CDD</option>
+                        <option value="Stage" data-i18n="careers.opt.stage">Stage</option>
+                        <option value="Alternance" data-i18n="careers.opt.alternance">Alternance</option>
+                        <option value="Freelance" data-i18n="careers.opt.freelance">Freelance / Mission</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="careers.field.profil">Profil professionnel</label>
+                    <input type="text" name="profil" data-i18n-placeholder="careers.field.profil.ph" placeholder="Électricien, Chef de chantier, Apprenti…" required>
+                </div>
+                <div class="careers-row">
+                    <div class="form-group">
+                        <label data-i18n="careers.field.prenom">Prénom</label>
+                        <input type="text" name="prenom" data-i18n-placeholder="careers.field.prenom.ph" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="careers.field.nom">Nom</label>
+                        <input type="text" name="nom" data-i18n-placeholder="careers.field.nom.ph" placeholder="Votre nom" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="careers.field.email">Email</label>
+                    <input type="email" name="email" data-i18n-placeholder="careers.field.email.ph" placeholder="votre@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="careers.field.tel">Téléphone</label>
+                    <input type="tel" name="tel" data-i18n-placeholder="careers.field.tel.ph" placeholder="06 00 00 00 00">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="careers.field.message">Message & motivation</label>
+                    <textarea name="message" rows="4" data-i18n-placeholder="careers.field.message.ph" placeholder="Présentez-vous brièvement et expliquez votre intérêt pour MGE…" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit" id="careersSubmitBtn" data-i18n="careers.submit">Envoyer ma candidature</button>
+                <div class="form-feedback" id="careersFeedback"></div>
+            </form>
+            <p class="careers-notice" data-i18n-html="careers.notice">Nous examinerons votre candidature avec attention et vous recontacterons dans les plus brefs délais. Aucun appel spontané ne sera traité.</p>
+        </div>
+    </div>
+
+    <!-- MODAL SERVICE -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-backdrop" onclick="closeService()"></div>
+        <div class="modal-panel">
+            <button class="modal-close" onclick="closeService()">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-tag" id="modalTag"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-desc" id="modalDesc"></p>
+            <ul class="modal-points" id="modalPoints"></ul>
+            <a href="#contact" class="btn-main modal-cta" id="modalCta" onclick="demanderDevis()" data-i18n="modal.cta">Demander un devis</a>
+        </div>
+    </div>
+
+    <script>
+        // ── Hamburger ──────────────────────────────────────────────
+        const hamburger = document.getElementById('hamburger');
+        const overlay   = document.getElementById('navOverlay');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            overlay.classList.toggle('open');
+        });
+        function closeMenu() {
+            hamburger.classList.remove('open');
+            overlay.classList.remove('open');
+        }
+
+        // ── Navbar scroll ──────────────────────────────────────────
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Tabs services ──────────────────────────────────────────
+        function activateTab(tabName) {
+            document.querySelectorAll('.tab-card').forEach(t => t.classList.remove('active'));
+            const targetCard = document.querySelector(`[data-tab="${tabName}"]`);
+            if (targetCard) targetCard.classList.add('active');
+            document.querySelectorAll('.icons-grid').forEach(g => g.classList.add('hidden'));
+            const grid = document.getElementById('tab-' + tabName);
+            if (grid) {
+                grid.classList.remove('hidden');
+                grid.querySelectorAll('.icon-item').forEach((el, i) => {
+                    el.classList.remove('revealed');
+                    setTimeout(() => { el.classList.add('revealed'); }, i * 80);
+                });
+            }
+        }
+
+        // Restaurer le tab actif si on revient depuis service.html
+        const urlParams = new URLSearchParams(window.location.search);
+        const restoredTab = urlParams.get('tab');
+        if (restoredTab) activateTab(restoredTab);
+
+        document.querySelectorAll('.tab-card').forEach(tab => {
+            tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+        });
+
+        // Naviguer vers la page dédiée du service
+        function openService(serviceId) {
+            location.href = `${serviceId}.html`;
+        }
+
+        // ── Données services FR ────────────────────────────────────
+        const servicesFr = {
+            renovation: {
+                tag: 'Particulier',
+                title: 'Rénovation',
+                desc: "Refonte électrique complète pour appartements haussmanniens, lofts contemporains et maisons de standing. Chaque intervention est invisible et respecte l'architecture existante.",
+                points: ['Mise en conformité NF C 15-100', 'Câblage encastré sans démolition', 'Tableaux électriques sur-mesure', 'Coordination avec architectes et décorateurs', 'Garantie décennale incluse']
+            },
+            eclairage: {
+                tag: 'Particulier',
+                title: 'Éclairage',
+                desc: "Conception et installation d'éclairages sur-mesure : lumière d'accentuation, éclairage indirect, LEDs architecturales. Chaque scène de vie sublimée par la lumière.",
+                points: ['Étude lumineuse personnalisée', 'LED basse consommation haut de gamme', 'Variateurs et scènes lumineuses', 'Éclairage extérieur et paysager', 'Intégration domotique possible']
+            },
+            domotique: {
+                tag: 'Particulier',
+                title: 'Domotique',
+                desc: "Intégration de systèmes intelligents KNX, Control4 et Home Assistant pour un pilotage total de votre habitat depuis votre smartphone.",
+                points: ['Systèmes KNX & Control4 certifiés', 'Gestion lumière, volets, chauffage', 'Interface mobile intuitive', 'Scènes automatisées (départ, soirée, nuit)', 'Compatibilité Alexa & Google Home']
+            },
+            normes: {
+                tag: 'Particulier',
+                title: 'Mise aux Normes',
+                desc: "Diagnostic complet et mise en conformité de vos installations électriques selon la norme NF C 15-100. Obligatoire lors d'une vente immobilière.",
+                points: ['Diagnostic CONSUEL complet', 'Remplacement des installations vétustes', 'Mise à terre et protection différentielle', 'Rapport de conformité officiel', 'Accompagnement démarches administratives']
+            },
+            tableau: {
+                tag: 'Particulier',
+                title: 'Tableau Électrique',
+                desc: "Remplacement ou optimisation de votre tableau électrique. Installation de disjoncteurs, protections différentielles et gestion des circuits.",
+                points: ['Tableau encastré ou en saillie', 'Disjoncteurs magnéto-thermiques', 'Protection différentielle 30mA', 'Ajout de circuits dédiés (cuisine, bureau)', 'Étiquetage et documentation complète']
+            },
+            depannage: {
+                tag: 'Particulier',
+                title: 'Dépannage 7j/7',
+                desc: "Intervention rapide pour toute panne électrique, à Paris.",
+                points: ['Intervention sous 2h en urgence', 'Diagnostic précis et transparent', 'Réparation prise, interrupteur, circuit', 'Remplacement fusibles et disjoncteurs', 'Devis gratuit avant intervention']
+            },
+            tertiaire: {
+                tag: 'Entreprise',
+                title: 'Locaux Tertiaires',
+                desc: "Installation et maintenance électrique pour bureaux, cabinets médicaux, studios et espaces de coworking. Respect des contraintes d'exploitation.",
+                points: ['Câblage courants forts & faibles', 'Éclairage professionnel LED', 'Prises de travail et réseaux', 'Conformité ERP et accessibilité', 'Interventions hors heures ouvrées']
+            },
+            commerce: {
+                tag: 'Entreprise',
+                title: 'Commerce & Retail',
+                desc: "Solutions électriques adaptées aux commerces, boutiques et restaurants. Mise en valeur des espaces et fiabilité maximale de l'installation.",
+                points: ['Éclairage vitrine et ambiance', 'Alimentation caisses et TPE', 'Signalétique lumineuse', 'Respect normes ERP', 'Maintenance préventive']
+            },
+            infrastructure: {
+                tag: 'Entreprise',
+                title: 'Infrastructure',
+                desc: "Conception et réalisation d'infrastructures électriques pour bâtiments, copropriétés et résidences haut de gamme.",
+                points: ['TGBT et tableaux divisionnaires', 'Chemins de câbles', 'Alimentation parkings et communs', 'Éclairage de sécurité BAES', 'Groupe électrogène et onduleurs']
+            },
+            audit: {
+                tag: 'Entreprise',
+                title: 'Audit Énergétique',
+                desc: "Analyse complète de vos consommations électriques et recommandations pour réduire votre empreinte énergétique et vos coûts.",
+                points: ['Mesure des consommations en temps réel', 'Identification des postes énergivores', 'Plan d\'optimisation chiffré', 'Bilan carbone de l\'installation', 'Accompagnement CEE et aides fiscales']
+            },
+            maintenance: {
+                tag: 'Entreprise',
+                title: 'Maintenance',
+                desc: "Contrats de maintenance préventive et corrective pour garantir la continuité de votre activité et la conformité de vos installations.",
+                points: ['Visites périodiques planifiées', 'Vérifications réglementaires', 'Hotline dédiée 7j/7', 'Rapport d\'intervention systématique', 'Pièces de rechange en stock']
+            },
+            consuel: {
+                tag: 'Entreprise',
+                title: 'Conformité CONSUEL',
+                desc: "Accompagnement complet pour l'obtention de l'attestation CONSUEL, indispensable pour la mise en service de votre compteur électrique.",
+                points: ['Audit pré-CONSUEL', 'Levée des réserves', 'Constitution du dossier', 'Suivi du passage CONSUEL', 'Attestation de conformité garantie']
+            }
+        };
+
+        // ── Données services EN ────────────────────────────────────
+        const servicesEn = {
+            renovation: {
+                tag: 'Residential',
+                title: 'Renovation',
+                desc: "Complete electrical overhaul for Haussmann apartments, contemporary lofts and upscale homes. Every intervention is invisible and respects the existing architecture.",
+                points: ['NF C 15-100 compliance', 'Concealed wiring without demolition', 'Custom electrical panels', 'Coordination with architects and designers', 'Ten-year warranty included']
+            },
+            eclairage: {
+                tag: 'Residential',
+                title: 'Lighting',
+                desc: "Design and installation of custom lighting: accent, indirect, and architectural LEDs. Every living scene elevated by light.",
+                points: ['Personalized lighting study', 'Premium low-energy LEDs', 'Dimmers and lighting scenes', 'Outdoor and landscape lighting', 'Home automation integration available']
+            },
+            domotique: {
+                tag: 'Residential',
+                title: 'Home Automation',
+                desc: "Integration of intelligent KNX, Control4 and Home Assistant systems for total control of your home from your smartphone.",
+                points: ['Certified KNX & Control4 systems', 'Lighting, shutters, heating management', 'Intuitive mobile interface', 'Automated scenes (departure, evening, night)', 'Alexa & Google Home compatible']
+            },
+            normes: {
+                tag: 'Residential',
+                title: 'Electrical Compliance',
+                desc: "Complete diagnosis and compliance of your electrical installations to the NF C 15-100 standard. Required for property sales.",
+                points: ['Full CONSUEL diagnosis', 'Replacement of outdated installations', 'Earthing and differential protection', 'Official compliance report', 'Administrative support']
+            },
+            tableau: {
+                tag: 'Residential',
+                title: 'Electrical Panel',
+                desc: "Replacement or upgrade of your electrical panel. Installation of circuit breakers, differential protections and circuit management.",
+                points: ['Flush-mounted or surface panels', 'Magneto-thermal circuit breakers', '30mA differential protection', 'Dedicated circuits (kitchen, office)', 'Complete labeling and documentation']
+            },
+            depannage: {
+                tag: 'Residential',
+                title: 'Emergency Repair 7/7',
+                desc: "Rapid response for any electrical fault, across Paris.",
+                points: ['Response within 2 hours for emergencies', 'Accurate and transparent diagnosis', 'Socket, switch, circuit repair', 'Fuse and breaker replacement', 'Free quote before intervention']
+            },
+            tertiaire: {
+                tag: 'Commercial',
+                title: 'Office Buildings',
+                desc: "Electrical installation and maintenance for offices, medical practices, studios and coworking spaces. Respecting operational constraints.",
+                points: ['Power and data cabling', 'Professional LED lighting', 'Workstations and network outlets', 'ERP and accessibility compliance', 'Out-of-hours interventions']
+            },
+            commerce: {
+                tag: 'Commercial',
+                title: 'Retail & Shops',
+                desc: "Electrical solutions tailored for retail stores, boutiques and restaurants. Showcasing spaces with maximum installation reliability.",
+                points: ['Display and ambient lighting', 'Cash register and payment terminal power', 'Illuminated signage', 'ERP compliance', 'Preventive maintenance']
+            },
+            infrastructure: {
+                tag: 'Commercial',
+                title: 'Infrastructure',
+                desc: "Design and delivery of electrical infrastructure for buildings, co-ownerships and high-end residences.",
+                points: ['Main switchboards and sub-panels', 'Cable trays', 'Parking and common area power', 'Emergency lighting (BAES)', 'Generators and UPS systems']
+            },
+            audit: {
+                tag: 'Commercial',
+                title: 'Energy Audit',
+                desc: "Complete analysis of your electricity consumption and recommendations to reduce your energy footprint and costs.",
+                points: ['Real-time consumption measurement', 'Identification of energy-intensive equipment', 'Quantified optimization plan', 'Carbon footprint assessment', 'CEE and tax incentive support']
+            },
+            maintenance: {
+                tag: 'Commercial',
+                title: 'Maintenance',
+                desc: "Preventive and corrective maintenance contracts to ensure business continuity and installation compliance.",
+                points: ['Scheduled periodic visits', 'Regulatory checks', 'Dedicated hotline 7/7', 'Systematic intervention reports', 'Spare parts in stock']
+            },
+            consuel: {
+                tag: 'Commercial',
+                title: 'CONSUEL Compliance',
+                desc: "Full support for obtaining the CONSUEL certificate, essential for activating your electricity meter.",
+                points: ['Pre-CONSUEL audit', 'Reservation clearance', 'File preparation', 'CONSUEL inspection follow-up', 'Guaranteed compliance certificate']
+            }
+        };
+
+        // ── Traductions ────────────────────────────────────────────
+        const translations = {
+            fr: {
+                'nav.cta':                  'Consultation',
+                'nav.solutions':            'Solutions',
+                'nav.expertises':           'Expertises',
+                'nav.realisations':         'Réalisations',
+                'hero.label':               '— Paris &nbsp;·&nbsp; Électricité &amp; Domotique',
+                'hero.h1.thin':             "La maîtrise",
+                'hero.h1.serif':            'électrique.',
+                'hero.h1.light':            'De prestige.',
+                'hero.sub':                 "Expertise technique et finitions d'exception.<br>Installations soignées pour des clients exigeants à Paris.",
+                'hero.cta1':                'Étude de projet',
+                'hero.cta2':                'Nos réalisations',
+                'hero.scroll':              'Défiler',
+                'services.label':           '01 / Nos Solutions',
+                'services.h2':              'Des solutions <em>sur-mesure</em>',
+                'services.p':               "Grâce à notre expertise technique, nous créons des installations qui conjuguent fiabilité irréprochable et finitions d'exception.",
+                'services.tab.particulier':      'Particulier',
+                'services.tab.particulier.desc': 'Appartements & résidences',
+                'services.tab.entreprise':       'Entreprise',
+                'services.tab.entreprise.desc':  'Bureaux, commerces & infrastructure',
+                'service.renovation':       'Rénovation',
+                'service.eclairage':        'Éclairage',
+                'service.domotique':        'Domotique',
+                'service.normes':           'Mise aux normes',
+                'service.tableau':          'Tableau électrique',
+                'service.depannage':        'Dépannage',
+                'service.tertiaire':        'Tertiaire',
+                'service.commerce':         'Commerce',
+                'service.infrastructure':   'Infrastructure',
+                'service.audit':            'Audit énergétique',
+                'service.maintenance':      'Maintenance',
+                'service.consuel':          'Conformité CONSUEL',
+                'expertise.label':          "02 / Domaines d'Intervention",
+                'expertise.card1.h3':       'Rénovation',
+                'expertise.card1.p':        "Mise en conformité invisible pour patrimoines exigeants. Appartements haussmanniens, lofts contemporains — chaque installation respecte l'architecture et l'esthétique.",
+                'expertise.card2.h3':       'Domotique',
+                'expertise.card2.p':        'Intégration de systèmes intelligents KNX et Control4 pour un confort thermique et lumineux optimal. Pilotage total depuis votre mobile.',
+                'expertise.card3.h3':       'Éclairage',
+                'expertise.card3.p':        "Conception lumineuse sur-mesure : éclairage d'accentuation, indirect, basse consommation. Chaque scène de vie sublimée par la lumière.",
+                'stats.label1':             'Projets livrés',
+                'stats.label2':             'Chaque projet',
+                'stats.label3':             'Ancrage local',
+                'stats.label4':             'Certifié CONSUEL',
+                'archives.label':           '03 / Réalisations',
+                'archives.h2':              'Projets <em>récents</em>',
+                'archives.proj1.cat':       'Rénovation Électrique Complète',
+                'archives.proj1.h3':        'Appartement Belle Époque — Paris 15<sup>e</sup>',
+                'archives.proj1.p':         'Refonte totale du câblage, tableau sur-mesure et éclairage architectural intégré. 180m².',
+                'archives.proj2.cat':       'Domotique KNX',
+                'archives.proj2.h3':        'Suite Privée — Rue du Bac, Paris 7<sup>e</sup>',
+                'archives.proj2.p':         'Déploiement KNX complet : scènes lumineuses, volets motorisés et chauffage centralisé.',
+                'archives.proj3.cat':       'Éclairage Architectural',
+                'archives.proj3.h3':        'Penthouse Kléber — Paris 16<sup>e</sup>',
+                'archives.proj3.p':         'Étude lumineuse sur-mesure : spots encastrés, rubans LED architecturaux et gradateurs connectés. 120m².',
+                'contact.intro':            'Rénovation, domotique, dépannage ou audit énergétique — décrivez votre besoin et nous revenons vers vous rapidement avec une proposition adaptée.',
+                'contact.p1.title':         'Réponse sous 24h',
+                'contact.p1.text':          'Chaque demande est traitée en priorité.',
+                'contact.p2.title':         'Réactivité Disponible 7j/7 de 08h à 22h disponibilité',
+                'contact.p2.text':          'Pour chaque demande, une réponse rapide.',
+                'contact.p3.title':         'Devis gratuit & sans engagement',
+                'contact.p3.text':          'Étude personnalisée offerte.',
+                'contact.form.title':       'Votre projet',
+                'contact.form.sub':         'Remplissez ce formulaire — nous revenons vers vous rapidement.',
+                'contact.label':            '04 / Consultation',
+                'contact.h2':               'Parlons de<br><em>votre projet.</em>',
+                'contact.addr.label':       'Adresse',
+                'contact.phone.label':      'Ligne Directe',
+                'contact.email.label':      'Email',
+                'contact.social.label':     'Présence',
+                'form.name.label':          'Nom',
+                'form.name.placeholder':    'Votre nom',
+                'form.email.label':         'Email',
+                'form.email.placeholder':   'Votre email',
+                'form.projet.label':        'Nature du projet',
+                'form.projet.placeholder':  'Rénovation, domotique, dépannage…',
+                'form.msg.label':           'Message',
+                'form.msg.placeholder':     'Décrivez votre projet...',
+                'form.submit':              'Envoyer la demande',
+                'modal.cta':                'Demander un devis',
+                'footer.copy':              '&copy; 2026 MGE · Monge Gauthier Énergie · Paris',
+                'footer.link1':             'Expertise',
+                'footer.link2':             'Solutions',
+                'footer.link3':             'Contact',
+                'careers.tab':              'Nous rejoindre',
+                'careers.tag':              'Recrutement',
+                'careers.title':            'Rejoignez l\'équipe MGE',
+                'careers.intro':            'Vous souhaitez intégrer une entreprise à taille humaine, exigeante et reconnue dans l\'électricité de prestige à Paris ? Laissez-nous votre candidature.',
+                'careers.field.poste':      'Type de poste souhaité',
+                'careers.field.poste.placeholder': '— Sélectionner —',
+                'careers.opt.cdi':          'CDI',
+                'careers.opt.cdd':          'CDD',
+                'careers.opt.stage':        'Stage',
+                'careers.opt.alternance':   'Alternance',
+                'careers.opt.freelance':    'Freelance / Mission',
+                'careers.field.profil':     'Profil professionnel',
+                'careers.field.profil.ph':  'Électricien, Chef de chantier, Apprenti…',
+                'careers.field.prenom':     'Prénom',
+                'careers.field.prenom.ph':  'Votre prénom',
+                'careers.field.nom':        'Nom',
+                'careers.field.nom.ph':     'Votre nom',
+                'careers.field.email':      'Email',
+                'careers.field.email.ph':   'votre@email.com',
+                'careers.field.tel':        'Téléphone',
+                'careers.field.tel.ph':     '06 00 00 00 00',
+                'careers.field.message':    'Message & motivation',
+                'careers.field.message.ph': 'Présentez-vous brièvement et expliquez votre intérêt pour MGE…',
+                'careers.submit':           'Envoyer ma candidature',
+                'careers.notice':           'Nous examinerons votre candidature avec attention et vous recontacterons dans les plus brefs délais. Aucun appel spontané ne sera traité.',
+            },
+            en: {
+                'nav.cta':                  'Contact',
+                'nav.solutions':            'Solutions',
+                'nav.expertises':           'Expertise',
+                'nav.realisations':         'Projects',
+                'hero.label':               '— Paris &nbsp;·&nbsp; Electrical &amp; Home Automation',
+                'hero.h1.thin':             'Engineering',
+                'hero.h1.serif':            'electrical.',
+                'hero.h1.light':            'Of distinction.',
+                'hero.sub':                 'Technical expertise and exceptional finishes.<br>Meticulous installations for discerning clients across Paris.',
+                'hero.cta1':                'Project Study',
+                'hero.cta2':                'Our Projects',
+                'hero.scroll':              'Scroll',
+                'services.label':           '01 / Our Solutions',
+                'services.h2':              'Tailored <em>solutions</em>',
+                'services.p':               'Leveraging our technical expertise, we craft installations that combine impeccable reliability with exceptional finishes.',
+                'services.tab.particulier':      'Residential',
+                'services.tab.particulier.desc': 'Apartments & residences',
+                'services.tab.entreprise':       'Commercial',
+                'services.tab.entreprise.desc':  'Offices, retail & infrastructure',
+                'service.renovation':       'Renovation',
+                'service.eclairage':        'Lighting',
+                'service.domotique':        'Home Automation',
+                'service.normes':           'Compliance',
+                'service.tableau':          'Electrical Panel',
+                'service.depannage':        'Emergency Repair',
+                'service.tertiaire':        'Office Buildings',
+                'service.commerce':         'Retail',
+                'service.infrastructure':   'Infrastructure',
+                'service.audit':            'Energy Audit',
+                'service.maintenance':      'Maintenance',
+                'service.consuel':          'CONSUEL Compliance',
+                'expertise.label':          '02 / Areas of Expertise',
+                'expertise.card1.h3':       'Renovation',
+                'expertise.card1.p':        'Invisible compliance upgrades for discerning properties. Haussmann apartments, contemporary lofts — every installation respects the architecture and aesthetics.',
+                'expertise.card2.h3':       'Home Automation',
+                'expertise.card2.p':        'Integration of intelligent KNX and Control4 systems for optimal thermal and lighting comfort. Total control from your mobile.',
+                'expertise.card3.h3':       'Lighting',
+                'expertise.card3.p':        'Custom lighting design: accent, indirect, and low-energy LEDs. Every living scene elevated by light.',
+                'stats.label1':             'Projects delivered',
+                'stats.label2':             'Custom approach',
+                'stats.label3':             'Local presence',
+                'stats.label4':             'CONSUEL Certified',
+                'archives.label':           '03 / Projects',
+                'archives.h2':              'Recent <em>projects</em>',
+                'archives.proj1.cat':       'Full Electrical Renovation',
+                'archives.proj1.h3':        'Belle Époque Apartment — Paris 15<sup>e</sup>',
+                'archives.proj1.p':         'Complete rewiring, bespoke electrical panel and integrated architectural lighting. 180m².',
+                'archives.proj2.cat':       'KNX Home Automation',
+                'archives.proj2.h3':        'Private Suite — Rue du Bac, Paris 7<sup>e</sup>',
+                'archives.proj2.p':         'Full KNX deployment: lighting scenes, motorized shutters and centralised heating control.',
+                'archives.proj3.cat':       'Architectural Lighting',
+                'archives.proj3.h3':        'Penthouse Kléber — Paris 16<sup>e</sup>',
+                'archives.proj3.p':         'Bespoke lighting study: recessed spotlights, architectural LED strips and smart dimmers. 120m².',
+                'contact.intro':            'Renovation, home automation, emergency repair or energy audit — describe your need and we will get back to you quickly with a tailored proposal.',
+                'contact.p1.title':         'Response within 24h',
+                'contact.p1.text':          'Every request is handled as a priority.',
+                'contact.p2.title':         'Responsive & available',
+                'contact.p2.text':          'Prompt response for every request.',
+                'contact.p3.title':         'Free quote, no commitment',
+                'contact.p3.text':          'Personalised study at no cost.',
+                'contact.form.title':       'Your project',
+                'contact.form.sub':         'Fill in this form — we will get back to you shortly.',
+                'contact.label':            '04 / Contact',
+                'contact.h2':               "Let's talk about<br><em>your project.</em>",
+                'contact.addr.label':       'Address',
+                'contact.phone.label':      'Direct Line',
+                'contact.email.label':      'Email',
+                'contact.social.label':     'Follow us',
+                'form.name.label':          'Name',
+                'form.name.placeholder':    'Your name',
+                'form.email.label':         'Email',
+                'form.email.placeholder':   'Your email',
+                'form.projet.label':        'Project type',
+                'form.projet.placeholder':  'Renovation, automation, repair…',
+                'form.msg.label':           'Message',
+                'form.msg.placeholder':     'Describe your project...',
+                'form.submit':              'Send request',
+                'modal.cta':                'Request a quote',
+                'footer.copy':              '&copy; 2026 MGE · Monge Gauthier Énergie · Paris',
+                'footer.link1':             'Expertise',
+                'footer.link2':             'Solutions',
+                'footer.link3':             'Contact',
+                'careers.tab':              'Join us',
+                'careers.tag':              'Careers',
+                'careers.title':            'Join the MGE team',
+                'careers.intro':            'Looking to join a human-scale, demanding and recognized firm in electrical engineering in Paris? Leave us your application.',
+                'careers.field.poste':      'Desired position type',
+                'careers.field.poste.placeholder': '— Select —',
+                'careers.opt.cdi':          'Permanent (CDI)',
+                'careers.opt.cdd':          'Fixed-term (CDD)',
+                'careers.opt.stage':        'Internship',
+                'careers.opt.alternance':   'Apprenticeship',
+                'careers.opt.freelance':    'Freelance / Contract',
+                'careers.field.profil':     'Professional profile',
+                'careers.field.profil.ph':  'Electrician, Site manager, Apprentice…',
+                'careers.field.prenom':     'First name',
+                'careers.field.prenom.ph':  'Your first name',
+                'careers.field.nom':        'Last name',
+                'careers.field.nom.ph':     'Your last name',
+                'careers.field.email':      'Email',
+                'careers.field.email.ph':   'your@email.com',
+                'careers.field.tel':        'Phone',
+                'careers.field.tel.ph':     '+33 6 00 00 00 00',
+                'careers.field.message':    'Message & motivation',
+                'careers.field.message.ph': 'Briefly introduce yourself and explain your interest in MGE…',
+                'careers.submit':           'Send my application',
+                'careers.notice':           'We will carefully review your application and get back to you as soon as possible. Unsolicited calls will not be processed.',
+            }
+        };
+
+        let currentLang = 'fr';
+
+        function switchLang(lang) {
+            if (lang === currentLang) return;
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            const t = translations[lang];
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const v = t[el.dataset.i18n];
+                if (v !== undefined) el.textContent = v;
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const v = t[el.dataset.i18nHtml];
+                if (v !== undefined) el.innerHTML = v;
+            });
+
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const v = t[el.dataset.i18nPlaceholder];
+                if (v !== undefined) el.placeholder = v;
+            });
+
+            localStorage.setItem('mge-lang', lang);
+        }
+
+        // ── (ancienne modale supprimée — navigation directe via openService ci-dessus) ──
+
+        function closeService() {
+            document.getElementById('serviceModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const navH = document.getElementById('navbar')?.offsetHeight || 80;
+            const top = el.getBoundingClientRect().top + window.scrollY - navH;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
+
+        function demanderDevis() {
+            const title = document.getElementById('modalTitle').textContent;
+            closeService();
+            setTimeout(() => {
+                const champ = document.getElementById('champProjet');
+                if (champ && title) champ.value = title;
+                scrollToSection('contact');
+                if (champ) setTimeout(() => champ.focus(), 600);
+            }, 100);
+        }
+
+        // ══════════════════════════════════════════════════════════
+        // ⚠️  REMPLACEZ CES DEUX IDs PAR VOS IDs FORMSPREE
+        //     → https://formspree.io → Mon compte → Mes formulaires
+        const FORMSPREE_CONTACT  = 'mwvwbooy'; // Formulaire "Contact MGE"
+        const FORMSPREE_CANDIDAT = 'xjgprwwn'; // Formulaire "Candidature MGE"
+        // ══════════════════════════════════════════════════════════
+
+        async function envoyerForm(form, formspreeId, feedbackId) {
+            const btn      = form.querySelector('button[type="submit"]');
+            const feedback = document.getElementById(feedbackId);
+            const origText = btn.textContent;
+            btn.disabled   = true;
+            btn.textContent = currentLang === 'en' ? 'Sending…' : 'Envoi en cours…';
+            feedback.className = 'form-feedback';
+            feedback.textContent = '';
+            try {
+                const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (res.ok) {
+                    feedback.className = 'form-feedback success';
+                    feedback.textContent = currentLang === 'en'
+                        ? '✓ Message sent — we will get back to you shortly.'
+                        : '✓ Message envoyé — nous vous recontactons très vite.';
+                    form.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                feedback.className = 'form-feedback error';
+                feedback.textContent = currentLang === 'en'
+                    ? 'Error — please try again or call us directly.'
+                    : 'Erreur — réessayez ou appelez-nous directement.';
+            }
+            btn.disabled    = false;
+            btn.textContent = origText;
+        }
+
+        function submitContact(e) {
+            e.preventDefault();
+            envoyerForm(e.target, FORMSPREE_CONTACT, 'contactFeedback');
+        }
+
+        // ── Candidature ────────────────────────────────────────────
+        function openCareers() {
+            document.getElementById('careersModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCareers() {
+            document.getElementById('careersModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function submitCareers(e) {
+            e.preventDefault();
+            envoyerForm(e.target, FORMSPREE_CANDIDAT, 'careersFeedback');
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') { closeService(); closeCareers(); }
+        });
+
+        // ── Pré-remplissage projet depuis service.html ─────────────
+        window.addEventListener('DOMContentLoaded', () => {
+            const projet = sessionStorage.getItem('mge-projet');
+            if (projet) {
+                const input = document.querySelector('input[name="projet"]');
+                if (input) input.value = projet;
+                sessionStorage.removeItem('mge-projet');
+                setTimeout(() => scrollToSection('contact'), 300);
+            }
+
+            // Scroll vers #services si on revient depuis service.html avec ?tab=
+            if (urlParams.get('tab')) {
+                setTimeout(() => scrollToSection('services'), 200);
+            }
+        });
+
+        // ── Scroll-reveal ──────────────────────────────────────────
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Observer pour les icon-items (onglet actif au chargement)
+        const iconObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const items = entry.target.querySelectorAll('.icon-item');
+                    items.forEach((el, i) => {
+                        setTimeout(() => el.classList.add('revealed'), i * 80);
+                    });
+                    iconObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.icons-grid:not(.hidden)').forEach(g => iconObserver.observe(g));
+
+        // ── Restore language ───────────────────────────────────────
+        const savedLang = localStorage.getItem('mge-lang');
+        if (savedLang && savedLang !== 'fr') switchLang(savedLang);
+    </script>
+</body>
+</html>

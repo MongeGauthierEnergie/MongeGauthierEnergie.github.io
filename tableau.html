@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Électrique Paris | MGE — Remplacement & Optimisation</title>
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="apple-touch-icon" href="images/logo-mge.png">
+    <meta name="description" content="Remplacement ou optimisation de votre tableau électrique à Paris. Disjoncteurs, protections différentielles, circuits dédiés. Intervention en 1 journée. Devis gratuit.">
+    <link rel="canonical" href="https://MongeGauthierEnergie.github.io/tableau.html">
+    <meta property="og:title" content="Tableau Électrique Paris | MGE — Remplacement & Optimisation">
+    <meta property="og:description" content="Remplacement ou optimisation de votre tableau électrique à Paris. Disjoncteurs, protections différentielles, circuits dédiés. Intervention en 1 journée. Devis gratuit.">
+    <meta property="og:url" content="https://MongeGauthierEnergie.github.io/tableau.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1616137466211-f02fc81ae5d1?w=1400&auto=format&fit=crop&q=80">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+                </div>
+                <span class="nav-phone">07 81 90 07 84</span>
+                <a href="careers.html" class="btn-careers-nav">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav">Consultation</a>
+            </div>
+        </div>
+        <nav class="nav-overlay" id="navOverlay">
+            <ul>
+                <li><a href="index.html#services"  onclick="closeMenu()">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()">Consultation</a></li>
+            </ul>
+            <div class="overlay-footer">
+                <div class="overlay-address">
+                    <span>2 rue Lakanal, 75015 Paris</span>
+                    <span>07 81 90 07 84</span>
+                </div>
+                <div class="overlay-social">
+                    <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/monge-gauthier-energie/?viewAsMember=true" target="_blank" aria-label="LinkedIn MGE" onclick="closeMenu()">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="sp-hero">
+        <div class="sp-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1616137466211-f02fc81ae5d1?w=1400&auto=format&fit=crop&q=80')"></div>
+        <div class="sp-hero-overlay"></div>
+        <div class="container sp-hero-content">
+            <a href="index.html?tab=particulier#services" class="sp-back">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span>Retour aux solutions</span>
+            </a>
+            <div class="sp-hero-inner">
+                <span class="sp-tag">Particulier</span>
+                <h1 class="sp-title">TABLEAU ÉLECTRIQUE</h1>
+                <p class="sp-hero-sub">Remplacement ou optimisation de votre tableau électrique. Installation de disjoncteurs, protections différentielles et gestion des circuits en une journée.</p>
+                <div class="sp-hero-cta">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ STATS ═══ -->
+    <section class="sp-stats reveal reveal-up">
+        <div class="container">
+            <div class="sp-stats-grid">
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">1 jour</span>
+                        <span class="sp-stat-label">Durée moyenne d'intervention</span>
+                    </div>
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">30 mA</span>
+                        <span class="sp-stat-label">Protection différentielle systématique</span>
+                    </div>
+                    <div class="sp-stat-item">
+                        <span class="sp-stat-num">15 ans</span>
+                        <span class="sp-stat-label">Garantie sur les tableaux posés</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTENU ═══ -->
+    <section class="sp-content">
+        <div class="container">
+            <div class="sp-body">
+                <div class="sp-left reveal reveal-up">
+                    <span class="section-label">Notre service</span>
+                    <p class="sp-desc">Le tableau électrique est le cœur de votre installation. Un tableau vétuste ou mal dimensionné peut causer des pannes répétées, voire des incendies. MGE remplace ou optimise votre tableau en une journée, avec des équipements haut de gamme (Schneider, Legrand, Hager), un câblage irréprochable et une documentation complète de vos circuits.</p>
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                </div>
+                <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
+                    <h3 class="sp-points-title">Ce que comprend ce service</h3>
+                    <ul class="sp-points">
+                        <li>Tableau encastré ou en saillie</li>
+                        <li>Disjoncteurs magnéto-thermiques</li>
+                        <li>Protection différentielle 30 mA</li>
+                        <li>Ajout de circuits dédiés (cuisine, bureau)</li>
+                        <li>Étiquetage et documentation complète</li>
+                        <li>Mise en service et test complet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ GALERIE ═══ -->
+    <section class="sp-gallery reveal reveal-up">
+        <div class="container">
+            <div class="sp-gallery-grid">
+                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s">
+                    <img src="https://images.unsplash.com/photo-1616137466211-f02fc81ae5d1?w=900&auto=format&fit=crop&q=75" alt="Tableau Électrique" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s">
+                    <img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Tableau Électrique" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s">
+                    <img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Tableau Électrique" loading="lazy">
+                </div>
+                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s">
+                    <img src="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1" alt="Tableau Électrique" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ÉTAPES ═══ -->
+    <section class="sp-steps-section">
+        <div class="container">
+            <div class="sp-steps-header reveal reveal-up">
+                <span class="section-label">Notre approche</span>
+                <h2>Comment nous <em>travaillons</em></h2>
+            </div>
+            <div class="sp-steps-grid">
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.00s">
+                    <span class="sp-step-num">01</span>
+                    <div class="sp-step-content">
+                        <h3>Analyse des besoins</h3>
+                        <p>Recensement de vos équipements, de vos circuits existants et de vos projets futurs. Dimensionnement précis du nouveau tableau.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.12s">
+                    <span class="sp-step-num">02</span>
+                    <div class="sp-step-content">
+                        <h3>Choix du matériel</h3>
+                        <p>Sélection des équipements (Schneider, Legrand, Hager) adaptés à votre installation. Présentation du devis détaillé.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.24s">
+                    <span class="sp-step-num">03</span>
+                    <div class="sp-step-content">
+                        <h3>Remplacement</h3>
+                        <p>Dépose de l'ancien tableau, câblage du nouveau, reprise de tous les circuits. Intervention propre et rapide, généralement en une journée.</p>
+                    </div>
+                </div>
+                <div class="sp-step reveal reveal-up" style="transition-delay:0.36s">
+                    <span class="sp-step-num">04</span>
+                    <div class="sp-step-content">
+                        <h3>Tests & documentation</h3>
+                        <p>Contrôle de chaque circuit, test des protections différentielles. Remise d'un schéma complet et d'un étiquetage clair de chaque disjoncteur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="sp-faq-section">
+        <div class="container">
+            <div class="sp-faq-header reveal reveal-up">
+                <span class="section-label">Questions fréquentes</span>
+                <h2>Ce que vous voulez <em>savoir</em></h2>
+            </div>
+            <div class="sp-faq-list">
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.00s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Quand faut-il remplacer son tableau électrique ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Si votre tableau date de plus de 25 ans, si les disjoncteurs sautent fréquemment, si vous n'avez pas de protection différentielle 30 mA, ou si vous ajoutez des équipements énergivores (borne de recharge, climatisation).</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.08s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Combien de circuits faut-il prévoir ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>La norme NF C 15-100 impose un minimum : circuit éclairage par tranche de 8 points lumineux, circuit prise par pièce, circuits spécialisés pour le lave-linge, le four, la cuisinière, etc.</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.16s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Peut-on garder les anciens circuits avec un nouveau tableau ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Oui, dans la plupart des cas. Nous testons chaque circuit existant et ne remplaçons que ceux qui présentent des défauts d'isolement ou de continuité.</p></div>
+                </div>
+                <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.24s">
+                    <button class="sp-faq-q" aria-expanded="false">
+                        <span>Faut-il couper le courant dans tout l'appartement ?</span>
+                        <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="sp-faq-a"><p>Oui, mais seulement quelques heures. Nous planifions l'intervention pour que la coupure soit la plus courte possible, généralement moins d'une demi-journée.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ AUTRES SOLUTIONS ═══ -->
+    <section class="sp-related">
+        <div class="container">
+            <span class="section-label">Autres solutions</span>
+            <div class="sp-related-grid">
+                <a href="renovation.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Particulier</span>
+                    <h3>Rénovation</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+                <a href="normes.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Particulier</span>
+                    <h3>Mise aux Normes</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+                <a href="depannage.html" class="sp-related-item reveal reveal-up">
+                    <span class="sp-related-tag">Particulier</span>
+                    <h3>Dépannage 7j/7</h3>
+                    <span class="sp-related-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA BAND ═══ -->
+    <section class="sp-cta-band">
+        <div class="container">
+            <div class="sp-cta-inner reveal reveal-up">
+                <div class="sp-cta-text">
+                    <p class="sp-cta-label">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title">Parlons de <em>votre projet.</em></h2>
+                </div>
+                <div class="sp-cta-actions">
+                    <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
+                    <a href="tel:0781900784" class="btn-ghost">07 81 90 07 84</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
+            <p>© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <div class="footer-links">
+                <a href="index.html#expertise">Expertise</a>
+                <a href="index.html#services">Solutions</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ── Navbar ──
+    const hamburger = document.getElementById('hamburger');
+    const overlay   = document.getElementById('navOverlay');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        overlay.classList.toggle('open');
+        document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMenu() {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ── Lang switch (UI only) ──
+    let currentLang = localStorage.getItem('mge-lang') || 'fr';
+    function switchLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('mge-lang', lang);
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    }
+    // Apply saved lang on load
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.sp-faq-q').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const isOpen = this.getAttribute('aria-expanded') === 'true';
+            document.querySelectorAll('.sp-faq-q').forEach(b => {
+                b.setAttribute('aria-expanded', 'false');
+                b.closest('.sp-faq-item').classList.remove('open');
+            });
+            if (!isOpen) {
+                this.setAttribute('aria-expanded', 'true');
+                this.closest('.sp-faq-item').classList.add('open');
+            }
+        });
+    });
+
+    // ── Scroll reveal ──
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
+        });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Devis pré-remplissage ──
+    document.querySelectorAll('.sp-devis-btn').forEach(btn => {
+        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', 'Tableau Électrique'));
+    });
+    </script>
+</body>
+</html>
