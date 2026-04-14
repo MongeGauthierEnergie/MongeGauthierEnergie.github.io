@@ -13,43 +13,36 @@
     <meta property="og:description" content="MGE intervient pour tout dépannage électrique à Paris en moins de 2h, 7 jours sur 7. Diagnostic précis, réparation durable. Devis gratuit avant intervention.">
     <meta property="og:url" content="https://MongeGauthierEnergie.github.io/depannage.html">
     <meta property="og:image" content="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=1400&h=800&dpr=1">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ═══ NAVBAR ═══ -->
     <header class="navbar" id="navbar">
         <div class="nav-inner">
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <a href="index.html" class="nav-logo">
-                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
-            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <a href="index.html" class="nav-logo"><img src="images/logo-mge.png" alt="MGE"></a>
             <div class="nav-right">
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">FR</button>
                     <span class="lang-sep">/</span>
                     <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
                 </div>
                 <span class="nav-phone">07 81 90 07 84</span>
-                <a href="careers.html" class="btn-careers-nav">Nous rejoindre</a>
-                <a href="index.html#contact" class="btn-nav">Consultation</a>
+                <a href="careers.html" class="btn-careers-nav" id="ui-careers">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav" id="ui-cta">Consultation</a>
             </div>
         </div>
         <nav class="nav-overlay" id="navOverlay">
             <ul>
-                <li><a href="index.html#services"  onclick="closeMenu()">Solutions</a></li>
-                <li><a href="index.html#expertise" onclick="closeMenu()">Expertises</a></li>
-                <li><a href="index.html#archives"  onclick="closeMenu()">Réalisations</a></li>
-                <li><a href="index.html#contact"   onclick="closeMenu()">Consultation</a></li>
+                <li><a href="index.html#services"  onclick="closeMenu()" id="ui-nav1">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()" id="ui-nav2">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()" id="ui-nav3">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" id="ui-nav4">Consultation</a></li>
             </ul>
             <div class="overlay-footer">
-                <div class="overlay-address">
-                    <span>2 rue Lakanal, 75015 Paris</span>
-                    <span>07 81 90 07 84</span>
-                </div>
+                <div class="overlay-address"><span>2 rue Lakanal, 75015 Paris</span><span>07 81 90 07 84</span></div>
                 <div class="overlay-social">
                     <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
                         <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -64,19 +57,18 @@
         </nav>
     </header>
 
-    <!-- ═══ HERO ═══ -->
     <section class="sp-hero">
         <div class="sp-hero-bg" style="background-image:url('https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=1400&h=800&dpr=1')"></div>
         <div class="sp-hero-overlay"></div>
         <div class="container sp-hero-content">
             <a href="index.html?tab=particulier#services" class="sp-back">
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-                <span>Retour aux solutions</span>
+                <span id="spBackLabel">Retour aux solutions</span>
             </a>
             <div class="sp-hero-inner">
-                <span class="sp-tag">Particulier</span>
-                <h1 class="sp-title">DÉPANNAGE 7J/7</h1>
-                <p class="sp-hero-sub">Intervention rapide pour toute panne électrique à Paris. Diagnostic précis, réparation immédiate, tarif transparent. Disponible 7 jours sur 7.</p>
+                <span class="sp-tag" id="spTag">Particulier</span>
+                <h1 class="sp-title" id="spTitle">DÉPANNAGE 7J/7</h1>
+                <p class="sp-hero-sub" id="spHeroSub">Intervention rapide pour toute panne électrique à Paris. Diagnostic précis, réparation immédiate, tarif transparent. Disponible 7 jours sur 7.</p>
                 <div class="sp-hero-cta">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                     <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
@@ -85,181 +77,166 @@
         </div>
     </section>
 
-    <!-- ═══ STATS ═══ -->
     <section class="sp-stats reveal reveal-up">
         <div class="container">
             <div class="sp-stats-grid">
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">2 h</span>
-                        <span class="sp-stat-label">Délai d'intervention garanti à Paris</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">7j/7</span>
-                        <span class="sp-stat-label">Disponibilité week-end & fériés</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">0 €</span>
-                        <span class="sp-stat-label">Devis systématiquement gratuit</span>
-                    </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-0">2 h</span>
+                    <span class="sp-stat-label" id="stat-lbl-0">Délai d'intervention garanti à Paris</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-1">7j/7</span>
+                    <span class="sp-stat-label" id="stat-lbl-1">Disponibilité week-end & fériés</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-2">0 €</span>
+                    <span class="sp-stat-label" id="stat-lbl-2">Devis systématiquement gratuit</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CONTENU ═══ -->
     <section class="sp-content">
         <div class="container">
             <div class="sp-body">
                 <div class="sp-left reveal reveal-up">
-                    <span class="section-label">Notre service</span>
-                    <p class="sp-desc">Une panne électrique ne prévient pas. Disjoncteur qui saute en permanence, prise défaillante, court-circuit inexpliqué — MGE intervient à Paris 7j/7 avec un technicien qualifié. Notre engagement : un diagnostic transparent avant toute intervention et une réparation durable, pas un simple rafistolage.</p>
+                    <span class="section-label" id="spServiceLabel">Notre service</span>
+                    <p class="sp-desc" id="spDesc">Une panne électrique ne prévient pas. Disjoncteur qui saute en permanence, prise défaillante, court-circuit inexpliqué — MGE intervient à Paris 7j/7 avec un technicien qualifié. Notre engagement : un diagnostic transparent avant toute intervention et une réparation durable, pas un simple rafistolage.</p>
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                 </div>
                 <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
-                    <h3 class="sp-points-title">Ce que comprend ce service</h3>
+                    <h3 class="sp-points-title" id="spPointsTitle">Ce que comprend ce service</h3>
                     <ul class="sp-points">
-                        <li>Intervention sous 2h en urgence</li>
-                        <li>Diagnostic précis et transparent</li>
-                        <li>Réparation prise, interrupteur, circuit</li>
-                        <li>Remplacement fusibles et disjoncteurs</li>
-                        <li>Devis gratuit avant intervention</li>
-                        <li>Disponible week-end et jours fériés</li>
+                        <li id="pt-0">Intervention sous 2h en urgence</li>
+                        <li id="pt-1">Diagnostic précis et transparent</li>
+                        <li id="pt-2">Réparation prise, interrupteur, circuit</li>
+                        <li id="pt-3">Remplacement fusibles et disjoncteurs</li>
+                        <li id="pt-4">Devis gratuit avant intervention</li>
+                        <li id="pt-5">Disponible week-end et jours fériés</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ GALERIE ═══ -->
     <section class="sp-gallery reveal reveal-up">
         <div class="container">
             <div class="sp-gallery-grid">
-                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s">
-                    <img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Dépannage 7j/7" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s">
-                    <img src="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Dépannage 7j/7" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s">
-                    <img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Dépannage 7j/7" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s">
-                    <img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1" alt="Dépannage 7j/7" loading="lazy">
-                </div>
+                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s"><img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="DÉPANNAGE 7J/7" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s"><img src="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="DÉPANNAGE 7J/7" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s"><img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="DÉPANNAGE 7J/7" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s"><img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1" alt="DÉPANNAGE 7J/7" loading="lazy"></div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ ÉTAPES ═══ -->
     <section class="sp-steps-section">
         <div class="container">
             <div class="sp-steps-header reveal reveal-up">
-                <span class="section-label">Notre approche</span>
-                <h2>Comment nous <em>travaillons</em></h2>
+                <span class="section-label" id="spStepsLabel">Notre approche</span>
+                <h2 id="spStepsTitle">Comment nous <em>travaillons</em></h2>
             </div>
             <div class="sp-steps-grid">
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.00s">
                     <span class="sp-step-num">01</span>
                     <div class="sp-step-content">
-                        <h3>Appel & diagnostic</h3>
-                        <p>Décrivez votre panne. Notre technicien vous guide par téléphone pour identifier le problème et évaluer l'urgence.</p>
+                        <h3 id="step-t-0">Appel & diagnostic</h3>
+                        <p id="step-d-0">Décrivez votre panne. Notre technicien vous guide par téléphone pour identifier le problème et évaluer l'urgence.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.12s">
                     <span class="sp-step-num">02</span>
                     <div class="sp-step-content">
-                        <h3>Intervention sur site</h3>
-                        <p>Un électricien qualifié arrive dans les 2 heures. Il effectue un diagnostic complet et vous présente un devis avant de commencer.</p>
+                        <h3 id="step-t-1">Intervention sur site</h3>
+                        <p id="step-d-1">Un électricien qualifié arrive dans les 2 heures. Il effectue un diagnostic complet et vous présente un devis avant de commencer.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.24s">
                     <span class="sp-step-num">03</span>
                     <div class="sp-step-content">
-                        <h3>Réparation</h3>
-                        <p>La plupart des pannes sont résolues en une seule intervention grâce à notre stock de pièces embarquées (disjoncteurs, prises, câbles).</p>
+                        <h3 id="step-t-2">Réparation</h3>
+                        <p id="step-d-2">La plupart des pannes sont résolues en une seule intervention grâce à notre stock de pièces embarquées (disjoncteurs, prises, câbles).</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.36s">
                     <span class="sp-step-num">04</span>
                     <div class="sp-step-content">
-                        <h3>Contrôle & prévention</h3>
-                        <p>Vérification du reste de l'installation pour anticiper d'autres défauts. Rapport d'intervention remis par e-mail.</p>
+                        <h3 id="step-t-3">Contrôle & prévention</h3>
+                        <p id="step-d-3">Vérification du reste de l'installation pour anticiper d'autres défauts. Rapport d'intervention remis par e-mail.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ FAQ ═══ -->
     <section class="sp-faq-section">
         <div class="container">
             <div class="sp-faq-header reveal reveal-up">
-                <span class="section-label">Questions fréquentes</span>
-                <h2>Ce que vous voulez <em>savoir</em></h2>
+                <span class="section-label" id="spFaqLabel">Questions fréquentes</span>
+                <h2 id="spFaqTitle">Ce que vous voulez <em>savoir</em></h2>
             </div>
             <div class="sp-faq-list">
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.00s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Intervenez-vous les week-ends et jours fériés ?</span>
+                        <span id="faq-q-0">Intervenez-vous les week-ends et jours fériés ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Oui, 7 jours sur 7. Le tarif week-end est légèrement majoré mais reste transparent et communiqué avant toute intervention.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-0">Oui, 7 jours sur 7. Le tarif week-end est légèrement majoré mais reste transparent et communiqué avant toute intervention.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.08s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Mon disjoncteur saute dès que je branche un appareil, que faire ?</span>
+                        <span id="faq-q-1">Mon disjoncteur saute dès que je branche un appareil, que faire ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Ne rebranchez pas l'appareil sans identifier l'origine. Cela peut indiquer un court-circuit dans l'appareil lui-même ou une surcharge du circuit. Appelez-nous pour un diagnostic rapide.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-1">Ne rebranchez pas l'appareil sans identifier l'origine. Cela peut indiquer un court-circuit dans l'appareil ou une surcharge du circuit. Appelez-nous pour un diagnostic rapide.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.16s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Puis-je toucher au tableau électrique moi-même ?</span>
+                        <span id="faq-q-2">Puis-je toucher au tableau électrique moi-même ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Le rétablissement d'un disjoncteur est sans danger. En revanche, ne touchez jamais aux fils ou aux bornes de branchement sans être certifié. Contactez-nous pour toute intervention sur le câblage.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-2">Le rétablissement d'un disjoncteur est sans danger. En revanche, ne touchez jamais aux fils ou aux bornes de branchement sans être certifié. Contactez-nous pour toute intervention sur le câblage.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.24s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>La réparation est-elle garantie ?</span>
+                        <span id="faq-q-3">La réparation est-elle garantie ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Oui, toutes nos réparations sont garanties 1 an pièces et main-d'œuvre. Si la panne réapparaît dans ce délai, nous revenons sans frais.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-3">Oui, toutes nos réparations sont garanties 1 an pièces et main-d'œuvre. Si la panne réapparaît dans ce délai, nous revenons sans frais.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ AUTRES SOLUTIONS ═══ -->
     <section class="sp-related">
         <div class="container">
-            <span class="section-label">Autres solutions</span>
+            <span class="section-label" id="spRelatedLabel">Autres solutions</span>
             <div class="sp-related-grid">
                 <a href="tableau.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Tableau Électrique</h3>
+                    <span class="sp-related-tag" id="rel-tag-0">Particulier</span>
+                    <h3 id="rel-t-0">Tableau Électrique</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="normes.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Mise aux Normes</h3>
+                    <span class="sp-related-tag" id="rel-tag-1">Particulier</span>
+                    <h3 id="rel-t-1">Mise aux Normes</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="renovation.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Rénovation</h3>
+                    <span class="sp-related-tag" id="rel-tag-2">Particulier</span>
+                    <h3 id="rel-t-2">Rénovation</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CTA BAND ═══ -->
     <section class="sp-cta-band">
         <div class="container">
             <div class="sp-cta-inner reveal reveal-up">
                 <div class="sp-cta-text">
-                    <p class="sp-cta-label">Prêt à démarrer votre projet ?</p>
-                    <h2 class="sp-cta-title">Parlons de <em>votre projet.</em></h2>
+                    <p class="sp-cta-label" id="spCtaLabel">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title" id="spCtaTitle">Parlons de <em>votre projet.</em></h2>
                 </div>
                 <div class="sp-cta-actions">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
@@ -269,21 +246,20 @@
         </div>
     </section>
 
-    <!-- ═══ FOOTER ═══ -->
     <footer class="footer">
         <div class="container footer-inner">
             <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
-            <p>© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <p id="ui-footer-copy">© 2026 MGE · Monge Gauthier Énergie · Paris</p>
             <div class="footer-links">
-                <a href="index.html#expertise">Expertise</a>
-                <a href="index.html#services">Solutions</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html#expertise" id="ui-footer1">Expertise</a>
+                <a href="index.html#services"  id="ui-footer2">Solutions</a>
+                <a href="index.html#contact"   id="ui-footer3">Contact</a>
             </div>
         </div>
     </footer>
 
     <script>
-    // ── Navbar ──
+    // ── Navbar ──────────────────────────────────────────────────────────
     const hamburger = document.getElementById('hamburger');
     const overlay   = document.getElementById('navOverlay');
     hamburger.addEventListener('click', () => {
@@ -301,18 +277,151 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
-    // ── Lang switch (UI only) ──
+    // ── Traductions ──────────────────────────────────────────────────────
+    const t = {
+        fr: {
+            tag: 'Particulier',
+            slug: 'DÉPANNAGE 7J/7',
+            heroSub: `Intervention rapide pour toute panne électrique à Paris. Diagnostic précis, réparation immédiate, tarif transparent. Disponible 7 jours sur 7.`,
+            desc: `Une panne électrique ne prévient pas. Disjoncteur qui saute en permanence, prise défaillante, court-circuit inexpliqué — MGE intervient à Paris 7j/7 avec un technicien qualifié. Notre engagement : un diagnostic transparent avant toute intervention et une réparation durable, pas un simple rafistolage.`,
+            points: ["Intervention sous 2h en urgence", "Diagnostic pr\u00e9cis et transparent", "R\u00e9paration prise, interrupteur, circuit", "Remplacement fusibles et disjoncteurs", "Devis gratuit avant intervention", "Disponible week-end et jours f\u00e9ri\u00e9s"],
+            statNums: ["2\u202fh", "7j/7", "0\u202f\u20ac"],
+            statLabels: ["D\u00e9lai d'intervention garanti \u00e0 Paris", "Disponibilit\u00e9 week-end & f\u00e9ri\u00e9s", "Devis syst\u00e9matiquement gratuit"],
+            stepTitles: ["Appel & diagnostic", "Intervention sur site", "R\u00e9paration", "Contr\u00f4le & pr\u00e9vention"],
+            stepDescs: ["D\u00e9crivez votre panne. Notre technicien vous guide par t\u00e9l\u00e9phone pour identifier le probl\u00e8me et \u00e9valuer l'urgence.", "Un \u00e9lectricien qualifi\u00e9 arrive dans les 2 heures. Il effectue un diagnostic complet et vous pr\u00e9sente un devis avant de commencer.", "La plupart des pannes sont r\u00e9solues en une seule intervention gr\u00e2ce \u00e0 notre stock de pi\u00e8ces embarqu\u00e9es (disjoncteurs, prises, c\u00e2bles).", "V\u00e9rification du reste de l'installation pour anticiper d'autres d\u00e9fauts. Rapport d'intervention remis par e-mail."],
+            faqQ: ["Intervenez-vous les week-ends et jours f\u00e9ri\u00e9s ?", "Mon disjoncteur saute d\u00e8s que je branche un appareil, que faire ?", "Puis-je toucher au tableau \u00e9lectrique moi-m\u00eame ?", "La r\u00e9paration est-elle garantie ?"],
+            faqA: ["Oui, 7 jours sur 7. Le tarif week-end est l\u00e9g\u00e8rement major\u00e9 mais reste transparent et communiqu\u00e9 avant toute intervention.", "Ne rebranchez pas l'appareil sans identifier l'origine. Cela peut indiquer un court-circuit dans l'appareil ou une surcharge du circuit. Appelez-nous pour un diagnostic rapide.", "Le r\u00e9tablissement d'un disjoncteur est sans danger. En revanche, ne touchez jamais aux fils ou aux bornes de branchement sans \u00eatre certifi\u00e9. Contactez-nous pour toute intervention sur le c\u00e2blage.", "Oui, toutes nos r\u00e9parations sont garanties 1 an pi\u00e8ces et main-d'\u0153uvre. Si la panne r\u00e9appara\u00eet dans ce d\u00e9lai, nous revenons sans frais."],
+            relTags: ["Particulier", "Particulier", "Particulier"],
+            relTitles: ["Tableau \u00c9lectrique", "Mise aux Normes", "R\u00e9novation"],
+            ui: {
+                back: 'Retour aux solutions',
+                sectionService: 'Notre service',
+                pointsTitle: 'Ce que comprend ce service',
+                stepsLabel: 'Notre approche',
+                stepsTitle: 'Comment nous <em>travaillons</em>',
+                faqLabel: 'Questions fréquentes',
+                faqTitle: 'Ce que vous voulez <em>savoir</em>',
+                ctaBtn: 'Demander un devis',
+                ctaLabel: 'Prêt à démarrer votre projet ?',
+                ctaTitle: 'Parlons de <em>votre projet.</em>',
+                relatedLabel: 'Autres solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Nous rejoindre',
+                navCta: 'Consultation',
+                nav1: 'Solutions',
+                nav2: 'Expertises',
+                nav3: 'Réalisations',
+                nav4: 'Consultation',
+            }
+        },
+        en: {
+            tag: 'Residential',
+            slug: 'EMERGENCY REPAIR',
+            heroSub: `Rapid response for any electrical fault across Paris. Accurate diagnosis, immediate repair, transparent pricing. Available 7 days a week.`,
+            desc: `An electrical fault doesn\'t wait. Tripping breaker, faulty socket, unexplained short-circuit — MGE responds in Paris 7/7 with a qualified technician. Our commitment: a transparent diagnosis before any intervention and a lasting repair, not a quick fix.`,
+            points: ["Response within 2 hours for emergencies", "Accurate and transparent diagnosis", "Socket, switch and circuit repair", "Fuse and circuit breaker replacement", "Free quote before intervention", "Available weekends & public holidays"],
+            statNums: ["2\u202fh", "7/7", "\u20ac0"],
+            statLabels: ["Guaranteed response time in Paris", "Availability weekends & holidays", "Quote always free"],
+            stepTitles: ["Call & diagnosis", "On-site intervention", "Repair", "Check & prevention"],
+            stepDescs: ["Describe your fault. Our technician guides you by phone to identify the problem and assess urgency.", "A qualified electrician arrives within 2 hours, carries out a full diagnosis and presents a quote before starting.", "Most faults are resolved in a single visit thanks to our stock of spare parts (breakers, sockets, cables).", "Inspection of the rest of the installation to anticipate other faults. Intervention report sent by email."],
+            faqQ: ["Do you work weekends and public holidays?", "My breaker trips every time I plug in an appliance, what should I do?", "Can I touch the electrical panel myself?", "Is the repair guaranteed?"],
+            faqA: ["Yes, 7 days a week. Weekend rates are slightly higher but always communicated transparently before any intervention.", "Do not plug it back in without identifying the cause. This may indicate a short-circuit in the appliance or a circuit overload. Call us for a rapid diagnosis.", "Resetting a breaker is safe. However, never touch wires or terminals without certification. Contact us for any wiring intervention.", "Yes, all repairs carry a 1-year parts and labour guarantee. If the fault reappears within this period, we return free of charge."],
+            relTags: ["Residential", "Residential", "Residential"],
+            relTitles: ["Electrical Panel", "Compliance", "Renovation"],
+            ui: {
+                back: 'Back to solutions',
+                sectionService: 'Our service',
+                pointsTitle: 'What this service includes',
+                stepsLabel: 'Our approach',
+                stepsTitle: 'How we <em>work</em>',
+                faqLabel: 'Frequently asked questions',
+                faqTitle: 'What you want <em>to know</em>',
+                ctaBtn: 'Request a quote',
+                ctaLabel: 'Ready to get started?',
+                ctaTitle: 'Let's talk about <em>your project.</em>',
+                relatedLabel: 'Other solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Join us',
+                navCta: 'Contact',
+                nav1: 'Solutions',
+                nav2: 'Expertise',
+                nav3: 'Projects',
+                nav4: 'Contact',
+            }
+        }
+    };
+
+    function applyLang(lang) {
+        const d = t[lang];
+        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        const setHTML = (id, v) => { const el = document.getElementById(id); if (el) el.innerHTML = v; };
+
+        // Hero
+        setText('spTag', d.tag);
+        setText('spTitle', d.slug);
+        setText('spHeroSub', d.heroSub);
+        // Stats
+        d.statNums.forEach((n, i) => setText('stat-num-' + i, n));
+        d.statLabels.forEach((l, i) => setText('stat-lbl-' + i, l));
+        // Desc & points
+        setText('spDesc', d.desc);
+        d.points.forEach((p, i) => setText('pt-' + i, p));
+        setText('spPointsTitle', d.pointsTitle);
+        setText('spServiceLabel', d.sectionService);
+        // Steps
+        setHTML('spStepsLabel', d.ui.stepsLabel);
+        setHTML('spStepsTitle', d.ui.stepsTitle);
+        d.stepTitles.forEach((t2, i) => setText('step-t-' + i, t2));
+        d.stepDescs.forEach((t2, i) => setText('step-d-' + i, t2));
+        // FAQ
+        setText('spFaqLabel', d.ui.faqLabel);
+        setHTML('spFaqTitle', d.ui.faqTitle);
+        d.faqQ.forEach((q, i) => setText('faq-q-' + i, q));
+        d.faqA.forEach((a, i) => setText('faq-a-' + i, a));
+        // Related
+        setText('spRelatedLabel', d.ui.relatedLabel);
+        d.relTags.forEach((tag, i) => setText('rel-tag-' + i, tag));
+        d.relTitles.forEach((title, i) => setText('rel-t-' + i, title));
+        // CTA
+        setText('spCtaLabel', d.ui.ctaLabel);
+        setHTML('spCtaTitle', d.ui.ctaTitle);
+        document.querySelectorAll('.sp-devis-btn').forEach(b => b.textContent = d.ui.ctaBtn);
+        document.querySelectorAll('.btn-ghost, .btn-ghost-light').forEach((b, i) => { /* phone stays */ });
+        // Back link
+        setText('spBackLabel', d.ui.back);
+        // Navbar UI
+        setText('ui-careers', d.ui.navCareers);
+        setText('ui-cta', d.ui.navCta);
+        setText('ui-nav1', d.ui.nav1);
+        setText('ui-nav2', d.ui.nav2);
+        setText('ui-nav3', d.ui.nav3);
+        setText('ui-nav4', d.ui.nav4);
+        // Footer
+        setText('ui-footer-copy', d.ui.footerCopy);
+        setText('ui-footer1', d.ui.footerLink1);
+        setText('ui-footer2', d.ui.footerLink2);
+        setText('ui-footer3', d.ui.footerLink3);
+    }
+
     let currentLang = localStorage.getItem('mge-lang') || 'fr';
     function switchLang(lang) {
         currentLang = lang;
         localStorage.setItem('mge-lang', lang);
         document.documentElement.lang = lang;
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        applyLang(lang);
     }
-    // Apply saved lang on load
+    // Init
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+    if (currentLang === 'en') applyLang('en');
 
-    // ── FAQ accordion ──
+    // ── FAQ accordion ────────────────────────────────────────────────────
     document.querySelectorAll('.sp-faq-q').forEach(btn => {
         btn.addEventListener('click', function() {
             const isOpen = this.getAttribute('aria-expanded') === 'true';
@@ -327,7 +436,7 @@
         });
     });
 
-    // ── Scroll reveal ──
+    // ── Scroll reveal ────────────────────────────────────────────────────
     const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
             if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
@@ -335,9 +444,9 @@
     }, { threshold: 0.07 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // ── Devis pré-remplissage ──
+    // ── Devis pré-remplissage ────────────────────────────────────────────
     document.querySelectorAll('.sp-devis-btn').forEach(btn => {
-        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', 'Dépannage 7j/7'));
+        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', document.getElementById('spTitle')?.textContent || ''));
     });
     </script>
 </body>

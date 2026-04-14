@@ -13,43 +13,36 @@
     <meta property="og:description" content="Solutions électriques pour commerces, boutiques et restaurants à Paris. Éclairage vitrine, alimentation caisse, conformité ERP. Devis gratuit.">
     <meta property="og:url" content="https://MongeGauthierEnergie.github.io/commerce.html">
     <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400&auto=format&fit=crop&q=80">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ═══ NAVBAR ═══ -->
     <header class="navbar" id="navbar">
         <div class="nav-inner">
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <a href="index.html" class="nav-logo">
-                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
-            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <a href="index.html" class="nav-logo"><img src="images/logo-mge.png" alt="MGE"></a>
             <div class="nav-right">
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">FR</button>
                     <span class="lang-sep">/</span>
                     <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
                 </div>
                 <span class="nav-phone">07 81 90 07 84</span>
-                <a href="careers.html" class="btn-careers-nav">Nous rejoindre</a>
-                <a href="index.html#contact" class="btn-nav">Consultation</a>
+                <a href="careers.html" class="btn-careers-nav" id="ui-careers">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav" id="ui-cta">Consultation</a>
             </div>
         </div>
         <nav class="nav-overlay" id="navOverlay">
             <ul>
-                <li><a href="index.html#services"  onclick="closeMenu()">Solutions</a></li>
-                <li><a href="index.html#expertise" onclick="closeMenu()">Expertises</a></li>
-                <li><a href="index.html#archives"  onclick="closeMenu()">Réalisations</a></li>
-                <li><a href="index.html#contact"   onclick="closeMenu()">Consultation</a></li>
+                <li><a href="index.html#services"  onclick="closeMenu()" id="ui-nav1">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()" id="ui-nav2">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()" id="ui-nav3">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" id="ui-nav4">Consultation</a></li>
             </ul>
             <div class="overlay-footer">
-                <div class="overlay-address">
-                    <span>2 rue Lakanal, 75015 Paris</span>
-                    <span>07 81 90 07 84</span>
-                </div>
+                <div class="overlay-address"><span>2 rue Lakanal, 75015 Paris</span><span>07 81 90 07 84</span></div>
                 <div class="overlay-social">
                     <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
                         <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -64,19 +57,18 @@
         </nav>
     </header>
 
-    <!-- ═══ HERO ═══ -->
     <section class="sp-hero">
         <div class="sp-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400&auto=format&fit=crop&q=80')"></div>
         <div class="sp-hero-overlay"></div>
         <div class="container sp-hero-content">
             <a href="index.html?tab=entreprise#services" class="sp-back">
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-                <span>Retour aux solutions</span>
+                <span id="spBackLabel">Retour aux solutions</span>
             </a>
             <div class="sp-hero-inner">
-                <span class="sp-tag">Entreprise</span>
-                <h1 class="sp-title">COMMERCE & RETAIL</h1>
-                <p class="sp-hero-sub">Solutions électriques adaptées aux commerces, boutiques et restaurants. Mise en valeur des espaces et fiabilité maximale de l'installation.</p>
+                <span class="sp-tag" id="spTag">Entreprise</span>
+                <h1 class="sp-title" id="spTitle">COMMERCE & RETAIL</h1>
+                <p class="sp-hero-sub" id="spHeroSub">Solutions électriques adaptées aux commerces, boutiques et restaurants. Mise en valeur des espaces et fiabilité maximale de l'installation.</p>
                 <div class="sp-hero-cta">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                     <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
@@ -85,181 +77,166 @@
         </div>
     </section>
 
-    <!-- ═══ STATS ═══ -->
     <section class="sp-stats reveal reveal-up">
         <div class="container">
             <div class="sp-stats-grid">
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">24 h</span>
-                        <span class="sp-stat-label">Délai de remise en service d'urgence</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">ERP</span>
-                        <span class="sp-stat-label">Conformité garantie</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">−40%</span>
-                        <span class="sp-stat-label">Économie énergie avec notre LED pro</span>
-                    </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-0">24 h</span>
+                    <span class="sp-stat-label" id="stat-lbl-0">Délai de remise en service d'urgence</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-1">ERP</span>
+                    <span class="sp-stat-label" id="stat-lbl-1">Conformité garantie</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-2">−40%</span>
+                    <span class="sp-stat-label" id="stat-lbl-2">Économie énergie avec notre LED pro</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CONTENU ═══ -->
     <section class="sp-content">
         <div class="container">
             <div class="sp-body">
                 <div class="sp-left reveal reveal-up">
-                    <span class="section-label">Notre service</span>
-                    <p class="sp-desc">Dans un commerce, chaque détail compte. L'éclairage vitrine qui attire le client, les prises de caisse toujours disponibles, l'alimentation fiable des équipements de cuisine — MGE conçoit des installations pensées pour la performance commerciale. Nos interventions sont rapides et nous respectons votre rythme d'activité.</p>
+                    <span class="section-label" id="spServiceLabel">Notre service</span>
+                    <p class="sp-desc" id="spDesc">Dans un commerce, chaque détail compte. L'éclairage vitrine qui attire le client, les prises de caisse toujours disponibles, l'alimentation fiable des équipements de cuisine — MGE conçoit des installations pensées pour la performance commerciale. Nos interventions sont rapides et nous respectons votre rythme d'activité.</p>
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                 </div>
                 <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
-                    <h3 class="sp-points-title">Ce que comprend ce service</h3>
+                    <h3 class="sp-points-title" id="spPointsTitle">Ce que comprend ce service</h3>
                     <ul class="sp-points">
-                        <li>Éclairage vitrine et ambiance</li>
-                        <li>Alimentation caisses et TPE</li>
-                        <li>Signalétique lumineuse</li>
-                        <li>Respect normes ERP</li>
-                        <li>Maintenance préventive</li>
-                        <li>Remise en service express</li>
+                        <li id="pt-0">Éclairage vitrine et ambiance</li>
+                        <li id="pt-1">Alimentation caisses et TPE</li>
+                        <li id="pt-2">Signalétique lumineuse</li>
+                        <li id="pt-3">Respect normes ERP</li>
+                        <li id="pt-4">Maintenance préventive</li>
+                        <li id="pt-5">Remise en service express</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ GALERIE ═══ -->
     <section class="sp-gallery reveal reveal-up">
         <div class="container">
             <div class="sp-gallery-grid">
-                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75" alt="Commerce & Retail" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s">
-                    <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=900&auto=format&fit=crop&q=75" alt="Commerce & Retail" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75" alt="Commerce & Retail" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s">
-                    <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=500&auto=format&fit=crop&q=75" alt="Commerce & Retail" loading="lazy">
-                </div>
+                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75" alt="COMMERCE & RETAIL" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s"><img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=900&auto=format&fit=crop&q=75" alt="COMMERCE & RETAIL" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=75" alt="COMMERCE & RETAIL" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s"><img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=500&auto=format&fit=crop&q=75" alt="COMMERCE & RETAIL" loading="lazy"></div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ ÉTAPES ═══ -->
     <section class="sp-steps-section">
         <div class="container">
             <div class="sp-steps-header reveal reveal-up">
-                <span class="section-label">Notre approche</span>
-                <h2>Comment nous <em>travaillons</em></h2>
+                <span class="section-label" id="spStepsLabel">Notre approche</span>
+                <h2 id="spStepsTitle">Comment nous <em>travaillons</em></h2>
             </div>
             <div class="sp-steps-grid">
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.00s">
                     <span class="sp-step-num">01</span>
                     <div class="sp-step-content">
-                        <h3>Visite & brief commercial</h3>
-                        <p>Compréhension de votre concept, de votre parcours client et de vos contraintes opérationnelles. Prise en compte du planning d'ouverture.</p>
+                        <h3 id="step-t-0">Visite & brief commercial</h3>
+                        <p id="step-d-0">Compréhension de votre concept, de votre parcours client et de vos contraintes opérationnelles. Prise en compte du planning d'ouverture.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.12s">
                     <span class="sp-step-num">02</span>
                     <div class="sp-step-content">
-                        <h3>Plan d'éclairage & alimentation</h3>
-                        <p>Conception du plan lumière (vitrine, ambiance, accentuation) et du plan d'alimentation (caisses, cuisine, signalétique).</p>
+                        <h3 id="step-t-1">Plan d'éclairage & alimentation</h3>
+                        <p id="step-d-1">Conception du plan lumière (vitrine, ambiance, accentuation) et du plan d'alimentation (caisses, cuisine, signalétique).</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.24s">
                     <span class="sp-step-num">03</span>
                     <div class="sp-step-content">
-                        <h3>Travaux</h3>
-                        <p>Installation complète. Toutes les interventions de gros œuvre sont planifiées la nuit ou le week-end pour éviter toute fermeture.</p>
+                        <h3 id="step-t-2">Travaux</h3>
+                        <p id="step-d-2">Installation complète. Toutes les interventions de gros œuvre sont planifiées la nuit ou le week-end pour éviter toute fermeture.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.36s">
                     <span class="sp-step-num">04</span>
                     <div class="sp-step-content">
-                        <h3>Livraison & suivi</h3>
-                        <p>Mise en service complète le jour J. Contrat de maintenance préventive proposé pour garantir la continuité de votre activité.</p>
+                        <h3 id="step-t-3">Livraison & suivi</h3>
+                        <p id="step-d-3">Mise en service complète le jour J. Contrat de maintenance préventive proposé pour garantir la continuité de votre activité.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ FAQ ═══ -->
     <section class="sp-faq-section">
         <div class="container">
             <div class="sp-faq-header reveal reveal-up">
-                <span class="section-label">Questions fréquentes</span>
-                <h2>Ce que vous voulez <em>savoir</em></h2>
+                <span class="section-label" id="spFaqLabel">Questions fréquentes</span>
+                <h2 id="spFaqTitle">Ce que vous voulez <em>savoir</em></h2>
             </div>
             <div class="sp-faq-list">
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.00s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Peut-on travailler la nuit pour ne pas fermer le commerce ?</span>
+                        <span id="faq-q-0">Peut-on travailler la nuit pour ne pas fermer le commerce ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>C'est notre organisation habituelle pour les commerces. Nous coordonnons avec vous pour que toutes les interventions importantes se fassent hors des heures d'ouverture.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-0">C'est notre organisation habituelle pour les commerces. Nous coordonnons avec vous pour que toutes les interventions importantes se fassent hors des heures d'ouverture.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.08s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Quelle réglementation s'applique à mon restaurant ou ma boutique ?</span>
+                        <span id="faq-q-1">Quelle réglementation s'applique à mon restaurant ou ma boutique ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Les établissements recevant du public (ERP) sont soumis à des règles strictes : éclairage de sécurité, protection incendie, accessibilité. Nous vérifions et mettons en conformité l'ensemble.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-1">Les établissements recevant du public (ERP) sont soumis à des règles strictes : éclairage de sécurité, protection incendie, accessibilité. Nous vérifions et mettons en conformité l'ensemble.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.16s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Proposez-vous des solutions d'éclairage pour les vitrines ?</span>
+                        <span id="faq-q-2">Proposez-vous des solutions d'éclairage pour les vitrines ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Oui, c'est une de nos spécialités. Spots LED orientables, rubans lumineux, éclairage de mise en valeur des produits — nous concevons des solutions qui valorisent votre marchandise.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-2">Oui, c'est une de nos spécialités. Spots LED orientables, rubans lumineux, éclairage de mise en valeur des produits — nous concevons des solutions qui valorisent votre marchandise.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.24s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Que faire en cas de panne en plein service ?</span>
+                        <span id="faq-q-3">Que faire en cas de panne en plein service ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Appelez-nous directement. Nous intervenons en urgence dans les 2 heures pour les commerces sous contrat. Sans contrat, nous faisons tout notre possible pour intervenir le jour même.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-3">Appelez-nous directement. Nous intervenons en urgence dans les 2 heures pour les commerces sous contrat. Sans contrat, nous faisons tout notre possible pour intervenir le jour même.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ AUTRES SOLUTIONS ═══ -->
     <section class="sp-related">
         <div class="container">
-            <span class="section-label">Autres solutions</span>
+            <span class="section-label" id="spRelatedLabel">Autres solutions</span>
             <div class="sp-related-grid">
                 <a href="tertiaire.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Entreprise</span>
-                    <h3>Locaux Tertiaires</h3>
+                    <span class="sp-related-tag" id="rel-tag-0">Entreprise</span>
+                    <h3 id="rel-t-0">Locaux Tertiaires</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="infrastructure.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Entreprise</span>
-                    <h3>Infrastructure</h3>
+                    <span class="sp-related-tag" id="rel-tag-1">Entreprise</span>
+                    <h3 id="rel-t-1">Infrastructure</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="maintenance.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Entreprise</span>
-                    <h3>Maintenance</h3>
+                    <span class="sp-related-tag" id="rel-tag-2">Entreprise</span>
+                    <h3 id="rel-t-2">Maintenance</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CTA BAND ═══ -->
     <section class="sp-cta-band">
         <div class="container">
             <div class="sp-cta-inner reveal reveal-up">
                 <div class="sp-cta-text">
-                    <p class="sp-cta-label">Prêt à démarrer votre projet ?</p>
-                    <h2 class="sp-cta-title">Parlons de <em>votre projet.</em></h2>
+                    <p class="sp-cta-label" id="spCtaLabel">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title" id="spCtaTitle">Parlons de <em>votre projet.</em></h2>
                 </div>
                 <div class="sp-cta-actions">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
@@ -269,21 +246,20 @@
         </div>
     </section>
 
-    <!-- ═══ FOOTER ═══ -->
     <footer class="footer">
         <div class="container footer-inner">
             <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
-            <p>© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <p id="ui-footer-copy">© 2026 MGE · Monge Gauthier Énergie · Paris</p>
             <div class="footer-links">
-                <a href="index.html#expertise">Expertise</a>
-                <a href="index.html#services">Solutions</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html#expertise" id="ui-footer1">Expertise</a>
+                <a href="index.html#services"  id="ui-footer2">Solutions</a>
+                <a href="index.html#contact"   id="ui-footer3">Contact</a>
             </div>
         </div>
     </footer>
 
     <script>
-    // ── Navbar ──
+    // ── Navbar ──────────────────────────────────────────────────────────
     const hamburger = document.getElementById('hamburger');
     const overlay   = document.getElementById('navOverlay');
     hamburger.addEventListener('click', () => {
@@ -301,18 +277,151 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
-    // ── Lang switch (UI only) ──
+    // ── Traductions ──────────────────────────────────────────────────────
+    const t = {
+        fr: {
+            tag: 'Entreprise',
+            slug: 'COMMERCE & RETAIL',
+            heroSub: `Solutions électriques adaptées aux commerces, boutiques et restaurants. Mise en valeur des espaces et fiabilité maximale de l\'installation.`,
+            desc: `Dans un commerce, chaque détail compte. L\'éclairage vitrine qui attire le client, les prises de caisse toujours disponibles, l\'alimentation fiable des équipements de cuisine — MGE conçoit des installations pensées pour la performance commerciale. Nos interventions sont rapides et nous respectons votre rythme d\'activité.`,
+            points: ["\u00c9clairage vitrine et ambiance", "Alimentation caisses et TPE", "Signal\u00e9tique lumineuse", "Respect normes ERP", "Maintenance pr\u00e9ventive", "Remise en service express"],
+            statNums: ["24\u202fh", "ERP", "\u221240%"],
+            statLabels: ["D\u00e9lai de remise en service d'urgence", "Conformit\u00e9 garantie", "\u00c9conomie \u00e9nergie avec notre LED pro"],
+            stepTitles: ["Visite & brief commercial", "Plan d'\u00e9clairage & alimentation", "Travaux", "Livraison & suivi"],
+            stepDescs: ["Compr\u00e9hension de votre concept, de votre parcours client et de vos contraintes op\u00e9rationnelles. Prise en compte du planning d'ouverture.", "Conception du plan lumi\u00e8re (vitrine, ambiance, accentuation) et du plan d'alimentation (caisses, cuisine, signal\u00e9tique).", "Installation compl\u00e8te. Toutes les interventions de gros \u0153uvre sont planifi\u00e9es la nuit ou le week-end pour \u00e9viter toute fermeture.", "Mise en service compl\u00e8te le jour J. Contrat de maintenance pr\u00e9ventive propos\u00e9 pour garantir la continuit\u00e9 de votre activit\u00e9."],
+            faqQ: ["Peut-on travailler la nuit pour ne pas fermer le commerce ?", "Quelle r\u00e9glementation s'applique \u00e0 mon restaurant ou ma boutique ?", "Proposez-vous des solutions d'\u00e9clairage pour les vitrines ?", "Que faire en cas de panne en plein service ?"],
+            faqA: ["C'est notre organisation habituelle pour les commerces. Nous coordonnons avec vous pour que toutes les interventions importantes se fassent hors des heures d'ouverture.", "Les \u00e9tablissements recevant du public (ERP) sont soumis \u00e0 des r\u00e8gles strictes : \u00e9clairage de s\u00e9curit\u00e9, protection incendie, accessibilit\u00e9. Nous v\u00e9rifions et mettons en conformit\u00e9 l'ensemble.", "Oui, c'est une de nos sp\u00e9cialit\u00e9s. Spots LED orientables, rubans lumineux, \u00e9clairage de mise en valeur des produits \u2014 nous concevons des solutions qui valorisent votre marchandise.", "Appelez-nous directement. Nous intervenons en urgence dans les 2 heures pour les commerces sous contrat. Sans contrat, nous faisons tout notre possible pour intervenir le jour m\u00eame."],
+            relTags: ["Entreprise", "Entreprise", "Entreprise"],
+            relTitles: ["Locaux Tertiaires", "Infrastructure", "Maintenance"],
+            ui: {
+                back: 'Retour aux solutions',
+                sectionService: 'Notre service',
+                pointsTitle: 'Ce que comprend ce service',
+                stepsLabel: 'Notre approche',
+                stepsTitle: 'Comment nous <em>travaillons</em>',
+                faqLabel: 'Questions fréquentes',
+                faqTitle: 'Ce que vous voulez <em>savoir</em>',
+                ctaBtn: 'Demander un devis',
+                ctaLabel: 'Prêt à démarrer votre projet ?',
+                ctaTitle: 'Parlons de <em>votre projet.</em>',
+                relatedLabel: 'Autres solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Nous rejoindre',
+                navCta: 'Consultation',
+                nav1: 'Solutions',
+                nav2: 'Expertises',
+                nav3: 'Réalisations',
+                nav4: 'Consultation',
+            }
+        },
+        en: {
+            tag: 'Commercial',
+            slug: 'RETAIL & SHOPS',
+            heroSub: `Electrical solutions tailored for retail stores, boutiques and restaurants. Space enhancement and maximum installation reliability.`,
+            desc: `In retail, every detail counts. The display lighting that attracts customers, always-available till sockets, reliable kitchen equipment power — MGE designs installations focused on commercial performance. Our interventions are fast and we respect your business schedule.`,
+            points: ["Display and ambient lighting", "Cash register and payment terminal power", "Illuminated signage", "ERP compliance", "Preventive maintenance", "Express recommissioning"],
+            statNums: ["24\u202fh", "ERP", "\u221240%"],
+            statLabels: ["Emergency recommissioning time", "Compliance guaranteed", "Energy saving with our pro LED"],
+            stepTitles: ["Visit & brief", "Lighting & power plan", "Works", "Handover & support"],
+            stepDescs: ["Understanding your concept, customer journey and operational constraints. Taking into account your opening schedule.", "Display, ambient and accent lighting plan, plus power plan for tills, kitchen and signage.", "Full installation. All major works scheduled at night or weekends to avoid any closure.", "Full commissioning on day one. Preventive maintenance contract proposed to guarantee business continuity."],
+            faqQ: ["Can you work nights to avoid closing the shop?", "What regulations apply to my restaurant or shop?", "Do you offer display window lighting solutions?", "What should I do in case of a breakdown during service?"],
+            faqA: ["This is our standard organisation for retail clients. We coordinate with you so all major interventions happen outside opening hours.", "Establishments open to the public (ERP) are subject to strict rules: emergency lighting, fire protection, accessibility. We check and comply with everything.", "Yes, it is one of our specialities. Adjustable LED spots, light strips, product highlighting \u2014 we design solutions that showcase your merchandise.", "Call us directly. We respond within 2 hours for contract clients. Without a contract, we do everything possible to attend the same day."],
+            relTags: ["Commercial", "Commercial", "Commercial"],
+            relTitles: ["Office Buildings", "Infrastructure", "Maintenance"],
+            ui: {
+                back: 'Back to solutions',
+                sectionService: 'Our service',
+                pointsTitle: 'What this service includes',
+                stepsLabel: 'Our approach',
+                stepsTitle: 'How we <em>work</em>',
+                faqLabel: 'Frequently asked questions',
+                faqTitle: 'What you want <em>to know</em>',
+                ctaBtn: 'Request a quote',
+                ctaLabel: 'Ready to get started?',
+                ctaTitle: 'Let's talk about <em>your project.</em>',
+                relatedLabel: 'Other solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Join us',
+                navCta: 'Contact',
+                nav1: 'Solutions',
+                nav2: 'Expertise',
+                nav3: 'Projects',
+                nav4: 'Contact',
+            }
+        }
+    };
+
+    function applyLang(lang) {
+        const d = t[lang];
+        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        const setHTML = (id, v) => { const el = document.getElementById(id); if (el) el.innerHTML = v; };
+
+        // Hero
+        setText('spTag', d.tag);
+        setText('spTitle', d.slug);
+        setText('spHeroSub', d.heroSub);
+        // Stats
+        d.statNums.forEach((n, i) => setText('stat-num-' + i, n));
+        d.statLabels.forEach((l, i) => setText('stat-lbl-' + i, l));
+        // Desc & points
+        setText('spDesc', d.desc);
+        d.points.forEach((p, i) => setText('pt-' + i, p));
+        setText('spPointsTitle', d.pointsTitle);
+        setText('spServiceLabel', d.sectionService);
+        // Steps
+        setHTML('spStepsLabel', d.ui.stepsLabel);
+        setHTML('spStepsTitle', d.ui.stepsTitle);
+        d.stepTitles.forEach((t2, i) => setText('step-t-' + i, t2));
+        d.stepDescs.forEach((t2, i) => setText('step-d-' + i, t2));
+        // FAQ
+        setText('spFaqLabel', d.ui.faqLabel);
+        setHTML('spFaqTitle', d.ui.faqTitle);
+        d.faqQ.forEach((q, i) => setText('faq-q-' + i, q));
+        d.faqA.forEach((a, i) => setText('faq-a-' + i, a));
+        // Related
+        setText('spRelatedLabel', d.ui.relatedLabel);
+        d.relTags.forEach((tag, i) => setText('rel-tag-' + i, tag));
+        d.relTitles.forEach((title, i) => setText('rel-t-' + i, title));
+        // CTA
+        setText('spCtaLabel', d.ui.ctaLabel);
+        setHTML('spCtaTitle', d.ui.ctaTitle);
+        document.querySelectorAll('.sp-devis-btn').forEach(b => b.textContent = d.ui.ctaBtn);
+        document.querySelectorAll('.btn-ghost, .btn-ghost-light').forEach((b, i) => { /* phone stays */ });
+        // Back link
+        setText('spBackLabel', d.ui.back);
+        // Navbar UI
+        setText('ui-careers', d.ui.navCareers);
+        setText('ui-cta', d.ui.navCta);
+        setText('ui-nav1', d.ui.nav1);
+        setText('ui-nav2', d.ui.nav2);
+        setText('ui-nav3', d.ui.nav3);
+        setText('ui-nav4', d.ui.nav4);
+        // Footer
+        setText('ui-footer-copy', d.ui.footerCopy);
+        setText('ui-footer1', d.ui.footerLink1);
+        setText('ui-footer2', d.ui.footerLink2);
+        setText('ui-footer3', d.ui.footerLink3);
+    }
+
     let currentLang = localStorage.getItem('mge-lang') || 'fr';
     function switchLang(lang) {
         currentLang = lang;
         localStorage.setItem('mge-lang', lang);
         document.documentElement.lang = lang;
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        applyLang(lang);
     }
-    // Apply saved lang on load
+    // Init
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+    if (currentLang === 'en') applyLang('en');
 
-    // ── FAQ accordion ──
+    // ── FAQ accordion ────────────────────────────────────────────────────
     document.querySelectorAll('.sp-faq-q').forEach(btn => {
         btn.addEventListener('click', function() {
             const isOpen = this.getAttribute('aria-expanded') === 'true';
@@ -327,7 +436,7 @@
         });
     });
 
-    // ── Scroll reveal ──
+    // ── Scroll reveal ────────────────────────────────────────────────────
     const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
             if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
@@ -335,9 +444,9 @@
     }, { threshold: 0.07 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // ── Devis pré-remplissage ──
+    // ── Devis pré-remplissage ────────────────────────────────────────────
     document.querySelectorAll('.sp-devis-btn').forEach(btn => {
-        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', 'Commerce & Retail'));
+        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', document.getElementById('spTitle')?.textContent || ''));
     });
     </script>
 </body>

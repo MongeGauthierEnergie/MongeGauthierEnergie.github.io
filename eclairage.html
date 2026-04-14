@@ -13,43 +13,36 @@
     <meta property="og:description" content="MGE conçoit et installe vos éclairages sur-mesure à Paris : lumière d'accentuation, éclairage indirect, LEDs architecturales, variateurs. Devis gratuit.">
     <meta property="og:url" content="https://MongeGauthierEnergie.github.io/eclairage.html">
     <meta property="og:image" content="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=1400&h=800&dpr=1">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ═══ NAVBAR ═══ -->
     <header class="navbar" id="navbar">
         <div class="nav-inner">
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <a href="index.html" class="nav-logo">
-                <img src="images/logo-mge.png" alt="MGE — Monge Gauthier Énergie">
-            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <a href="index.html" class="nav-logo"><img src="images/logo-mge.png" alt="MGE"></a>
             <div class="nav-right">
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+                    <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">FR</button>
                     <span class="lang-sep">/</span>
                     <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
                 </div>
                 <span class="nav-phone">07 81 90 07 84</span>
-                <a href="careers.html" class="btn-careers-nav">Nous rejoindre</a>
-                <a href="index.html#contact" class="btn-nav">Consultation</a>
+                <a href="careers.html" class="btn-careers-nav" id="ui-careers">Nous rejoindre</a>
+                <a href="index.html#contact" class="btn-nav" id="ui-cta">Consultation</a>
             </div>
         </div>
         <nav class="nav-overlay" id="navOverlay">
             <ul>
-                <li><a href="index.html#services"  onclick="closeMenu()">Solutions</a></li>
-                <li><a href="index.html#expertise" onclick="closeMenu()">Expertises</a></li>
-                <li><a href="index.html#archives"  onclick="closeMenu()">Réalisations</a></li>
-                <li><a href="index.html#contact"   onclick="closeMenu()">Consultation</a></li>
+                <li><a href="index.html#services"  onclick="closeMenu()" id="ui-nav1">Solutions</a></li>
+                <li><a href="index.html#expertise" onclick="closeMenu()" id="ui-nav2">Expertises</a></li>
+                <li><a href="index.html#archives"  onclick="closeMenu()" id="ui-nav3">Réalisations</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" id="ui-nav4">Consultation</a></li>
             </ul>
             <div class="overlay-footer">
-                <div class="overlay-address">
-                    <span>2 rue Lakanal, 75015 Paris</span>
-                    <span>07 81 90 07 84</span>
-                </div>
+                <div class="overlay-address"><span>2 rue Lakanal, 75015 Paris</span><span>07 81 90 07 84</span></div>
                 <div class="overlay-social">
                     <a href="https://www.instagram.com/mge_energie" target="_blank" aria-label="Instagram MGE" onclick="closeMenu()">
                         <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -64,19 +57,18 @@
         </nav>
     </header>
 
-    <!-- ═══ HERO ═══ -->
     <section class="sp-hero">
         <div class="sp-hero-bg" style="background-image:url('https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=1400&h=800&dpr=1')"></div>
         <div class="sp-hero-overlay"></div>
         <div class="container sp-hero-content">
             <a href="index.html?tab=particulier#services" class="sp-back">
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-                <span>Retour aux solutions</span>
+                <span id="spBackLabel">Retour aux solutions</span>
             </a>
             <div class="sp-hero-inner">
-                <span class="sp-tag">Particulier</span>
-                <h1 class="sp-title">ÉCLAIRAGE</h1>
-                <p class="sp-hero-sub">Conception et installation d'éclairages sur-mesure : lumière d'accentuation, éclairage indirect, LEDs architecturales. Chaque scène de vie sublimée par la lumière.</p>
+                <span class="sp-tag" id="spTag">Particulier</span>
+                <h1 class="sp-title" id="spTitle">ÉCLAIRAGE</h1>
+                <p class="sp-hero-sub" id="spHeroSub">Conception et installation d'éclairages sur-mesure : lumière d'accentuation, éclairage indirect, LEDs architecturales. Chaque scène de vie sublimée par la lumière.</p>
                 <div class="sp-hero-cta">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                     <a href="tel:0781900784" class="btn-ghost-light">07 81 90 07 84</a>
@@ -85,181 +77,166 @@
         </div>
     </section>
 
-    <!-- ═══ STATS ═══ -->
     <section class="sp-stats reveal reveal-up">
         <div class="container">
             <div class="sp-stats-grid">
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">−70%</span>
-                        <span class="sp-stat-label">Économie sur la facture énergie</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">5 ans</span>
-                        <span class="sp-stat-label">Garantie sur les équipements LED</span>
-                    </div>
-                    <div class="sp-stat-item">
-                        <span class="sp-stat-num">300+</span>
-                        <span class="sp-stat-label">Points lumineux installés par an</span>
-                    </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-0">−70%</span>
+                    <span class="sp-stat-label" id="stat-lbl-0">Économie sur la facture énergie</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-1">5 ans</span>
+                    <span class="sp-stat-label" id="stat-lbl-1">Garantie sur les équipements LED</span>
+                </div>
+                <div class="sp-stat-item">
+                    <span class="sp-stat-num" id="stat-num-2">300+</span>
+                    <span class="sp-stat-label" id="stat-lbl-2">Points lumineux installés par an</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CONTENU ═══ -->
     <section class="sp-content">
         <div class="container">
             <div class="sp-body">
                 <div class="sp-left reveal reveal-up">
-                    <span class="section-label">Notre service</span>
-                    <p class="sp-desc">L'éclairage est la touche finale qui révèle un intérieur. MGE conçoit des installations lumineuses sur-mesure, en parfaite harmonie avec votre décoration. De l'étude lumineuse à la mise en service des gradateurs, nous orchestrons chaque ambiance pour que votre intérieur parisien soit mis en valeur à toute heure de la journée.</p>
+                    <span class="section-label" id="spServiceLabel">Notre service</span>
+                    <p class="sp-desc" id="spDesc">L'éclairage est la touche finale qui révèle un intérieur. MGE conçoit des installations lumineuses sur-mesure, en parfaite harmonie avec votre décoration. De l'étude lumineuse à la mise en service des gradateurs, nous orchestrons chaque ambiance pour que votre intérieur parisien soit mis en valeur à toute heure.</p>
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
                 </div>
                 <div class="sp-right reveal reveal-up" style="transition-delay:.15s">
-                    <h3 class="sp-points-title">Ce que comprend ce service</h3>
+                    <h3 class="sp-points-title" id="spPointsTitle">Ce que comprend ce service</h3>
                     <ul class="sp-points">
-                        <li>Étude lumineuse personnalisée</li>
-                        <li>LED basse consommation haut de gamme</li>
-                        <li>Variateurs et scènes lumineuses</li>
-                        <li>Spots encastrés, rails et rubans LED</li>
-                        <li>Éclairage extérieur et paysager</li>
-                        <li>Intégration domotique possible</li>
+                        <li id="pt-0">Étude lumineuse personnalisée</li>
+                        <li id="pt-1">LED basse consommation haut de gamme</li>
+                        <li id="pt-2">Variateurs et scènes lumineuses</li>
+                        <li id="pt-3">Spots encastrés, rails et rubans LED</li>
+                        <li id="pt-4">Éclairage extérieur et paysager</li>
+                        <li id="pt-5">Intégration domotique possible</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ GALERIE ═══ -->
     <section class="sp-gallery reveal reveal-up">
         <div class="container">
             <div class="sp-gallery-grid">
-                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s">
-                    <img src="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Éclairage" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s">
-                    <img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Éclairage" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s">
-                    <img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Éclairage" loading="lazy">
-                </div>
-                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s">
-                    <img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1" alt="Éclairage" loading="lazy">
-                </div>
+                <div class="sp-gallery-item sp-gallery-item--1 reveal reveal-up" style="transition-delay:0.0s"><img src="https://images.pexels.com/photos/28620165/pexels-photo-28620165.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="ÉCLAIRAGE" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--2 reveal reveal-up" style="transition-delay:0.1s"><img src="https://images.pexels.com/photos/3457299/pexels-photo-3457299.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="ÉCLAIRAGE" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--3 reveal reveal-up" style="transition-delay:0.2s"><img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="ÉCLAIRAGE" loading="lazy"></div>
+                <div class="sp-gallery-item sp-gallery-item--4 reveal reveal-up" style="transition-delay:0.3s"><img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1" alt="ÉCLAIRAGE" loading="lazy"></div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ ÉTAPES ═══ -->
     <section class="sp-steps-section">
         <div class="container">
             <div class="sp-steps-header reveal reveal-up">
-                <span class="section-label">Notre approche</span>
-                <h2>Comment nous <em>travaillons</em></h2>
+                <span class="section-label" id="spStepsLabel">Notre approche</span>
+                <h2 id="spStepsTitle">Comment nous <em>travaillons</em></h2>
             </div>
             <div class="sp-steps-grid">
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.00s">
                     <span class="sp-step-num">01</span>
                     <div class="sp-step-content">
-                        <h3>Étude lumineuse</h3>
-                        <p>Analyse de vos espaces, de la lumière naturelle et de vos usages. Élaboration d'un plan lumière sur-mesure avec simulation.</p>
+                        <h3 id="step-t-0">Étude lumineuse</h3>
+                        <p id="step-d-0">Analyse de vos espaces, de la lumière naturelle et de vos usages. Élaboration d'un plan lumière sur-mesure avec simulation.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.12s">
                     <span class="sp-step-num">02</span>
                     <div class="sp-step-content">
-                        <h3>Sélection</h3>
-                        <p>Choix des sources lumineuses (spots, suspensions, rubans, projecteurs) en accord avec votre décorateur et vos préférences.</p>
+                        <h3 id="step-t-1">Sélection</h3>
+                        <p id="step-d-1">Choix des sources lumineuses (spots, suspensions, rubans, projecteurs) en accord avec votre décorateur et vos préférences.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.24s">
                     <span class="sp-step-num">03</span>
                     <div class="sp-step-content">
-                        <h3>Installation</h3>
-                        <p>Câblage et pose des luminaires, variateurs et contrôleurs. Cheminement des câbles totalement dissimulé.</p>
+                        <h3 id="step-t-2">Installation</h3>
+                        <p id="step-d-2">Câblage et pose des luminaires, variateurs et contrôleurs. Cheminement des câbles totalement dissimulé.</p>
                     </div>
                 </div>
                 <div class="sp-step reveal reveal-up" style="transition-delay:0.36s">
                     <span class="sp-step-num">04</span>
                     <div class="sp-step-content">
-                        <h3>Réglages & formation</h3>
-                        <p>Programmation des scènes lumineuses, réglage des intensités, et formation à l'utilisation de votre système.</p>
+                        <h3 id="step-t-3">Réglages & formation</h3>
+                        <p id="step-d-3">Programmation des scènes lumineuses, réglage des intensités, et formation à l'utilisation de votre système.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ FAQ ═══ -->
     <section class="sp-faq-section">
         <div class="container">
             <div class="sp-faq-header reveal reveal-up">
-                <span class="section-label">Questions fréquentes</span>
-                <h2>Ce que vous voulez <em>savoir</em></h2>
+                <span class="section-label" id="spFaqLabel">Questions fréquentes</span>
+                <h2 id="spFaqTitle">Ce que vous voulez <em>savoir</em></h2>
             </div>
             <div class="sp-faq-list">
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.00s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Quelle est la différence entre éclairage indirect et d'accentuation ?</span>
+                        <span id="faq-q-0">Quelle est la différence entre éclairage indirect et d'accentuation ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>L'éclairage indirect crée une ambiance douce en diffusant la lumière sur les murs ou le plafond. L'accentuation met en valeur un tableau, un meuble ou un détail architectural avec un faisceau ciblé.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-0">L'éclairage indirect crée une ambiance douce en diffusant la lumière sur les murs ou le plafond. L'accentuation met en valeur un tableau, un meuble ou un détail architectural avec un faisceau ciblé.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.08s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Peut-on intégrer l'éclairage à une installation domotique existante ?</span>
+                        <span id="faq-q-1">Peut-on intégrer l'éclairage à une installation domotique existante ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Oui, nous sommes compatibles avec les systèmes KNX, Control4, Somfy et la plupart des standards du marché. Votre éclairage pourra être piloté depuis votre smartphone.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-1">Oui, nous sommes compatibles avec les systèmes KNX, Control4, Somfy et la plupart des standards du marché. Votre éclairage pourra être piloté depuis votre smartphone.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.16s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Combien de scènes lumineuses peut-on programmer ?</span>
+                        <span id="faq-q-2">Combien de scènes lumineuses peut-on programmer ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Autant que vous le souhaitez : réveil, journée de travail, dîner en amoureux, soirée, nuit… Chaque pièce peut avoir ses propres scènes activables en un toucher.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-2">Autant que vous le souhaitez : réveil, journée de travail, dîner en amoureux, soirée, nuit… Chaque pièce peut avoir ses propres scènes activables en un toucher.</p></div>
                 </div>
                 <div class="sp-faq-item reveal reveal-up" style="transition-delay:0.24s">
                     <button class="sp-faq-q" aria-expanded="false">
-                        <span>Les LEDs sont-elles compatibles avec les variateurs ?</span>
+                        <span id="faq-q-3">Les LEDs sont-elles compatibles avec les variateurs ?</span>
                         <svg class="sp-faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="sp-faq-a"><p>Toutes les LEDs que nous installons sont dimmables et testées avec nos variateurs pour garantir une variation douce, sans scintillement ni bourdonnement.</p></div>
+                    <div class="sp-faq-a"><p id="faq-a-3">Toutes les LEDs que nous installons sont dimmables et testées avec nos variateurs pour garantir une variation douce, sans scintillement ni bourdonnement.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ AUTRES SOLUTIONS ═══ -->
     <section class="sp-related">
         <div class="container">
-            <span class="section-label">Autres solutions</span>
+            <span class="section-label" id="spRelatedLabel">Autres solutions</span>
             <div class="sp-related-grid">
                 <a href="renovation.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Rénovation</h3>
+                    <span class="sp-related-tag" id="rel-tag-0">Particulier</span>
+                    <h3 id="rel-t-0">Rénovation</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="domotique.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Domotique</h3>
+                    <span class="sp-related-tag" id="rel-tag-1">Particulier</span>
+                    <h3 id="rel-t-1">Domotique</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
                 <a href="normes.html" class="sp-related-item reveal reveal-up">
-                    <span class="sp-related-tag">Particulier</span>
-                    <h3>Mise aux Normes</h3>
+                    <span class="sp-related-tag" id="rel-tag-2">Particulier</span>
+                    <h3 id="rel-t-2">Mise aux Normes</h3>
                     <span class="sp-related-arrow">→</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ═══ CTA BAND ═══ -->
     <section class="sp-cta-band">
         <div class="container">
             <div class="sp-cta-inner reveal reveal-up">
                 <div class="sp-cta-text">
-                    <p class="sp-cta-label">Prêt à démarrer votre projet ?</p>
-                    <h2 class="sp-cta-title">Parlons de <em>votre projet.</em></h2>
+                    <p class="sp-cta-label" id="spCtaLabel">Prêt à démarrer votre projet ?</p>
+                    <h2 class="sp-cta-title" id="spCtaTitle">Parlons de <em>votre projet.</em></h2>
                 </div>
                 <div class="sp-cta-actions">
                     <a href="index.html#contact" class="btn-main sp-devis-btn">Demander un devis</a>
@@ -269,21 +246,20 @@
         </div>
     </section>
 
-    <!-- ═══ FOOTER ═══ -->
     <footer class="footer">
         <div class="container footer-inner">
             <img src="images/logo-mge.png" alt="MGE" class="footer-logo">
-            <p>© 2026 MGE · Monge Gauthier Énergie · Paris</p>
+            <p id="ui-footer-copy">© 2026 MGE · Monge Gauthier Énergie · Paris</p>
             <div class="footer-links">
-                <a href="index.html#expertise">Expertise</a>
-                <a href="index.html#services">Solutions</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html#expertise" id="ui-footer1">Expertise</a>
+                <a href="index.html#services"  id="ui-footer2">Solutions</a>
+                <a href="index.html#contact"   id="ui-footer3">Contact</a>
             </div>
         </div>
     </footer>
 
     <script>
-    // ── Navbar ──
+    // ── Navbar ──────────────────────────────────────────────────────────
     const hamburger = document.getElementById('hamburger');
     const overlay   = document.getElementById('navOverlay');
     hamburger.addEventListener('click', () => {
@@ -301,18 +277,151 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
-    // ── Lang switch (UI only) ──
+    // ── Traductions ──────────────────────────────────────────────────────
+    const t = {
+        fr: {
+            tag: 'Particulier',
+            slug: 'ÉCLAIRAGE',
+            heroSub: `Conception et installation d\'éclairages sur-mesure : lumière d\'accentuation, éclairage indirect, LEDs architecturales. Chaque scène de vie sublimée par la lumière.`,
+            desc: `L\'éclairage est la touche finale qui révèle un intérieur. MGE conçoit des installations lumineuses sur-mesure, en parfaite harmonie avec votre décoration. De l\'étude lumineuse à la mise en service des gradateurs, nous orchestrons chaque ambiance pour que votre intérieur parisien soit mis en valeur à toute heure.`,
+            points: ["\u00c9tude lumineuse personnalis\u00e9e", "LED basse consommation haut de gamme", "Variateurs et sc\u00e8nes lumineuses", "Spots encastr\u00e9s, rails et rubans LED", "\u00c9clairage ext\u00e9rieur et paysager", "Int\u00e9gration domotique possible"],
+            statNums: ["\u221270%", "5 ans", "300+"],
+            statLabels: ["\u00c9conomie sur la facture \u00e9nergie", "Garantie sur les \u00e9quipements LED", "Points lumineux install\u00e9s par an"],
+            stepTitles: ["\u00c9tude lumineuse", "S\u00e9lection", "Installation", "R\u00e9glages & formation"],
+            stepDescs: ["Analyse de vos espaces, de la lumi\u00e8re naturelle et de vos usages. \u00c9laboration d'un plan lumi\u00e8re sur-mesure avec simulation.", "Choix des sources lumineuses (spots, suspensions, rubans, projecteurs) en accord avec votre d\u00e9corateur et vos pr\u00e9f\u00e9rences.", "C\u00e2blage et pose des luminaires, variateurs et contr\u00f4leurs. Cheminement des c\u00e2bles totalement dissimul\u00e9.", "Programmation des sc\u00e8nes lumineuses, r\u00e9glage des intensit\u00e9s, et formation \u00e0 l'utilisation de votre syst\u00e8me."],
+            faqQ: ["Quelle est la diff\u00e9rence entre \u00e9clairage indirect et d'accentuation ?", "Peut-on int\u00e9grer l'\u00e9clairage \u00e0 une installation domotique existante ?", "Combien de sc\u00e8nes lumineuses peut-on programmer ?", "Les LEDs sont-elles compatibles avec les variateurs ?"],
+            faqA: ["L'\u00e9clairage indirect cr\u00e9e une ambiance douce en diffusant la lumi\u00e8re sur les murs ou le plafond. L'accentuation met en valeur un tableau, un meuble ou un d\u00e9tail architectural avec un faisceau cibl\u00e9.", "Oui, nous sommes compatibles avec les syst\u00e8mes KNX, Control4, Somfy et la plupart des standards du march\u00e9. Votre \u00e9clairage pourra \u00eatre pilot\u00e9 depuis votre smartphone.", "Autant que vous le souhaitez : r\u00e9veil, journ\u00e9e de travail, d\u00eener en amoureux, soir\u00e9e, nuit\u2026 Chaque pi\u00e8ce peut avoir ses propres sc\u00e8nes activables en un toucher.", "Toutes les LEDs que nous installons sont dimmables et test\u00e9es avec nos variateurs pour garantir une variation douce, sans scintillement ni bourdonnement."],
+            relTags: ["Particulier", "Particulier", "Particulier"],
+            relTitles: ["R\u00e9novation", "Domotique", "Mise aux Normes"],
+            ui: {
+                back: 'Retour aux solutions',
+                sectionService: 'Notre service',
+                pointsTitle: 'Ce que comprend ce service',
+                stepsLabel: 'Notre approche',
+                stepsTitle: 'Comment nous <em>travaillons</em>',
+                faqLabel: 'Questions fréquentes',
+                faqTitle: 'Ce que vous voulez <em>savoir</em>',
+                ctaBtn: 'Demander un devis',
+                ctaLabel: 'Prêt à démarrer votre projet ?',
+                ctaTitle: 'Parlons de <em>votre projet.</em>',
+                relatedLabel: 'Autres solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Nous rejoindre',
+                navCta: 'Consultation',
+                nav1: 'Solutions',
+                nav2: 'Expertises',
+                nav3: 'Réalisations',
+                nav4: 'Consultation',
+            }
+        },
+        en: {
+            tag: 'Residential',
+            slug: 'LIGHTING',
+            heroSub: `Design and installation of bespoke lighting: accent, indirect and architectural LEDs. Every living scene elevated by light.`,
+            desc: `Lighting is the finishing touch that reveals an interior. MGE designs bespoke lighting installations in perfect harmony with your decoration. From the lighting study to commissioning of dimmers, we orchestrate every atmosphere so your Parisian interior is showcased at any time of day.`,
+            points: ["Personalised lighting study", "Premium low-energy LEDs", "Dimmers and lighting scenes", "Recessed spots, tracks and LED strips", "Outdoor and landscape lighting", "Home automation integration available"],
+            statNums: ["\u221270%", "5 yrs", "300+"],
+            statLabels: ["Savings on energy bill", "Warranty on LED equipment", "Light points installed per year"],
+            stepTitles: ["Lighting study", "Selection", "Installation", "Settings & training"],
+            stepDescs: ["Analysis of your spaces, natural light and usage. Custom lighting plan with simulation.", "Choice of light sources (spots, pendants, strips, projectors) in line with your decorator and preferences.", "Wiring and fitting of luminaires, dimmers and controllers. Fully concealed cable runs.", "Programming of lighting scenes, intensity adjustment, and training on how to use your system."],
+            faqQ: ["What is the difference between indirect and accent lighting?", "Can lighting be integrated into an existing home automation system?", "How many lighting scenes can be programmed?", "Are LEDs compatible with dimmers?"],
+            faqA: ["Indirect lighting creates a soft atmosphere by diffusing light on walls or ceiling. Accent lighting highlights a painting, piece of furniture or architectural detail with a targeted beam.", "Yes, we are compatible with KNX, Control4, Somfy and most market standards. Your lighting can be controlled from your smartphone.", "As many as you wish: wake-up, work day, romantic dinner, evening, night\u2026 Each room can have its own scenes activated with a single touch.", "All the LEDs we install are dimmable and tested with our dimmers to guarantee smooth dimming with no flicker or buzzing."],
+            relTags: ["Residential", "Residential", "Residential"],
+            relTitles: ["Renovation", "Home Automation", "Compliance"],
+            ui: {
+                back: 'Back to solutions',
+                sectionService: 'Our service',
+                pointsTitle: 'What this service includes',
+                stepsLabel: 'Our approach',
+                stepsTitle: 'How we <em>work</em>',
+                faqLabel: 'Frequently asked questions',
+                faqTitle: 'What you want <em>to know</em>',
+                ctaBtn: 'Request a quote',
+                ctaLabel: 'Ready to get started?',
+                ctaTitle: 'Let's talk about <em>your project.</em>',
+                relatedLabel: 'Other solutions',
+                footerCopy: '© 2026 MGE · Monge Gauthier Énergie · Paris',
+                footerLink1: 'Expertise',
+                footerLink2: 'Solutions',
+                footerLink3: 'Contact',
+                navCareers: 'Join us',
+                navCta: 'Contact',
+                nav1: 'Solutions',
+                nav2: 'Expertise',
+                nav3: 'Projects',
+                nav4: 'Contact',
+            }
+        }
+    };
+
+    function applyLang(lang) {
+        const d = t[lang];
+        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        const setHTML = (id, v) => { const el = document.getElementById(id); if (el) el.innerHTML = v; };
+
+        // Hero
+        setText('spTag', d.tag);
+        setText('spTitle', d.slug);
+        setText('spHeroSub', d.heroSub);
+        // Stats
+        d.statNums.forEach((n, i) => setText('stat-num-' + i, n));
+        d.statLabels.forEach((l, i) => setText('stat-lbl-' + i, l));
+        // Desc & points
+        setText('spDesc', d.desc);
+        d.points.forEach((p, i) => setText('pt-' + i, p));
+        setText('spPointsTitle', d.pointsTitle);
+        setText('spServiceLabel', d.sectionService);
+        // Steps
+        setHTML('spStepsLabel', d.ui.stepsLabel);
+        setHTML('spStepsTitle', d.ui.stepsTitle);
+        d.stepTitles.forEach((t2, i) => setText('step-t-' + i, t2));
+        d.stepDescs.forEach((t2, i) => setText('step-d-' + i, t2));
+        // FAQ
+        setText('spFaqLabel', d.ui.faqLabel);
+        setHTML('spFaqTitle', d.ui.faqTitle);
+        d.faqQ.forEach((q, i) => setText('faq-q-' + i, q));
+        d.faqA.forEach((a, i) => setText('faq-a-' + i, a));
+        // Related
+        setText('spRelatedLabel', d.ui.relatedLabel);
+        d.relTags.forEach((tag, i) => setText('rel-tag-' + i, tag));
+        d.relTitles.forEach((title, i) => setText('rel-t-' + i, title));
+        // CTA
+        setText('spCtaLabel', d.ui.ctaLabel);
+        setHTML('spCtaTitle', d.ui.ctaTitle);
+        document.querySelectorAll('.sp-devis-btn').forEach(b => b.textContent = d.ui.ctaBtn);
+        document.querySelectorAll('.btn-ghost, .btn-ghost-light').forEach((b, i) => { /* phone stays */ });
+        // Back link
+        setText('spBackLabel', d.ui.back);
+        // Navbar UI
+        setText('ui-careers', d.ui.navCareers);
+        setText('ui-cta', d.ui.navCta);
+        setText('ui-nav1', d.ui.nav1);
+        setText('ui-nav2', d.ui.nav2);
+        setText('ui-nav3', d.ui.nav3);
+        setText('ui-nav4', d.ui.nav4);
+        // Footer
+        setText('ui-footer-copy', d.ui.footerCopy);
+        setText('ui-footer1', d.ui.footerLink1);
+        setText('ui-footer2', d.ui.footerLink2);
+        setText('ui-footer3', d.ui.footerLink3);
+    }
+
     let currentLang = localStorage.getItem('mge-lang') || 'fr';
     function switchLang(lang) {
         currentLang = lang;
         localStorage.setItem('mge-lang', lang);
         document.documentElement.lang = lang;
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        applyLang(lang);
     }
-    // Apply saved lang on load
+    // Init
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+    if (currentLang === 'en') applyLang('en');
 
-    // ── FAQ accordion ──
+    // ── FAQ accordion ────────────────────────────────────────────────────
     document.querySelectorAll('.sp-faq-q').forEach(btn => {
         btn.addEventListener('click', function() {
             const isOpen = this.getAttribute('aria-expanded') === 'true';
@@ -327,7 +436,7 @@
         });
     });
 
-    // ── Scroll reveal ──
+    // ── Scroll reveal ────────────────────────────────────────────────────
     const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
             if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
@@ -335,9 +444,9 @@
     }, { threshold: 0.07 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // ── Devis pré-remplissage ──
+    // ── Devis pré-remplissage ────────────────────────────────────────────
     document.querySelectorAll('.sp-devis-btn').forEach(btn => {
-        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', 'Éclairage'));
+        btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', document.getElementById('spTitle')?.textContent || ''));
     });
     </script>
 </body>
