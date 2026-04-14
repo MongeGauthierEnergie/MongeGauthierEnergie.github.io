@@ -1609,6 +1609,7 @@ h1 {
     inset: 0;
     background-size: cover;
     background-position: center;
+    background-color: #1a2a3e;
     z-index: 0;
 }
 .sp-hero-overlay {
