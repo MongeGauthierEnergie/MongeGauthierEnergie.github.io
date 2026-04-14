@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable | MGE — Électricien Paris</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="images/logo-mge.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .not-found {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: #0d1620;
+            color: #f0ebe3;
+        }
+        .not-found-code {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 300;
+            line-height: 1;
+            color: rgba(255,255,255,0.08);
+            margin-bottom: 1rem;
+        }
+        .not-found h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #f0ebe3;
+        }
+        .not-found p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: rgba(240,235,227,0.55);
+            max-width: 400px;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+        .not-found-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn-main {
+            display: inline-block;
+            padding: 0.85rem 2rem;
+            background: #f0ebe3;
+            color: #0d1620;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn-main:hover { opacity: 0.85; }
+        .btn-ghost {
+            display: inline-block;
+            padding: 0.85rem 2rem;
+            border: 1px solid rgba(240,235,227,0.25);
+            color: #f0ebe3;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: border-color 0.2s;
+        }
+        .btn-ghost:hover { border-color: rgba(240,235,227,0.6); }
+        .not-found-logo {
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .not-found-logo img { height: 36px; }
+    </style>
+</head>
+<body>
+    <div class="not-found">
+        <a href="/" class="not-found-logo">
+            <img src="images/logo-mge.png" alt="MGE">
+        </a>
+        <div class="not-found-code">404</div>
+        <h1>Page introuvable</h1>
+        <p>Cette page n'existe pas ou a été déplacée. Revenez à l'accueil pour découvrir nos services.</p>
+        <div class="not-found-links">
+            <a href="/" class="btn-main">Retour à l'accueil</a>
+            <a href="/#contact" class="btn-ghost">Nous contacter</a>
+        </div>
+    </div>
+</body>
+</html>
