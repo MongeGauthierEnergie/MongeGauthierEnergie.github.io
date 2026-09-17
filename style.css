@@ -10,7 +10,8 @@
     --navy:        #1D2E44;
     --navy-light:  #2a3f5c;
     --blue:        #4A9AD4;
-    --grey:        #6B7A8D;
+    --blue-text:   #2A77B0;   /* bleu assombri — 4,81:1 sur blanc, petits textes */
+    --grey:        #657385;
     --grey-light:  #f7f8fa;
     --line:        #E8ECF0;
     --font-sans:   'Inter', -apple-system, sans-serif;
@@ -109,7 +110,7 @@ body {
 
 .lang-sep {
     font-size: 0.6rem;
-    color: var(--line);
+    color: var(--grey);
     line-height: 1;
 }
 
@@ -577,9 +578,18 @@ h1 {
     background: var(--grey-light);
     border: 1px solid var(--line);
     transition: all 0.4s var(--ease);
+    /* Cartes = liens <a> : neutraliser le style de lien par défaut */
+    text-decoration: none;
+    color: inherit;
     /* Reveal stagger */
     opacity: 0;
     transform: translateY(25px);
+}
+
+/* Focus clavier visible sur les cartes services */
+.icon-item:focus-visible {
+    outline: 2px solid var(--navy);
+    outline-offset: 3px;
 }
 
 .icon-item.revealed {
@@ -835,7 +845,7 @@ h1 {
     font-size: 0.62rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--blue);
+    color: var(--blue-text);
     margin-bottom: 12px;
     font-weight: 500;
 }
@@ -1160,7 +1170,7 @@ h1 {
     font-size: 0.62rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--blue);
+    color: var(--blue-text);
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -1642,11 +1652,11 @@ h1 {
     font-size: 0.62rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--blue);
+    color: #fff;
     font-weight: 500;
     margin-bottom: 20px;
-    background: rgba(74,154,212,0.15);
-    border: 1px solid rgba(74,154,212,0.3);
+    background: var(--blue-text);
+    border: 1px solid var(--blue-text);
     padding: 6px 14px;
     border-radius: 2px;
 }
@@ -1814,7 +1824,7 @@ h1 {
 .sp-steps-header h2 em {
     font-family: var(--font-serif);
     font-style: italic;
-    color: var(--blue);
+    color: var(--blue-text);
 }
 .sp-steps-grid {
     display: grid;
@@ -1937,7 +1947,7 @@ h1 {
     font-size: 0.58rem;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--blue);
+    color: var(--blue-text);
     font-weight: 500;
 }
 .sp-related-item h3 {
@@ -1949,7 +1959,7 @@ h1 {
 }
 .sp-related-arrow {
     font-size: 1rem;
-    color: var(--blue);
+    color: var(--blue-text);
     transition: transform 0.3s;
 }
 .sp-related-item:hover .sp-related-arrow { transform: translateX(5px); }
@@ -2037,7 +2047,7 @@ h1 {
 .cp-value-num {
     font-size: 0.6rem;
     letter-spacing: 2px;
-    color: var(--blue);
+    color: var(--blue-text);
     font-weight: 500;
     flex-shrink: 0;
     margin-top: 4px;
@@ -2104,7 +2114,7 @@ h1 {
     gap: 12px;
     font-size: 0.9rem;
     font-weight: 400;
-    color: var(--blue);
+    color: var(--blue-text);
     padding: 16px 0;
 }
 
@@ -2166,4 +2176,227 @@ h1 {
 
     .cp-grid { grid-template-columns: 1fr; gap: 60px; }
     .cp-form-card { padding: 36px 24px; }
+}
+
+/* Piège anti-robot : hors écran plutôt que display:none — les bots
+   évolués ignorent display:none mais remplissent les champs déplacés. */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ══════════════════════════════════════════════════════════
+   PAGES LÉGALES (mentions, confidentialité, CGU)
+   ══════════════════════════════════════════════════════════ */
+.legal {
+    padding: 160px 0 110px;
+    background: var(--bg);
+}
+.legal-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.legal-label {
+    display: block;
+    font-size: 0.62rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 26px;
+}
+.legal h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 300;
+    color: var(--navy);
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+.legal-maj {
+    font-size: 0.78rem;
+    color: var(--grey);
+    padding-bottom: 42px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 52px;
+}
+.legal h2 {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--navy);
+    letter-spacing: -0.2px;
+    margin: 52px 0 18px;
+}
+.legal h2:first-of-type { margin-top: 0; }
+.legal h3 {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin: 30px 0 10px;
+}
+.legal p,
+.legal li {
+    font-size: 0.92rem;
+    line-height: 1.85;
+    color: var(--grey);
+}
+.legal p { margin-bottom: 16px; }
+.legal ul { margin: 0 0 20px; padding-left: 20px; }
+.legal li { margin-bottom: 9px; }
+.legal a { color: var(--blue-text); text-decoration: underline; text-underline-offset: 3px; }
+.legal a:hover { color: var(--navy); }
+.legal strong { color: var(--navy); font-weight: 500; }
+
+/* Bloc d'identité : tableau de définitions */
+.legal-fiche {
+    background: var(--grey-light);
+    border: 1px solid var(--line);
+    padding: 30px 32px;
+    margin: 0 0 26px;
+}
+.legal-fiche dl { display: grid; grid-template-columns: 210px 1fr; gap: 12px 24px; margin: 0; }
+.legal-fiche dt { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1.4px; color: var(--grey); }
+.legal-fiche dd { margin: 0; font-size: 0.92rem; color: var(--navy); line-height: 1.6; }
+
+/* Encart d'avertissement à compléter par l'éditeur */
+.legal-todo {
+    border-left: 3px solid var(--blue-text);
+    background: var(--grey-light);
+    padding: 18px 22px;
+    margin: 0 0 26px;
+}
+.legal-todo p { margin: 0; font-size: 0.86rem; }
+
+@media (max-width: 768px) {
+    .legal { padding: 120px 0 80px; }
+    .legal-inner { padding: 0 24px; }
+    .legal-fiche { padding: 24px 22px; }
+    .legal-fiche dl { grid-template-columns: 1fr; gap: 4px 0; }
+    .legal-fiche dt { margin-top: 12px; }
+    .legal-fiche dt:first-child { margin-top: 0; }
+}
+
+/* Liens légaux de la page 404 */
+.not-found-legal {
+    margin-top: 48px;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    color: var(--grey);
+}
+.not-found-legal a { color: var(--grey); text-decoration: none; }
+.not-found-legal a:hover { color: var(--navy); text-decoration: underline; }
+
+/* ══════════════════════════════════════════════════════════
+   BANNIÈRE DE CONSENTEMENT
+   Affichée uniquement si une mesure d'audience à cookies est
+   configurée dans consent.js. Inactive par défaut.
+   ══════════════════════════════════════════════════════════ */
+.consent-bar {
+    position: fixed;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px 26px;
+    background: var(--navy);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 50px rgba(15, 25, 40, 0.28);
+    animation: consent-entree 0.45s var(--ease);
+}
+@keyframes consent-entree {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .consent-bar { animation: none; }
+}
+
+.consent-txt {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.82);
+}
+.consent-txt a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.consent-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.consent-btn {
+    font-family: inherit;
+    font-size: 0.68rem;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 22px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+    white-space: nowrap;
+}
+.consent-btn--refus {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.85);
+}
+.consent-btn--refus:hover { border-color: #fff; color: #fff; }
+.consent-btn--accept {
+    background: #fff;
+    color: var(--navy);
+    font-weight: 500;
+}
+.consent-btn--accept:hover { background: var(--blue); color: #fff; }
+.consent-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+@media (max-width: 768px) {
+    .consent-bar {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding: 20px;
+    }
+    .consent-actions { justify-content: stretch; }
+    .consent-btn { flex: 1; text-align: center; }
+}
+
+/* Sélecteur de langue sur la page 404 */
+.not-found-lang {
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+/* Sélecteur de langue sur les pages légales */
+.legal-lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.legal-note-langue {
+    font-size: 0.78rem;
+    color: var(--grey);
+    font-style: italic;
+    padding: 14px 18px;
+    background: var(--grey-light);
+    border-left: 3px solid var(--line);
+    margin-bottom: 34px;
 }

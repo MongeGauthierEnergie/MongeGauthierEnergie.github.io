@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGE — Nous rejoindre</title>
+    <title>Recrutement Électricien Paris | MGE — Rejoindre nos équipes</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="images/logo-mge.png">
-    <link rel="apple-touch-icon" href="images/logo-mge.png">
-    <meta name="description" content="Rejoignez l'équipe MGE — Candidatures CDI, CDD, Stage, Alternance à Paris.">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="description" content="MGE recrute à Paris : électriciens, chefs de chantier, apprentis. CDI, CDD, stage et alternance. Candidatures spontanées bienvenues.">
+    <link rel="canonical" href="https://mongegauthierenergie.github.io/careers.html">
+    <meta property="og:title" content="Recrutement Électricien Paris | MGE — Rejoindre nos équipes">
+    <meta property="og:description" content="MGE recrute à Paris : électriciens, chefs de chantier, apprentis. CDI, CDD, stage et alternance.">
+    <meta property="og:url" content="https://mongegauthierenergie.github.io/careers.html">
+    <meta property="og:image" content="https://mongegauthierenergie.github.io/images/og-mge.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MGE — Électricien de prestige à Paris">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="MGE — Monge Gauthier Énergie">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recrutement Électricien Paris | MGE">
+    <meta name="twitter:description" content="MGE recrute à Paris : électriciens, chefs de chantier, apprentis.">
+    <meta name="twitter:image" content="https://mongegauthierenergie.github.io/images/og-mge.jpg">
+    <link rel="preload" href="fonts/Inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-300-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <meta name="geo.region" content="FR-75">
     <meta name="geo.placename" content="Paris">
     <meta name="geo.position" content="48.8418;2.3013">
@@ -36,7 +51,7 @@
                 </div>
                 <span class="nav-phone">07 81 90 07 84</span>
                 <a href="careers.html" class="btn-careers-nav" data-i18n="nav.careers">Nous rejoindre</a>
-                <a href="index.html#contact" class="btn-nav" data-i18n="nav.cta">Consultation</a>
+                <a href="index.html#contact" class="btn-nav" data-i18n="nav.cta">Demander un devis</a>
             </div>
         </div>
         <nav class="nav-overlay" id="navOverlay">
@@ -44,7 +59,7 @@
                 <li><a href="index.html#services"  onclick="closeMenu()" data-i18n="nav.solutions">Solutions</a></li>
                 <li><a href="index.html#expertise" onclick="closeMenu()" data-i18n="nav.expertises">Expertises</a></li>
                 <li><a href="index.html#archives"  onclick="closeMenu()" data-i18n="nav.realisations">Réalisations</a></li>
-                <li><a href="index.html#contact"   onclick="closeMenu()" data-i18n="nav.cta">Consultation</a></li>
+                <li><a href="index.html#contact"   onclick="closeMenu()" data-i18n="nav.cta">Demander un devis</a></li>
             </ul>
             <div class="overlay-footer">
                 <div class="overlay-address">
@@ -130,6 +145,10 @@
                         <p class="cp-form-sub" data-i18n="form.sub">Remplissez ce formulaire — nous vous recontacterons dans les plus brefs délais.</p>
 
                         <form class="cp-form" onsubmit="submitForm(event)">
+                <div class="hp-field" aria-hidden="true">
+                    <label for="hp-3">Laissez ce champ vide</label>
+                    <input type="text" id="hp-3" name="_gotcha" tabindex="-1" autocomplete="off">
+                </div>
                             <input type="hidden" name="_subject" value="Nouvelle candidature — MGE Paris">
                             <div class="form-group">
                                 <label data-i18n="form.poste">Type de poste souhaité</label>
@@ -144,29 +163,29 @@
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.profil">Profil professionnel</label>
-                                <input type="text" name="profil" data-i18n-placeholder="form.profil.ph" placeholder="Électricien, Chef de chantier, Apprenti…" required>
+                                <input type="text" name="profil" data-i18n-placeholder="form.profil.ph" placeholder="Électricien, Chef de chantier, Apprenti…" maxlength="80" required>
                             </div>
                             <div class="careers-row">
                                 <div class="form-group">
                                     <label data-i18n="form.prenom">Prénom</label>
-                                    <input type="text" name="prenom" data-i18n-placeholder="form.prenom.ph" placeholder="Votre prénom" required>
+                                    <input type="text" name="prenom" data-i18n-placeholder="form.prenom.ph" placeholder="Votre prénom" autocomplete="given-name" minlength="2" maxlength="60" required>
                                 </div>
                                 <div class="form-group">
                                     <label data-i18n="form.nom">Nom</label>
-                                    <input type="text" name="nom" data-i18n-placeholder="form.nom.ph" placeholder="Votre nom" required>
+                                    <input type="text" name="nom" data-i18n-placeholder="form.nom.ph" placeholder="Votre nom" autocomplete="family-name" minlength="2" maxlength="60" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.email">Email</label>
-                                <input type="email" name="email" data-i18n-placeholder="form.email.ph" placeholder="votre@email.com" required>
+                                <input type="email" name="email" data-i18n-placeholder="form.email.ph" placeholder="votre@email.com" autocomplete="email" maxlength="120" required>
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.tel">Téléphone</label>
-                                <input type="tel" name="tel" data-i18n-placeholder="form.tel.ph" placeholder="06 00 00 00 00">
+                                <input type="tel" name="tel" data-i18n-placeholder="form.tel.ph" placeholder="06 00 00 00 00" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+().\s-]{6,25}">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.msg">Message & motivation</label>
-                                <textarea name="message" rows="5" data-i18n-placeholder="form.msg.ph" placeholder="Présentez-vous brièvement et expliquez votre intérêt pour MGE…" required></textarea>
+                                <textarea name="message" rows="5" data-i18n-placeholder="form.msg.ph" placeholder="Présentez-vous brièvement et expliquez votre intérêt pour MGE…" minlength="10" maxlength="2000" required></textarea>
                             </div>
                             <button type="submit" class="btn-submit" id="cpSubmit" data-i18n="form.submit">Envoyer ma candidature</button>
                             <div class="cp-sent" id="cpSent">
@@ -191,6 +210,9 @@
                 <a href="index.html#expertise" data-i18n="footer.link1">Expertise</a>
                 <a href="index.html#services"  data-i18n="footer.link2">Solutions</a>
                 <a href="index.html#contact"   data-i18n="footer.link3">Contact</a>
+                <a href="mentions-legales.html" data-i18n="footer.legal1">Mentions légales</a>
+                <a href="confidentialite.html" data-i18n="footer.legal2">Confidentialité</a>
+                <a href="cgu.html" data-i18n="footer.legal3">CGU</a>
             </div>
         </div>
     </footer>
@@ -220,7 +242,7 @@
             'nav.solutions':   'Solutions',
             'nav.expertises':  'Expertises',
             'nav.realisations':'Réalisations',
-            'nav.cta':         'Consultation',
+            'nav.cta':         'Demander un devis',
             'nav.careers':     'Nous rejoindre',
             'back':            'Retour',
             'hero.tag':        'Recrutement',
@@ -263,12 +285,20 @@
             'footer.link1':    'Expertise',
             'footer.link2':    'Solutions',
             'footer.link3':    'Contact',
+            'stats.num1':    '100',
+            'stats.num2':    'Sur-mesure',
+            'stats.num3':    'Paris',
+            'footer.legal1':    'Mentions légales',
+            'footer.legal2':    'Confidentialité',
+            'footer.legal3':    'CGU',
+            'meta.title':    'Recrutement Électricien Paris | MGE — Rejoindre nos équipes',
+            'meta.desc':    'MGE recrute à Paris : électriciens, chefs de chantier, apprentis. CDI, CDD, stage et alternance. Candidatures spontanées bienvenues.',
         },
         en: {
             'nav.solutions':   'Solutions',
             'nav.expertises':  'Expertise',
             'nav.realisations':'Projects',
-            'nav.cta':         'Contact',
+            'nav.cta':         'Request a quote',
             'nav.careers':     'Join us',
             'back':            'Back',
             'hero.tag':        'Careers',
@@ -311,6 +341,12 @@
             'footer.link1':    'Expertise',
             'footer.link2':    'Solutions',
             'footer.link3':    'Contact',
+            'stats.num2':    'Bespoke',
+            'footer.legal1':    'Legal notice',
+            'footer.legal2':    'Privacy',
+            'footer.legal3':    'Terms of use',
+            'meta.title':    'Electrician Jobs in Paris | MGE — Join our team',
+            'meta.desc':    'MGE is hiring in Paris: electricians, site managers, apprentices. Permanent and fixed-term contracts, internships and apprenticeships.',
         }
     };
 
@@ -323,6 +359,9 @@
         localStorage.setItem('mge-lang', lang);
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
         const t = ui[lang];
+        if (t['meta.title']) document.title = t['meta.title'];
+        const md = document.querySelector('meta[name="description"]');
+        if (md && t['meta.desc']) md.setAttribute('content', t['meta.desc']);
         document.querySelectorAll('[data-i18n]').forEach(el => {
             if (t[el.dataset.i18n] !== undefined) el.textContent = t[el.dataset.i18n];
         });
@@ -346,8 +385,22 @@
     const FORMSPREE_CANDIDAT = 'xjgprwwn';
     // ══════════════════════════════════════════════════════════
 
+
+    // ── Anti-robot : délai minimal de remplissage ──────────────
+    const OUVERTURE_PAGE = Date.now();
+    const DELAI_MIN_MS   = 3000;
+    function tropRapide() { return Date.now() - OUVERTURE_PAGE < DELAI_MIN_MS; }
+
     async function submitForm(e) {
         e.preventDefault();
+        if (tropRapide()) {
+            const sent = document.getElementById('cpSent');
+            sent.querySelector('span').textContent = currentLang === 'en'
+                ? 'Submitted too quickly — please click send again.'
+                : 'Envoi trop rapide — cliquez à nouveau sur Envoyer.';
+            sent.style.display = 'flex';
+            return;
+        }
         const form     = e.target;
         const btn      = document.getElementById('cpSubmit');
         const sent     = document.getElementById('cpSent');
@@ -387,5 +440,6 @@
     // ── Init ───────────────────────────────────────────────────────
     applyLang(currentLang);
     </script>
+    <script src="consent.js" defer></script>
 </body>
 </html>
