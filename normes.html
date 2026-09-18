@@ -20,25 +20,37 @@
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mise aux Normes NF C 15-100",
-      "description": "Mise en conformité électrique NF C 15-100 pour appartements, maisons et locaux professionnels à Paris.",
-      "provider": {
-        "@type": "Electrician",
-        "name": "MGE - Monge Gauthier Énergie",
-        "telephone": "+33781900784",
-        "url": "https://mongegauthierenergie.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2 rue Lakanal",
-          "addressLocality": "Paris",
-          "postalCode": "75015",
-          "addressCountry": "FR"
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mise aux Normes NF C 15-100",
+        "description": "Mise en conformité électrique NF C 15-100 pour appartements, maisons et locaux professionnels à Paris.",
+        "provider": {
+            "@id": "https://mongegauthierenergie.github.io/#entreprise"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "url": "https://mongegauthierenergie.github.io/normes.html",
+        "serviceType": "Mise aux Normes NF C 15-100",
+        "inLanguage": "fr-FR",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://mongegauthierenergie.github.io/normes.html",
+            "servicePhone": {
+                "@type": "ContactPoint",
+                "telephone": "+33781900784"
+            },
+            "serviceLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Paris",
+                    "postalCode": "75015",
+                    "addressCountry": "FR"
+                }
+            }
         }
-      },
-      "areaServed": {"@type": "City", "name": "Paris"},
-      "url": "https://mongegauthierenergie.github.io/normes.html"
     }
     </script>
     <meta name="geo.region" content="FR-75">
@@ -57,6 +69,47 @@
         {"@type":"ListItem","position":1,"name":"Accueil","item":"https://mongegauthierenergie.github.io/"},
         {"@type":"ListItem","position":2,"name":"Mise aux Normes","item":"https://mongegauthierenergie.github.io/normes.html"}
       ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "fr-FR",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "La mise aux normes est-elle obligatoire pour vendre mon appartement ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lors d'une vente, un diagnostic électrique est obligatoire si l'installation a plus de 15 ans. Si des anomalies sont relevées, les travaux ne sont pas légalement obligatoires mais fortement recommandés pour rassurer l'acheteur."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mon assurance peut-elle refuser de m'indemniser en cas de sinistre ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Si votre installation est vétuste et reconnue non conforme, votre assureur peut invoquer une faute grave pour réduire ou refuser l'indemnisation en cas d'incendie ou dégât des eaux d'origine électrique."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Combien de temps prennent les travaux de mise en conformité ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En fonction de l'état de l'installation, de 1 à 5 jours. Un simple remplacement de tableau et ajout de différentiels peut se faire en 1 journée."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quel est le coût moyen d'une mise aux normes ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Entre 1 500 € et 5 000 € selon la superficie et l'état de l'installation. Nous établissons un devis détaillé gratuit après diagnostic."
+                }
+            }
+        ]
     }
     </script>
 </head>

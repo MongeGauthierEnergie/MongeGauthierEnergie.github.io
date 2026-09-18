@@ -1,0 +1,51 @@
+# MGE — Monge Gauthier Énergie
+
+> Entreprise d'électricité générale et de domotique basée à Paris 15e, spécialisée dans la
+> rénovation électrique de logements anciens, l'éclairage architectural et les installations
+> haut de gamme. Intervient à Paris et dans l'Ouest parisien.
+
+MGE (Monge Gauthier Énergie) est une SASU immatriculée au RCS de Paris sous le numéro
+994 424 190, créée le 27 novembre 2025, dirigée par Gauthier Monge. Elle est couverte par
+une assurance de responsabilité civile décennale AXERIA IARD (police 278545687) valable en
+France métropolitaine. Code NAF 43.21A — travaux d'installation électrique dans tous locaux.
+
+## Coordonnées
+
+- Adresse : 2 rue Lakanal, 75015 Paris, France
+- Téléphone : 07 81 90 07 84
+- Courriel : monge.energie@gmail.com
+- Horaires : du lundi au vendredi, 8h à 20h
+- Zone d'intervention : les 20 arrondissements de Paris et l'Ouest parisien
+
+## Prestations pour les particuliers
+
+- [Rénovation électrique](https://mongegauthierenergie.github.io/renovation.html) : refonte complète pour appartements haussmanniens et lofts, câblage encastré, intervention invisible respectant l'architecture existante. Compter 5 à 10 jours ouvrés pour 80 à 150 m².
+- [Éclairage architectural](https://mongegauthierenergie.github.io/eclairage.html) : conception et pose d'éclairages sur-mesure, lumière d'accentuation, éclairage indirect, LED architecturales.
+- [Domotique](https://mongegauthierenergie.github.io/domotique.html) : intégration de systèmes KNX, Control4 et Home Assistant, pilotage du confort thermique et lumineux.
+- [Mise aux normes NF C 15-100](https://mongegauthierenergie.github.io/normes.html) : mise en conformité des installations anciennes.
+- [Tableau électrique](https://mongegauthierenergie.github.io/tableau.html) : remplacement et optimisation, pose de disjoncteurs et protections différentielles, généralement en une journée.
+- [Dépannage électrique](https://mongegauthierenergie.github.io/depannage.html) : intervention rapide 7 jours sur 7, diagnostic et réparation, devis systématiquement gratuit.
+
+## Prestations pour les professionnels
+
+- [Électricité tertiaire](https://mongegauthierenergie.github.io/tertiaire.html) : bureaux, cabinets et locaux professionnels.
+- [Commerce et retail](https://mongegauthierenergie.github.io/commerce.html) : boutiques et restaurants.
+- [Infrastructure électrique](https://mongegauthierenergie.github.io/infrastructure.html) : TGBT, colonnes montantes, copropriétés et résidences.
+- [Audit énergétique](https://mongegauthierenergie.github.io/audit.html) : analyse des consommations, certificats d'économie d'énergie (CEE).
+- [Maintenance](https://mongegauthierenergie.github.io/maintenance.html) : contrats préventifs et correctifs.
+- [Attestation CONSUEL](https://mongegauthierenergie.github.io/consuel.html) : accompagnement jusqu'à l'obtention.
+
+## Pages complémentaires
+
+- [Accueil](https://mongegauthierenergie.github.io/) : présentation générale et formulaire de contact.
+- [Recrutement](https://mongegauthierenergie.github.io/careers.html) : offres pour électriciens, chefs de chantier et apprentis.
+- [Mentions légales](https://mongegauthierenergie.github.io/mentions-legales.html) : identité de l'entreprise, assurance, médiation.
+- [Politique de confidentialité](https://mongegauthierenergie.github.io/confidentialite.html)
+- [Conditions générales d'utilisation](https://mongegauthierenergie.github.io/cgu.html)
+
+## Notes
+
+Le site est disponible en français et en anglais ; la bascule se fait côté navigateur, les URL
+sont identiques dans les deux langues. Le contenu contractuel fait foi en français.
+Les photographies illustrant le site proviennent de banques d'images libres et ne représentent
+pas des chantiers réalisés par MGE.

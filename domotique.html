@@ -20,25 +20,37 @@
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Domotique KNX",
-      "description": "Installation de systèmes domotiques KNX et Control4 : scènes lumineuses, volets motorisés, chauffage centralisé.",
-      "provider": {
-        "@type": "Electrician",
-        "name": "MGE - Monge Gauthier Énergie",
-        "telephone": "+33781900784",
-        "url": "https://mongegauthierenergie.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2 rue Lakanal",
-          "addressLocality": "Paris",
-          "postalCode": "75015",
-          "addressCountry": "FR"
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Domotique KNX",
+        "description": "Installation de systèmes domotiques KNX et Control4 : scènes lumineuses, volets motorisés, chauffage centralisé.",
+        "provider": {
+            "@id": "https://mongegauthierenergie.github.io/#entreprise"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "url": "https://mongegauthierenergie.github.io/domotique.html",
+        "serviceType": "Domotique KNX",
+        "inLanguage": "fr-FR",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://mongegauthierenergie.github.io/domotique.html",
+            "servicePhone": {
+                "@type": "ContactPoint",
+                "telephone": "+33781900784"
+            },
+            "serviceLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Paris",
+                    "postalCode": "75015",
+                    "addressCountry": "FR"
+                }
+            }
         }
-      },
-      "areaServed": {"@type": "City", "name": "Paris"},
-      "url": "https://mongegauthierenergie.github.io/domotique.html"
     }
     </script>
     <meta name="geo.region" content="FR-75">
@@ -57,6 +69,47 @@
         {"@type":"ListItem","position":1,"name":"Accueil","item":"https://mongegauthierenergie.github.io/"},
         {"@type":"ListItem","position":2,"name":"Domotique KNX","item":"https://mongegauthierenergie.github.io/domotique.html"}
       ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "fr-FR",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quelle est la différence entre KNX et des systèmes comme Philips Hue ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KNX est un protocole professionnel filaire, extrêmement fiable et pérenne. Philips Hue est une solution grand public Wi-Fi, plus simple mais moins robuste et évolutive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Peut-on domotiser un appartement sans tout refaire ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, grâce à des solutions sans fil comme Home Assistant ou des actionneurs rétrofittables. Nous analysons votre installation existante et proposons la solution la plus adaptée."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "En cas de panne Internet, la domotique fonctionne-t-elle encore ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les systèmes KNX fonctionnent entièrement en local, sans dépendance à Internet. Les interrupteurs muraux continuent de fonctionner normalement en cas de coupure réseau."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Puis-je étendre mon installation domotique plus tard ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolument. L'architecture KNX est modulaire : vous pouvez ajouter des pièces, des fonctions ou des équipements à tout moment sans refaire l'installation existante."
+                }
+            }
+        ]
     }
     </script>
 </head>

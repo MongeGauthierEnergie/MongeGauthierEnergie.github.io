@@ -20,25 +20,37 @@
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Électricité Tertiaire",
-      "description": "Installations électriques pour bureaux, immeubles de bureaux et locaux tertiaires à Paris.",
-      "provider": {
-        "@type": "Electrician",
-        "name": "MGE - Monge Gauthier Énergie",
-        "telephone": "+33781900784",
-        "url": "https://mongegauthierenergie.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2 rue Lakanal",
-          "addressLocality": "Paris",
-          "postalCode": "75015",
-          "addressCountry": "FR"
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Électricité Tertiaire",
+        "description": "Installations électriques pour bureaux, immeubles de bureaux et locaux tertiaires à Paris.",
+        "provider": {
+            "@id": "https://mongegauthierenergie.github.io/#entreprise"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "url": "https://mongegauthierenergie.github.io/tertiaire.html",
+        "serviceType": "Électricité Tertiaire",
+        "inLanguage": "fr-FR",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://mongegauthierenergie.github.io/tertiaire.html",
+            "servicePhone": {
+                "@type": "ContactPoint",
+                "telephone": "+33781900784"
+            },
+            "serviceLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Paris",
+                    "postalCode": "75015",
+                    "addressCountry": "FR"
+                }
+            }
         }
-      },
-      "areaServed": {"@type": "City", "name": "Paris"},
-      "url": "https://mongegauthierenergie.github.io/tertiaire.html"
     }
     </script>
     <meta name="geo.region" content="FR-75">
@@ -57,6 +69,47 @@
         {"@type":"ListItem","position":1,"name":"Accueil","item":"https://mongegauthierenergie.github.io/"},
         {"@type":"ListItem","position":2,"name":"Électricité Tertiaire","item":"https://mongegauthierenergie.github.io/tertiaire.html"}
       ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "fr-FR",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Pouvez-vous intervenir la nuit ou le week-end pour ne pas perturber notre activité ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, c'est notre fonctionnement habituel pour les clients tertiaires. Nous planifions toutes les interventions importantes hors des heures ouvrées."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Que couvre la conformité ERP pour un bureau ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Éclairage de sécurité (BAES), détection incendie, accessibilité PMH, balisage des issues de secours. Nous vérifions l'ensemble de ces points et réalisons les travaux de mise en conformité."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Proposez-vous des contrats de maintenance pour les locaux tertiaires ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, nous proposons des contrats annuels avec visites préventives, vérifications réglementaires et hotline dédiée. Tarif calculé selon la surface et la complexité de l'installation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Pouvez-vous gérer l'électricité d'un déménagement de bureaux ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolument. Démontage dans les anciens locaux, installation dans les nouveaux, remise en service rapide. Nous coordonnons avec votre informaticien pour le câblage réseau."
+                }
+            }
+        ]
     }
     </script>
 </head>

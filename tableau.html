@@ -20,25 +20,37 @@
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Tableau Électrique Sur-Mesure",
-      "description": "Remplacement et création de tableaux électriques sur-mesure, disjoncteurs différentiels, protection optimale.",
-      "provider": {
-        "@type": "Electrician",
-        "name": "MGE - Monge Gauthier Énergie",
-        "telephone": "+33781900784",
-        "url": "https://mongegauthierenergie.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2 rue Lakanal",
-          "addressLocality": "Paris",
-          "postalCode": "75015",
-          "addressCountry": "FR"
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Tableau Électrique Sur-Mesure",
+        "description": "Remplacement et création de tableaux électriques sur-mesure, disjoncteurs différentiels, protection optimale.",
+        "provider": {
+            "@id": "https://mongegauthierenergie.github.io/#entreprise"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "url": "https://mongegauthierenergie.github.io/tableau.html",
+        "serviceType": "Tableau Électrique Sur-Mesure",
+        "inLanguage": "fr-FR",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://mongegauthierenergie.github.io/tableau.html",
+            "servicePhone": {
+                "@type": "ContactPoint",
+                "telephone": "+33781900784"
+            },
+            "serviceLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Paris",
+                    "postalCode": "75015",
+                    "addressCountry": "FR"
+                }
+            }
         }
-      },
-      "areaServed": {"@type": "City", "name": "Paris"},
-      "url": "https://mongegauthierenergie.github.io/tableau.html"
     }
     </script>
     <meta name="geo.region" content="FR-75">
@@ -57,6 +69,47 @@
         {"@type":"ListItem","position":1,"name":"Accueil","item":"https://mongegauthierenergie.github.io/"},
         {"@type":"ListItem","position":2,"name":"Tableau Électrique","item":"https://mongegauthierenergie.github.io/tableau.html"}
       ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "fr-FR",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quand faut-il remplacer son tableau électrique ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si votre tableau date de plus de 25 ans, si les disjoncteurs sautent fréquemment, si vous n'avez pas de protection différentielle 30 mA, ou si vous ajoutez des équipements énergivores (borne de recharge, climatisation)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Combien de circuits faut-il prévoir ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La norme NF C 15-100 impose un minimum : circuit éclairage par tranche de 8 points lumineux, circuit prise par pièce, circuits spécialisés pour le lave-linge, le four, la cuisinière, etc."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Peut-on garder les anciens circuits avec un nouveau tableau ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, dans la plupart des cas. Nous testons chaque circuit existant et ne remplaçons que ceux qui présentent des défauts d'isolement ou de continuité."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Faut-il couper le courant dans tout l'appartement ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, mais seulement quelques heures. Nous planifions l'intervention pour que la coupure soit la plus courte possible, généralement moins d'une demi-journée."
+                }
+            }
+        ]
     }
     </script>
 </head>
