@@ -2,101 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/</loc>
+    <loc>https://mge-energie.fr/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/renovation.html</loc>
+    <loc>https://mge-energie.fr/renovation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/eclairage.html</loc>
+    <loc>https://mge-energie.fr/eclairage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/domotique.html</loc>
+    <loc>https://mge-energie.fr/domotique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/normes.html</loc>
+    <loc>https://mge-energie.fr/normes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/tableau.html</loc>
+    <loc>https://mge-energie.fr/tableau</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/depannage.html</loc>
+    <loc>https://mge-energie.fr/depannage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/tertiaire.html</loc>
+    <loc>https://mge-energie.fr/tertiaire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/commerce.html</loc>
+    <loc>https://mge-energie.fr/commerce</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/infrastructure.html</loc>
+    <loc>https://mge-energie.fr/infrastructure</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/audit.html</loc>
+    <loc>https://mge-energie.fr/audit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/maintenance.html</loc>
+    <loc>https://mge-energie.fr/maintenance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/consuel.html</loc>
+    <loc>https://mge-energie.fr/consuel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mongegauthierenergie.github.io/careers.html</loc>
+    <loc>https://mge-energie.fr/careers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
     <url>
-        <loc>https://mongegauthierenergie.github.io/mentions-legales.html</loc>
+        <loc>https://mge-energie.fr/mentions-legales</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://mongegauthierenergie.github.io/confidentialite.html</loc>
+        <loc>https://mge-energie.fr/confidentialite</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://mongegauthierenergie.github.io/cgu.html</loc>
+        <loc>https://mge-energie.fr/cgu</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>

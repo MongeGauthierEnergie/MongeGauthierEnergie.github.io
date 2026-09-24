@@ -20,7 +20,7 @@
 
 const CONFIG = {
     fournisseur: null,          // null | 'plausible' | 'google'
-    domaine:     'mongegauthierenergie.github.io',   // pour Plausible
+    domaine:     'mge-energie.fr',   // pour Plausible
     idMesure:    ''             // 'G-XXXXXXXXXX' pour Google Analytics 4
 };
 
@@ -66,7 +66,7 @@ function construireBanniere() {
         <p class="consent-txt">
             Nous souhaitons mesurer l'audience de ce site pour l'améliorer.
             Aucune donnée n'est utilisée à des fins publicitaires.
-            <a href="confidentialite.html">En savoir plus</a>
+            <a href="confidentialite">En savoir plus</a>
         </p>
         <div class="consent-actions">
             <button type="button" class="consent-btn consent-btn--refus"  data-choix="refuse">Refuser</button>

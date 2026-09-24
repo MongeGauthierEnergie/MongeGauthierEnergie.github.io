@@ -19,29 +19,29 @@ France métropolitaine. Code NAF 43.21A — travaux d'installation électrique d
 
 ## Prestations pour les particuliers
 
-- [Rénovation électrique](https://mongegauthierenergie.github.io/renovation.html) : refonte complète pour appartements haussmanniens et lofts, câblage encastré, intervention invisible respectant l'architecture existante. Compter 5 à 10 jours ouvrés pour 80 à 150 m².
-- [Éclairage architectural](https://mongegauthierenergie.github.io/eclairage.html) : conception et pose d'éclairages sur-mesure, lumière d'accentuation, éclairage indirect, LED architecturales.
-- [Domotique](https://mongegauthierenergie.github.io/domotique.html) : intégration de systèmes KNX, Control4 et Home Assistant, pilotage du confort thermique et lumineux.
-- [Mise aux normes NF C 15-100](https://mongegauthierenergie.github.io/normes.html) : mise en conformité des installations anciennes.
-- [Tableau électrique](https://mongegauthierenergie.github.io/tableau.html) : remplacement et optimisation, pose de disjoncteurs et protections différentielles, généralement en une journée.
-- [Dépannage électrique](https://mongegauthierenergie.github.io/depannage.html) : intervention rapide 7 jours sur 7, diagnostic et réparation, devis systématiquement gratuit.
+- [Rénovation électrique](https://mge-energie.fr/renovation) : refonte complète pour appartements haussmanniens et lofts, câblage encastré, intervention invisible respectant l'architecture existante. Compter 5 à 10 jours ouvrés pour 80 à 150 m².
+- [Éclairage architectural](https://mge-energie.fr/eclairage) : conception et pose d'éclairages sur-mesure, lumière d'accentuation, éclairage indirect, LED architecturales.
+- [Domotique](https://mge-energie.fr/domotique) : intégration de systèmes KNX, Control4 et Home Assistant, pilotage du confort thermique et lumineux.
+- [Mise aux normes NF C 15-100](https://mge-energie.fr/normes) : mise en conformité des installations anciennes.
+- [Tableau électrique](https://mge-energie.fr/tableau) : remplacement et optimisation, pose de disjoncteurs et protections différentielles, généralement en une journée.
+- [Dépannage électrique](https://mge-energie.fr/depannage) : intervention rapide 7 jours sur 7, diagnostic et réparation, devis systématiquement gratuit.
 
 ## Prestations pour les professionnels
 
-- [Électricité tertiaire](https://mongegauthierenergie.github.io/tertiaire.html) : bureaux, cabinets et locaux professionnels.
-- [Commerce et retail](https://mongegauthierenergie.github.io/commerce.html) : boutiques et restaurants.
-- [Infrastructure électrique](https://mongegauthierenergie.github.io/infrastructure.html) : TGBT, colonnes montantes, copropriétés et résidences.
-- [Audit énergétique](https://mongegauthierenergie.github.io/audit.html) : analyse des consommations, certificats d'économie d'énergie (CEE).
-- [Maintenance](https://mongegauthierenergie.github.io/maintenance.html) : contrats préventifs et correctifs.
-- [Attestation CONSUEL](https://mongegauthierenergie.github.io/consuel.html) : accompagnement jusqu'à l'obtention.
+- [Électricité tertiaire](https://mge-energie.fr/tertiaire) : bureaux, cabinets et locaux professionnels.
+- [Commerce et retail](https://mge-energie.fr/commerce) : boutiques et restaurants.
+- [Infrastructure électrique](https://mge-energie.fr/infrastructure) : TGBT, colonnes montantes, copropriétés et résidences.
+- [Audit énergétique](https://mge-energie.fr/audit) : analyse des consommations, certificats d'économie d'énergie (CEE).
+- [Maintenance](https://mge-energie.fr/maintenance) : contrats préventifs et correctifs.
+- [Attestation CONSUEL](https://mge-energie.fr/consuel) : accompagnement jusqu'à l'obtention.
 
 ## Pages complémentaires
 
-- [Accueil](https://mongegauthierenergie.github.io/) : présentation générale et formulaire de contact.
-- [Recrutement](https://mongegauthierenergie.github.io/careers.html) : offres pour électriciens, chefs de chantier et apprentis.
-- [Mentions légales](https://mongegauthierenergie.github.io/mentions-legales.html) : identité de l'entreprise, assurance, médiation.
-- [Politique de confidentialité](https://mongegauthierenergie.github.io/confidentialite.html)
-- [Conditions générales d'utilisation](https://mongegauthierenergie.github.io/cgu.html)
+- [Accueil](https://mge-energie.fr/) : présentation générale et formulaire de contact.
+- [Recrutement](https://mge-energie.fr/careers) : offres pour électriciens, chefs de chantier et apprentis.
+- [Mentions légales](https://mge-energie.fr/mentions-legales) : identité de l'entreprise, assurance, médiation.
+- [Politique de confidentialité](https://mge-energie.fr/confidentialite)
+- [Conditions générales d'utilisation](https://mge-energie.fr/cgu)
 
 ## Notes
 

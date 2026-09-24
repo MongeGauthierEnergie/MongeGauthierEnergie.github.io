@@ -49,4 +49,4 @@ User-agent: CCBot
 Allow: /
 
 # ── Ressources ──────────────────────────────────────────────
-Sitemap: https://mongegauthierenergie.github.io/sitemap.xml
+Sitemap: https://mge-energie.fr/sitemap.xml

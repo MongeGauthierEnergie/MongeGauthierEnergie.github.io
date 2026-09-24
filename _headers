@@ -1,0 +1,34 @@
+# En-têtes HTTP — lus par Cloudflare Pages.
+# GitHub Pages ne savait pas les servir : c'est l'une des raisons de la bascule.
+#
+# Note : Pages sert des URL sans extension (/renovation, pas /renovation.html).
+# Les règles ci-dessous sont donc écrites sur les chemins réellement servis.
+
+/*
+  # ── Sécurité ────────────────────────────────────────────────
+  # 'unsafe-inline' est nécessaire : le site embarque ses scripts et
+  # quelques styles dans le HTML. Un nonce exigerait un serveur qui
+  # génère la page à la volée, ce qu'un site statique n'a pas.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io https://cloudflareinsights.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  X-Frame-Options: DENY
+  Strict-Transport-Security: max-age=31536000
+  # ── Cache par défaut ────────────────────────────────────────
+  # Les pages sont revalidées à chaque visite : une mise à jour est
+  # visible immédiatement, sans version périmée servie depuis le cache.
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Les photos portent un nom unique dérivé de leur source et de leur
+# largeur : leur contenu ne change jamais, on peut les figer un an.
+/images/photos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Les polices non plus ne changent pas.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Logo et icônes peuvent être retouchés : une semaine.
+/images/*
+  Cache-Control: public, max-age=604800
