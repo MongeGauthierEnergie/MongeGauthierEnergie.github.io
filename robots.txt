@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ce domaine a demenage vers https://mge-energie.fr
+Sitemap: https://mge-energie.fr/sitemap.xml
