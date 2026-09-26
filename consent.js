@@ -3,7 +3,11 @@
    ──────────────────────────────────────────────────────────────────────
    Un seul endroit à modifier : le bloc CONFIG ci-dessous.
 
-   • fournisseur: null        → aucune mesure, aucune bannière. (état actuel)
+   • fournisseur: null        → aucune mesure, aucune bannière.
+   • fournisseur: 'cloudflare'→ Cloudflare Web Analytics. Sans cookie, sans
+                                empreinte numérique, sans suivi inter-sites :
+                                aucune bannière requise. C'est l'option en
+                                place. (état actuel)
    • fournisseur: 'plausible' → mesure sans cookie ni donnée personnelle.
                                 Aucune bannière requise : la CNIL exempte
                                 les solutions de mesure d'audience qui ne
@@ -19,9 +23,10 @@
    ══════════════════════════════════════════════════════════════════════ */
 
 const CONFIG = {
-    fournisseur: null,          // null | 'plausible' | 'google'
-    domaine:     'mge-energie.fr',   // pour Plausible
-    idMesure:    ''             // 'G-XXXXXXXXXX' pour Google Analytics 4
+    fournisseur: 'cloudflare',  // null | 'cloudflare' | 'plausible' | 'google'
+    jetonCf:     'ceed583e8097426ab7b5216d94465dae',  // jeton Cloudflare Web Analytics
+    domaine:     'mge-energie.fr',                    // pour Plausible
+    idMesure:    ''                                   // 'G-XXXXXXXXXX' pour Google Analytics 4
 };
 
 const CLE_CONSENTEMENT = 'mge-consentement';
@@ -35,6 +40,15 @@ function ecrireChoix(valeur) {
 }
 
 /* ── Chargeurs ── */
+function chargerCloudflare() {
+    const s = document.createElement('script');
+    s.type = 'module';
+    s.defer = true;
+    s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', JSON.stringify({ token: CONFIG.jetonCf }));
+    document.head.appendChild(s);
+}
+
 function chargerPlausible() {
     const s = document.createElement('script');
     s.defer = true;
@@ -86,7 +100,13 @@ function construireBanniere() {
 (function init() {
     if (!CONFIG.fournisseur) return;                  // rien à charger, rien à demander
 
-    if (CONFIG.fournisseur === 'plausible') {         // sans cookie : exempté de consentement
+    // Sans cookie ni stockage sur l'appareil : exemptés de consentement
+    // au titre de l'article 82 de la loi Informatique et Libertés.
+    if (CONFIG.fournisseur === 'cloudflare') {
+        chargerCloudflare();
+        return;
+    }
+    if (CONFIG.fournisseur === 'plausible') {
         chargerPlausible();
         return;
     }
