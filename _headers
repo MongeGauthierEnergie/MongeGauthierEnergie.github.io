@@ -32,3 +32,13 @@
 # Les pages HTML gardent le comportement par défaut de Pages
 # (public, max-age=0, must-revalidate), qui est exactement ce qu'on veut :
 # une mise à jour du site est visible immédiatement.
+
+# Feuille de style et script : ils evoluent et ne portent pas d'empreinte
+# dans leur nom. Sans cette regle, Pages leur applique 4 heures de cache,
+# et une correction met 4 heures a atteindre les visiteurs. On revalide a
+# chaque visite : la reponse est un 304 vide quand rien n'a change.
+/style.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/consent.js
+  Cache-Control: public, max-age=0, must-revalidate
