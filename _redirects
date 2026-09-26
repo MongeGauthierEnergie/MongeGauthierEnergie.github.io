@@ -1,6 +1,0 @@
-# Redirections — lues par Cloudflare Pages.
-#
-# Le www sert le meme contenu que l'apex, ce qui cree un doublon aux yeux
-# des moteurs. La balise canonique le signale deja, mais une redirection
-# 301 est un signal sans ambiguite : une seule adresse fait autorite.
-https://www.mge-energie.fr/* https://mge-energie.fr/:splat 301
