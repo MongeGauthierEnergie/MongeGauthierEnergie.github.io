@@ -564,14 +564,6 @@
         });
     });
 
-    // ── Scroll ────────────────────────────────────────────────────
-    const revealObserver = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-            if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
-        });
-    }, { threshold: 0.07 });
-    document.querySelectorAll('.').forEach(el => revealObserver.observe(el));
-
     // ── Devis pré-remplissage ────────────────────────────────────────────
     document.querySelectorAll('.sp-devis-btn').forEach(btn => {
         btn.addEventListener('click', () => sessionStorage.setItem('mge-projet', document.getElementById('spTitle')?.textContent || ''));
