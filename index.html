@@ -779,13 +779,19 @@
                                             <input type="text" name="name" data-i18n-placeholder="form.name.placeholder" placeholder="Votre nom" autocomplete="name" minlength="2" maxlength="80" required>
                                         </div>
                                         <div class="form-group">
+                                            <label data-i18n="form.tel.label">Téléphone</label>
+                                            <input type="tel" name="telephone" data-i18n-placeholder="form.tel.placeholder" placeholder="06 12 34 56 78" data-i18n-title="form.tel.title" title="Numéro à 10 chiffres, par exemple 06 12 34 56 78" autocomplete="tel" inputmode="tel" maxlength="25" pattern="\s*\+?(?:[\s.\-\(\)]*\d){10,15}[\s.\-\(\)]*" required>
+                                        </div>
+                                    </div>
+                                    <div class="careers-row">
+                                        <div class="form-group">
                                             <label data-i18n="form.email.label">Email</label>
                                             <input type="email" name="email" data-i18n-placeholder="form.email.placeholder" placeholder="Votre email" autocomplete="email" maxlength="120" required>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label data-i18n="form.projet.label">Nature du projet</label>
-                                        <input type="text" id="champProjet" name="projet" data-i18n-placeholder="form.projet.placeholder" placeholder="Rénovation, domotique, dépannage…" maxlength="120">
+                                        <div class="form-group">
+                                            <label data-i18n="form.projet.label">Nature du projet</label>
+                                            <input type="text" id="champProjet" name="projet" data-i18n-placeholder="form.projet.placeholder" placeholder="Rénovation, domotique, dépannage…" maxlength="120">
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label data-i18n="form.msg.label">Message</label>
@@ -868,7 +874,7 @@
                 </div>
                 <div class="form-group">
                     <label data-i18n="careers.field.tel">Téléphone</label>
-                    <input type="tel" name="tel" data-i18n-placeholder="careers.field.tel.ph" placeholder="06 00 00 00 00" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+().\s-]{6,25}">
+                    <input type="tel" name="tel" data-i18n-placeholder="careers.field.tel.ph" placeholder="06 00 00 00 00" data-i18n-title="form.tel.title" title="Numéro à 10 chiffres, par exemple 06 12 34 56 78" autocomplete="tel" inputmode="tel" maxlength="25" pattern="\s*\+?(?:[\s.\-\(\)]*\d){10,15}[\s.\-\(\)]*">
                 </div>
                 <div class="form-group">
                     <label data-i18n="careers.field.message">Message & motivation</label>
@@ -1166,6 +1172,9 @@
                 'contact.social.label':     'Présence',
                 'form.name.label':          'Nom',
                 'form.name.placeholder':    'Votre nom',
+                'form.tel.label':           'Téléphone',
+                'form.tel.placeholder':     '06 12 34 56 78',
+                'form.tel.title':           'Numéro à 10 chiffres, par exemple 06 12 34 56 78',
                 'form.email.label':         'Email',
                 'form.email.placeholder':   'Votre email',
                 'form.projet.label':        'Nature du projet',
@@ -1283,6 +1292,9 @@
                 'contact.social.label':     'Follow us',
                 'form.name.label':          'Name',
                 'form.name.placeholder':    'Your name',
+                'form.tel.label':           'Phone',
+                'form.tel.placeholder':     '+33 6 12 34 56 78',
+                'form.tel.title':           'Phone number, e.g. +33 6 12 34 56 78',
                 'form.email.label':         'Email',
                 'form.email.placeholder':   'Your email',
                 'form.projet.label':        'Project type',
@@ -1355,6 +1367,11 @@
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                 const v = t[el.dataset.i18nPlaceholder];
                 if (v !== undefined) el.placeholder = v;
+            });
+
+            document.querySelectorAll('[data-i18n-title]').forEach(el => {
+                const v = t[el.dataset.i18nTitle];
+                if (v !== undefined) el.title = v;
             });
 
             if (t['meta.title']) document.title = t['meta.title'];

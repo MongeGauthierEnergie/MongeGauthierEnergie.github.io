@@ -201,7 +201,7 @@
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.tel">Téléphone</label>
-                                <input type="tel" name="tel" data-i18n-placeholder="form.tel.ph" placeholder="06 00 00 00 00" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+().\s-]{6,25}">
+                                <input type="tel" name="tel" data-i18n-placeholder="form.tel.ph" placeholder="06 00 00 00 00" data-i18n-title="form.tel.title" title="Numéro à 10 chiffres, par exemple 06 12 34 56 78" autocomplete="tel" inputmode="tel" maxlength="25" pattern="\s*\+?(?:[\s.\-\(\)]*\d){10,15}[\s.\-\(\)]*">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form.msg">Message & motivation</label>
@@ -296,6 +296,7 @@
             'form.email.ph':   'votre@email.com',
             'form.tel':        'Téléphone',
             'form.tel.ph':     '06 00 00 00 00',
+            'form.tel.title':  'Numéro à 10 chiffres, par exemple 06 12 34 56 78',
             'form.msg':        'Message & motivation',
             'form.msg.ph':     'Présentez-vous brièvement et expliquez votre intérêt pour MGE…',
             'form.submit':     'Envoyer ma candidature',
@@ -352,6 +353,7 @@
             'form.email.ph':   'your@email.com',
             'form.tel':        'Phone',
             'form.tel.ph':     '+33 6 00 00 00 00',
+            'form.tel.title':  'Phone number, e.g. +33 6 12 34 56 78',
             'form.msg':        'Message & motivation',
             'form.msg.ph':     'Briefly introduce yourself and explain your interest in MGE…',
             'form.submit':     'Send my application',
@@ -390,6 +392,9 @@
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             if (t[el.dataset.i18nPlaceholder] !== undefined) el.placeholder = t[el.dataset.i18nPlaceholder];
+        });
+        document.querySelectorAll('[data-i18n-title]').forEach(el => {
+            if (t[el.dataset.i18nTitle] !== undefined) el.title = t[el.dataset.i18nTitle];
         });
         // Options du select
         document.querySelectorAll('option[data-i18n]').forEach(el => {
