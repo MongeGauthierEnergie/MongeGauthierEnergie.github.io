@@ -1,8 +1,9 @@
 # MGE — Monge Gauthier Énergie
 
-> Entreprise d'électricité générale et de domotique basée à Paris 15e, spécialisée dans la
-> rénovation électrique de logements anciens, l'éclairage architectural et les installations
-> haut de gamme. Intervient à Paris et dans l'Ouest parisien.
+> Entreprise d'électricité générale et de domotique installée 2 rue Lakanal, Paris 15e,
+> spécialisée dans la rénovation électrique de logements anciens, la mise aux normes, le
+> dépannage et l'éclairage architectural. Intervient dans tout Paris et au sud de Paris :
+> Paris 14e, Montrouge, Malakoff, Vanves, Bagneux, Arcueil, Cachan, Gentilly.
 
 MGE (Monge Gauthier Énergie) est une SASU immatriculée au RCS de Paris sous le numéro
 994 424 190, créée le 27 novembre 2025, dirigée par Gauthier Monge. Elle est couverte par
@@ -14,8 +15,13 @@ France métropolitaine. Code NAF 43.21A — travaux d'installation électrique d
 - Adresse : 2 rue Lakanal, 75015 Paris, France
 - Téléphone : 07 81 90 07 84
 - Courriel : monge.energie@gmail.com
-- Horaires : du lundi au vendredi, 8h à 20h
-- Zone d'intervention : les 20 arrondissements de Paris et l'Ouest parisien
+- Horaires : 7 jours sur 7, de 8h à 22h
+- Fiche Google Maps : https://www.google.com/maps?cid=2969747043714221561
+- Avis clients : note de 5,0/5 sur Google, 23 avis (relevé du 1er octobre 2026)
+- Zone d'intervention : tout Paris, en priorité les 15e et 14e arrondissements ; au sud,
+  Montrouge, Malakoff, Vanves, Châtillon, Bagneux (Hauts-de-Seine), Arcueil, Cachan, Gentilly,
+  Le Kremlin-Bicêtre (Val-de-Marne) ; à l'ouest, Issy-les-Moulineaux et Boulogne-Billancourt.
+- Devis : gratuit et sans engagement
 
 ## Prestations pour les particuliers
 
@@ -24,7 +30,17 @@ France métropolitaine. Code NAF 43.21A — travaux d'installation électrique d
 - [Domotique](https://mge-energie.fr/domotique) : intégration de systèmes KNX, Control4 et Home Assistant, pilotage du confort thermique et lumineux.
 - [Mise aux normes NF C 15-100](https://mge-energie.fr/normes) : mise en conformité des installations anciennes.
 - [Tableau électrique](https://mge-energie.fr/tableau) : remplacement et optimisation, pose de disjoncteurs et protections différentielles, généralement en une journée.
-- [Dépannage électrique](https://mge-energie.fr/depannage) : intervention rapide 7 jours sur 7, diagnostic et réparation, devis systématiquement gratuit.
+- [Dépannage électrique](https://mge-energie.fr/depannage) : intervention rapide 7 jours sur 7 de 8h à 22h, diagnostic et réparation, devis systématiquement gratuit.
+
+## Zones d'intervention
+
+- [Toutes les zones d'intervention](https://mge-energie.fr/zones-intervention) : liste complète des arrondissements et communes desservis, avec les distances depuis la rue Lakanal.
+- [Électricien Paris 15e](https://mge-energie.fr/electricien-paris-15) : l'arrondissement où MGE est installée (2 rue Lakanal).
+- [Électricien Paris 14e](https://mge-energie.fr/electricien-paris-14) : Montparnasse, Alésia, Pernety, Montsouris — à 2,7 km.
+- [Électricien Montrouge](https://mge-energie.fr/electricien-montrouge) : 92120, à 3,6 km — immeubles anciens, mise aux normes avant vente.
+- [Électricien Bagneux](https://mge-energie.fr/electricien-bagneux) : 92220, à 5,3 km — maisons, extensions, domotique.
+- [Électricien Arcueil](https://mge-energie.fr/electricien-arcueil) : 94110, à 5,2 km — maisons en meulière, locaux professionnels.
+- [Électricien Cachan](https://mge-energie.fr/electricien-cachan) : 94230, à 6,5 km — rénovation de maisons anciennes, prise de terre.
 
 ## Prestations pour les professionnels
 

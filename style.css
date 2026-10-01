@@ -1091,7 +1091,8 @@ h1 {
 
 .footer-links {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 12px 30px;
 }
 
 .footer-links a {
@@ -1571,7 +1572,7 @@ h1 {
         text-align: center;
     }
 
-    .footer-links { justify-content: center; gap: 20px; }
+    .footer-links { justify-content: center; gap: 14px 20px; flex-wrap: wrap; }
 }
 
 /* 14. RESPONSIVE — PETITS MOBILES (iPhone SE etc.) */
@@ -2399,4 +2400,65 @@ h1 {
     background: var(--grey-light);
     border-left: 3px solid var(--line);
     margin-bottom: 34px;
+}
+
+/* ── PAGES LOCALES ET ZONES D'INTERVENTION ──
+   Réutilisent les blocs des pages services ; seuls ces ajustements sont propres. */
+.sp-desc + .sp-desc { margin-top: -30px; }
+.sp-review-link {
+    display: block;
+    width: fit-content;
+    margin: 0 0 40px;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    color: var(--blue-text);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+}
+.sp-review-link:hover { color: var(--navy); }
+.sp-related--alt { background: var(--bg); }
+.sp-related--alt .sp-related-item { background: var(--grey-light); }
+.sp-related-item--static:hover { transform: none; }
+a.nav-phone { text-decoration: none; }
+.zones-intro {
+    max-width: 720px;
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--grey);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.zones-intro + .sp-related-grid { margin-top: 30px; }
+.zones-all {
+    display: inline-block;
+    margin-top: 36px;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue-text);
+    text-decoration: none;
+}
+.zones-all:hover { color: var(--navy); }
+
+/* Section « Zones d'intervention » de l'accueil */
+#zones { padding: 130px 0; }
+#zones .section-label { margin-bottom: 40px; }
+#zones h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 200;
+    letter-spacing: -2px;
+    color: var(--navy);
+    margin-bottom: 30px;
+}
+#zones h2 em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--blue);
+    font-size: 1.15em;
+}
+@media (max-width: 768px) {
+    #zones { padding: 80px 0; }
+    #zones h2 { font-size: clamp(1.8rem, 8vw, 2.5rem); letter-spacing: -1px; }
 }
